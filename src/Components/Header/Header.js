@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import { HeaderWrpper } from "./Styled";
 
 const Header = () => {
   const token = window.localStorage.getItem("token");
@@ -16,12 +17,12 @@ const Header = () => {
     );
   }, [token]);
   return (
-    <div>
+    <HeaderWrpper>
       <div>
         <img alt="logo" />
       </div>
       <div>{HeaderMenu}</div>
-    </div>
+    </HeaderWrpper>
   );
 };
 
