@@ -1,5 +1,7 @@
 import React, { useMemo } from "react";
-import {logo} from "../../img/imgExport"
+import { logo } from "../../img/imgExport";
+import { Button } from "../../Styles";
+import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
 
 const Header = () => {
   const token = window.localStorage.getItem("token");
@@ -11,18 +13,16 @@ const Header = () => {
       </>
     ) : (
       <>
-        <button>로그인</button>
-        <button>회원가입</button>
+        <Button backGroundColor="black">로그인</Button>
+        <Button backGroundColor="black">회원가입</Button>
       </>
     );
   }, [token]);
   return (
-    <div>
-      <div>
-        <img alt="logo" src={logo}/>
-      </div>
-      <div>{HeaderMenu}</div>
-    </div>
+    <HeaderWrapper>
+      <Logo src={logo} />
+      <ButtonWrapper>{HeaderMenu}</ButtonWrapper>
+    </HeaderWrapper>
   );
 };
 
