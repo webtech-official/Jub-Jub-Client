@@ -1,13 +1,11 @@
 import React from "react";
-import { useState } from "react";
 import * as S from "./Styled";
 
-const Modal = ({ children }) => {
-  const [is_open, setOpen] = useState(false);
+const Modal = ({ children, is_open, setOpen }) => {
   const ModalOpen = is_open && (
     <S.ModalWrapper
       onClick={() => {
-        setOpen(false);
+        setOpen({ open: false, component: null });
       }}
     >
       {children}

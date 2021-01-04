@@ -19,7 +19,11 @@ const Button = (props) => {
       cursor: pointer;
     }
   `;
-  return <button className={buttonStyle}>{btnName}</button>;
+  return (
+    <button className={buttonStyle} onClick={props.onClick}>
+      {btnName}
+    </button>
+  );
 };
 
 export default Button;
