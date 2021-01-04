@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import {logo} from "../../img/imgExport"
 
 const Header = () => {
   const token = window.localStorage.getItem("token");
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <div>
       <div>
-        <img alt="logo" />
+        <img alt="logo" src={logo}/>
       </div>
       <div>{HeaderMenu}</div>
     </div>
