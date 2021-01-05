@@ -8,8 +8,6 @@ const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  z-index: 1;
 `;
 
 const Logo = styled.img`
