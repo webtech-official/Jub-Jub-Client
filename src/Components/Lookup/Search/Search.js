@@ -4,13 +4,17 @@ const Search = () => {
   const [search, onChange] = useState("");
   return (
     <>
-      <input
-        type="text"
-        value={search}
-        onChange={(e) => {
-          onChange(e.target.value);
-        }}
-      />
+      <div>
+        <input
+          className="searchArea"
+          type="text"
+          value={search}
+          onChange={(e) => {
+            onChange(e.target.value);
+          }}
+        />
+        <img></img>
+      </div>
     </>
   );
 };
