@@ -3,7 +3,7 @@ import { data } from "./dummy.json";
 import ItemPage from "./ItemPage/ItemPage";
 import LookupItem from "./LookupItem/LookupItem";
 import Search from "./Search/Search";
-import { LookupWrapper, LookupContainer } from "./Styled";
+import { LookupWrapper, LookupContainer, TitleBox } from "./Styled";
 
 const Lookup = () => {
   const [page, setPage] = useState(1);
@@ -13,8 +13,13 @@ const Lookup = () => {
   return (
     <LookupWrapper>
       <LookupContainer>
-        <Search/>
-        <div>번호 | 카테고리 | 품명 | 수량</div>
+        <Search />
+        <TitleBox>
+          <span className="itemNumber">번호</span>
+          <span className="category">카테고리</span>
+          <span className="itemName">품명</span>
+          <span className="itemAmount">수량</span>
+        </TitleBox>
         {LookupItemList}
         <ItemPage id={page} setId={setPage} length={data.length} />
       </LookupContainer>
