@@ -5,7 +5,7 @@ import {
   MyPageContainer,
 } from "./Container/index";
 
-import { Header } from "./Components/index";
+import { Background, Header } from "./Components/index";
 import { createBrowserHistory } from "history";
 
 const browserHistory = createBrowserHistory();
@@ -15,9 +15,9 @@ const App = () => {
     <>
       <Router history={browserHistory}>
         <Header />
+        <Background />
         <Switch>
-          <Route exact path="/" component={MainContainer} />
-          <Route exact path="/Home" component={HomeContainer} />
+          <Route exact path="/" component={HomeContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
         </Switch>
       </Router>
