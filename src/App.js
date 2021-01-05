@@ -15,7 +15,7 @@ const App = () => {
     <>
       <Router history={browserHistory}>
         <Header />
-        <Background/>
+        <Background />
         <Switch>
           <Route exact path="/" component={MainContainer} />
           <Route exact path="/Home" component={HomeContainer} />
