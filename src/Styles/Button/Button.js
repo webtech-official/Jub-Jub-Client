@@ -3,9 +3,10 @@ import { css } from "@emotion/css";
 
 const Button = (props) => {
   const [btnName, setBtnName] = useState(props.children);
-  const { backGroundColor } = props;
+  const { backGroundColor, onClick} = props;
   const buttonStyle = css`
     width: ${btnName.length > 3 ? `120px` : `100px`};
+    height: fit-content;
     background-color: ${backGroundColor};
     font-size: 16px;
     border: 1px solid #ffffff;
@@ -20,7 +21,7 @@ const Button = (props) => {
     }
   `;
   return (
-    <button className={buttonStyle} onClick={props.onClick}>
+    <button className={buttonStyle} onClick={onClick}>
       {btnName}
     </button>
   );

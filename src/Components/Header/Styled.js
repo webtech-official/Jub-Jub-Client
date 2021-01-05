@@ -18,7 +18,6 @@ const Logo = styled.img`
 
 const ButtonWrapper = styled.span`
   width: 250px;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 25px;
