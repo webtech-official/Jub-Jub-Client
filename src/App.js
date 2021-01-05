@@ -17,8 +17,7 @@ const App = () => {
         <Header />
         <Background />
         <Switch>
-          <Route exact path="/" component={MainContainer} />
-          <Route exact path="/Home" component={HomeContainer} />
+          <Route exact path="/" component={HomeContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
         </Switch>
       </Router>
