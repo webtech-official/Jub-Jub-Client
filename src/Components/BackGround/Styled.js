@@ -5,7 +5,7 @@ const BackGroundWrapper = styled.div`
   position: relative;
   width: 100%;
   min-width: 1440px;
-  height: 200vh;
+  height: 1950px;
   background-color: #000000;
 `;
 
