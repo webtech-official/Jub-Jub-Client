@@ -3,7 +3,7 @@ import { snow_globe_dom, ground } from "../../img/index";
 
 const BackGroundWrapper = styled.div`
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-width: 1440px;
   height: 200vh;
   background-color: #000000;
