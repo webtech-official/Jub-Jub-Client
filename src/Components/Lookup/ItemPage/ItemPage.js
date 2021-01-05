@@ -24,7 +24,7 @@ const ItemPage = ({ id, setId, length }) => {
         {pages}
         <button
           onClick={() => {
-            if (length / 5 + 1 <= id) {
+            if (length / 5 >= id) {
               setId(id + 1);
             }
           }}
