@@ -15,11 +15,11 @@ const App = () => {
     <>
       <Router history={browserHistory}>
         <Header />
-        <Background />
         <Switch>
           <Route exact path="/" component={HomeContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
         </Switch>
+        <Background />
       </Router>
     </>
   );
