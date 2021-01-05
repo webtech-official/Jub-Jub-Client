@@ -3,13 +3,13 @@ import React from "react";
 const ItemPage = ({ id, setId, length }) => {
   const page = [id, id + 1, id + 2, id + 3, id + 4];
   const pages = page.map((p) => (
-    <p
+    <span
       onClick={() => {
         setId(p);
       }}
     >
       | {p} |
-    </p>
+    </span>
   ));
   return (
     <>
