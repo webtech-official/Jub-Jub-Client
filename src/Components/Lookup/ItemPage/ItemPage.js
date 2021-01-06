@@ -22,7 +22,7 @@ const ItemPage = ({ id, setId, length }) => {
             id >= 6 && setId(id - 5);
           }}
         ></div>
-        <div className="pageNumer">{pages}</div>
+        <div className="pageNumber">{pages}</div>
         <div
           id="right"
           className="pageMoveButton"
