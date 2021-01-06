@@ -7,13 +7,14 @@ import { LookupWrapper, LookupContainer, TitleBox } from "./Styled";
 
 const Lookup = () => {
   const [page, setPage] = useState(1);
+  const [search, setSearch] = useState("");
   const LookupItemList = data
     .filter((item) => item.id <= page * 5 && item.id > (page - 1) * 5)
     .map((item) => <LookupItem itemInfo={item} />);
   return (
     <LookupWrapper>
       <LookupContainer>
-        <Search />
+        <Search search={search} onChange={setSearch} />
         <TitleBox>
           <span className="itemNumber">번호</span>
           <span className="category">카테고리</span>

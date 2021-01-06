@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const Search = () => {
-  const [search, onChange] = useState("");
+const Search = ({ search, onChange }) => {
   return (
     <>
       <div>
