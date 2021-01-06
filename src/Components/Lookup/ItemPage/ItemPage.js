@@ -6,7 +6,12 @@ const ItemPage = ({ id, setId, length }) => {
     <span
       className={p === id ? `selectedPage` : ``}
       onClick={() => {
-        setId(p);
+        if (p > parseInt(length / 5) + 1) {
+          alert("더 이상 존재하지 않습니다.");
+          setId(parseInt(length / 5) + 1);
+        } else {
+          setId(p);
+        }
       }}
     >
       {p}
@@ -19,7 +24,11 @@ const ItemPage = ({ id, setId, length }) => {
           id="left"
           className="pageMoveButton"
           onClick={() => {
-            id >= 6 && setId(id - 5);
+            if (id >= 6) {
+              setId(id - 5);
+            } else {
+              setId(1);
+            }
           }}
         ></div>
         <div className="pageNumber">{pages}</div>
@@ -29,6 +38,8 @@ const ItemPage = ({ id, setId, length }) => {
           onClick={() => {
             if (length / 5 >= id) {
               setId(id + 5);
+            } else if (id + 5 > length / 5) {
+              setId(parseInt(length / 5) + 1);
             }
           }}
         ></div>
