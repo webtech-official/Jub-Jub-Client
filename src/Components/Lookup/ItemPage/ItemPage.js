@@ -13,7 +13,7 @@ const ItemPage = ({ id, setId, length }) => {
   ));
   return (
     <>
-      <div>
+      <div className="controlArea">
         <button
           onClick={() => {
             id !== 1 && setId(id - 1);
@@ -21,7 +21,7 @@ const ItemPage = ({ id, setId, length }) => {
         >
           {"<"}
         </button>
-        {pages}
+        <div className="pageNumer">{pages}</div>
         <button
           onClick={() => {
             if (length / 5 >= id) {

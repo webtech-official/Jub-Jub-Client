@@ -51,6 +51,18 @@ const LookupContainer = styled.div`
   .itemAmount {
     width: 336px;
   }
+  .controlArea{
+    width: 40%;
+    height: 16%;
+    display:flex;
+    align-items: center;
+    button{
+      
+    }
+    .pageNumer{
+
+    }
+  }
 `;
 
 const TitleBox = styled.div`
