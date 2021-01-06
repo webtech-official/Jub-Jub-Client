@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { search_icon } from "../../../img/index";
 
 const Search = ({ search, onChange, onKeyPress }) => {
@@ -14,7 +14,7 @@ const Search = ({ search, onChange, onKeyPress }) => {
           }}
           onKeyPress={onKeyPress}
         />
-        <img src={search_icon}></img>
+        <img src={search_icon} alt="search_icon"></img>
       </div>
     </>
   );
