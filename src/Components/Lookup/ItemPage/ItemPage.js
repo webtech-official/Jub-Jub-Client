@@ -19,7 +19,7 @@ const ItemPage = ({ id, setId, length }) => {
           id="left"
           className="pageMoveButton"
           onClick={() => {
-            id !== 1 && setId(id - 1);
+            id >= 6 && setId(id - 5);
           }}
         ></div>
         <div className="pageNumer">{pages}</div>
@@ -28,7 +28,7 @@ const ItemPage = ({ id, setId, length }) => {
           className="pageMoveButton"
           onClick={() => {
             if (length / 5 >= id) {
-              setId(id + 1);
+              setId(id + 5);
             }
           }}
         ></div>
