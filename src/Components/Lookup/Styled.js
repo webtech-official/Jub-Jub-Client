@@ -64,20 +64,20 @@ const LookupContainer = styled.div`
     #right {
       background-image: url(${right_arrow});
     }
-    .selectedPage{
+    .selectedPage {
       font-weight: bold;
-      text-shadow: 0px 0px 5px #FFFFFF;
+      text-shadow: 0px 0px 5px #ffffff;
     }
-    .pageMoveButton{
+    .pageMoveButton {
       width: 24px;
       height: 24px;
-      background-size:cover;
+      background-size: cover;
     }
-    .pageNumer {
+    .pageNumber {
       width: 60%;
       display: flex;
       justify-content: space-between;
-      span{
+      span {
         font-size: 24px;
       }
     }
