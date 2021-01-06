@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { search_icon } from "../../../img/index";
 
-const Search = () => {
-  const [search, onChange] = useState("");
+const Search = ({ search, onChange }) => {
   return (
     <>
       <div className="searchArea">
