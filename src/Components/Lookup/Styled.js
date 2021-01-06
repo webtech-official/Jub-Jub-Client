@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { left_arrow, right_arrow } from "../../img/index";
 
 const LookupWrapper = styled.div`
   position: absolute;
@@ -51,16 +52,34 @@ const LookupContainer = styled.div`
   .itemAmount {
     width: 336px;
   }
-  .controlArea{
-    width: 40%;
+  .controlArea {
+    width: 30%;
     height: 16%;
-    display:flex;
+    display: flex;
     align-items: center;
-    button{
-      
+    justify-content: space-between;
+    #left {
+      background-image: url(${left_arrow});
     }
-    .pageNumer{
-
+    #right {
+      background-image: url(${right_arrow});
+    }
+    .selectedPage{
+      font-weight: bold;
+      text-shadow: 0px 0px 5px #FFFFFF;
+    }
+    .pageMoveButton{
+      width: 24px;
+      height: 24px;
+      background-size:cover;
+    }
+    .pageNumer {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      span{
+        font-size: 24px;
+      }
     }
   }
 `;
@@ -95,7 +114,7 @@ const ContentBox = styled.div`
     display: flex;
     align-items: center;
     border-bottom: 2px solid #ffffff;
-    span{
+    span {
       font-size: 24px;
       font-weight: bold;
     }
