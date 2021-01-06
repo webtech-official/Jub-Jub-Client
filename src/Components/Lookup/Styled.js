@@ -112,7 +112,7 @@ const ContentBox = styled.div`
     height:100%;
     display: flex;
     flex-direction: column;
-  }
+  }  
   .itemBox {
     width: fit-content;
     height: 20%;
