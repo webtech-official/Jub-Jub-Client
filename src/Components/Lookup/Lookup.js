@@ -41,7 +41,7 @@ const Lookup = () => {
           </div>
         </TitleBox>
         <ContentBox>
-          {LookupItemList}
+          <div className="items">{LookupItemList}</div>
           <ItemPage id={page} setId={setPage} length={items.length} />
         </ContentBox>
       </LookupContainer>
