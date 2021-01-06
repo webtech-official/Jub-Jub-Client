@@ -9,6 +9,7 @@ const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const LookupItemList = data
+    .filter((item, index) => data[index].name.includes(search))
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
@@ -27,7 +28,7 @@ const Lookup = () => {
         </TitleBox>
         <ContentBox>
           {LookupItemList}
-          <ItemPage id={page} setId={setPage} length={data.length} />
+          <ItemPage id={page} setId={setPage} length={LookupItemList.length} />
         </ContentBox>
       </LookupContainer>
     </LookupWrapper>
