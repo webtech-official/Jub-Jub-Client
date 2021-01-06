@@ -4,6 +4,7 @@ const ItemPage = ({ id, setId, length }) => {
   const page = [id, id + 1, id + 2, id + 3, id + 4];
   const pages = page.map((p) => (
     <span
+      key={p}
       className={p === id ? `selectedPage` : ``}
       onClick={() => {
         if (p > parseInt(length / 5) + 1) {

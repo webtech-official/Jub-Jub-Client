@@ -1,9 +1,5 @@
-import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
-import {
-  HomeContainer,
-  MainContainer,
-  MyPageContainer,
-} from "./Container/index";
+import { Route, Router, Switch } from "react-router-dom";
+import { HomeContainer, MyPageContainer } from "./Container/index";
 
 import { Background, Header } from "./Components/index";
 import { createBrowserHistory } from "history";
