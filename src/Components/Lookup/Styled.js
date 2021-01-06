@@ -54,7 +54,7 @@ const LookupContainer = styled.div`
   }
   .controlArea {
     width: 30%;
-    height: 16%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,9 +108,14 @@ const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  .items{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+  }
   .itemBox {
     width: fit-content;
-    height: 16%;
+    height: 20%;
     display: flex;
     align-items: center;
     border-bottom: 2px solid #ffffff;
