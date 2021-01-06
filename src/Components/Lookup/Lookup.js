@@ -9,7 +9,9 @@ const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const LookupItemList = data
-    .filter((item) => item.id <= page * 5 && item.id > (page - 1) * 5)
+    .filter(
+      (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
+    )
     .map((item) => <LookupItem itemInfo={item} />);
   return (
     <LookupWrapper>
