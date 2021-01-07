@@ -13,14 +13,14 @@ const LookupWrapper = styled.div`
 `;
 
 const LookupContainer = styled.div`
-  width: 1380px;
+  width: 1230px;
   height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 30px;
   .searchArea {
     width: 80%;
     height: fit-content;
@@ -41,16 +41,16 @@ const LookupContainer = styled.div`
     text-align: center;
   }
   .itemNumber {
-    width: 100px;
+    width: 70px;
   }
   .category {
-    width: 273px;
+    width: 253px;
   }
   .itemName {
-    width: 420px;
+    width: 380px;
   }
   .itemAmount {
-    width: 336px;
+    width: 296px;
   }
   .controlArea {
     width: 30%;
