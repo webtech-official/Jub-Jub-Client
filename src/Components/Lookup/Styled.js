@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { left_arrow, right_arrow } from "../../img/index";
 
 const LookupWrapper = styled.div`
   position: absolute;
@@ -13,14 +12,14 @@ const LookupWrapper = styled.div`
 `;
 
 const LookupContainer = styled.div`
-  width: 1380px;
+  width: 1230px;
   height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 30px;
   .searchArea {
     width: 80%;
     height: fit-content;
@@ -41,46 +40,16 @@ const LookupContainer = styled.div`
     text-align: center;
   }
   .itemNumber {
-    width: 100px;
+    width: 70px;
   }
   .category {
-    width: 273px;
+    width: 253px;
   }
   .itemName {
-    width: 420px;
+    width: 380px;
   }
   .itemAmount {
-    width: 336px;
-  }
-  .controlArea {
-    width: 30%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    #left {
-      background-image: url(${left_arrow});
-    }
-    #right {
-      background-image: url(${right_arrow});
-    }
-    .selectedPage {
-      font-weight: bold;
-      text-shadow: 0px 0px 5px #ffffff;
-    }
-    .pageMoveButton {
-      width: 24px;
-      height: 24px;
-      background-size: cover;
-    }
-    .pageNumber {
-      width: 60%;
-      display: flex;
-      justify-content: space-between;
-      span {
-        font-size: 24px;
-      }
-    }
+    width: 296px;
   }
 `;
 
@@ -99,31 +68,4 @@ const TitleBox = styled.div`
   }
 `;
 
-const ContentBox = styled.div`
-  width: 90%;
-  height: 70%;
-  color: white;
-  background-color: #000000;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .items{
-    height:100%;
-    display: flex;
-    flex-direction: column;
-  }  
-  .itemBox {
-    width: fit-content;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #ffffff;
-    span {
-      font-size: 24px;
-      font-weight: bold;
-    }
-  }
-`;
-
-export { LookupWrapper, LookupContainer, TitleBox, ContentBox };
+export { LookupWrapper, LookupContainer, TitleBox };

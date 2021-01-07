@@ -1,6 +1,7 @@
 import React from "react";
+import * as S from "./Styled";
 
-const ItemPage = ({ id, setId, length }) => {
+const ItemPage = ({ id, setId, length, children }) => {
   const page = [id, id + 1, id + 2, id + 3, id + 4];
   const pages = page.map((p) => (
     <span
@@ -9,6 +10,7 @@ const ItemPage = ({ id, setId, length }) => {
       onClick={() => {
         if (p > parseInt(length / 5) + 1) {
           alert("더 이상 존재하지 않습니다.");
+          console.log(parseInt(length / 5) + 1);
           setId(parseInt(length / 5) + 1);
         } else {
           setId(p);
@@ -19,7 +21,8 @@ const ItemPage = ({ id, setId, length }) => {
     </span>
   ));
   return (
-    <>
+    <S.ContentBox>
+      <div className="items">{children}</div>
       <div className="controlArea">
         <div
           id="left"
@@ -37,15 +40,15 @@ const ItemPage = ({ id, setId, length }) => {
           id="right"
           className="pageMoveButton"
           onClick={() => {
-            if (length / 5 >= id) {
-              setId(id + 5);
-            } else if (id + 5 > length / 5) {
+            if (id + 5 >= parseInt(length / 5) + 1) {
               setId(parseInt(length / 5) + 1);
+            } else {
+              setId(id + 5);
             }
           }}
         ></div>
       </div>
-    </>
+    </S.ContentBox>
   );
 };
 

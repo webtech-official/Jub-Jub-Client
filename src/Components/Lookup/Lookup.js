@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { data } from "./dummy.json";
-import ItemPage from "./ItemPage/ItemPage";
+import ItemPage from "../../Styles/ItemPage/ItemPage";
 import LookupItem from "./LookupItem/LookupItem";
 import Search from "./Search/Search";
-import { LookupWrapper, LookupContainer, TitleBox, ContentBox } from "./Styled";
+import * as S from "./Styled";
 
 const Lookup = () => {
   const [page, setPage] = useState(1);
@@ -25,27 +25,26 @@ const Lookup = () => {
     }
   };
   return (
-    <LookupWrapper>
-      <LookupContainer>
+    <S.LookupWrapper>
+      <S.LookupContainer>
         <Search
           search={search}
           onChange={setSearch}
           onKeyPress={handleSearch}
         />
-        <TitleBox>
+        <S.TitleBox>
           <div>
             <span className="itemNumber">번호</span>
             <span className="category">카테고리</span>
             <span className="itemName">품명</span>
             <span className="itemAmount">수량</span>
           </div>
-        </TitleBox>
-        <ContentBox>
-          <div className="items">{LookupItemList}</div>
-          <ItemPage id={page} setId={setPage} length={items.length} />
-        </ContentBox>
-      </LookupContainer>
-    </LookupWrapper>
+        </S.TitleBox>
+        <ItemPage id={page} setId={setPage} length={items.length}>
+          {LookupItemList}
+        </ItemPage>
+      </S.LookupContainer>
+    </S.LookupWrapper>
   );
 };
 
