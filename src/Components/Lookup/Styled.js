@@ -72,11 +72,13 @@ const LookupContainer = styled.div`
       width: 24px;
       height: 24px;
       background-size: cover;
+      cursor: pointer;
     }
     .pageNumber {
       width: 60%;
       display: flex;
       justify-content: space-between;
+      cursor: pointer;
       span {
         font-size: 24px;
       }
