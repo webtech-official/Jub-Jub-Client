@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Login, Register } from "..";
-import { logo } from "../../img/imgExport";
+import { logo } from "../../img/index";
 import { Button, Modal } from "../../Styles";
 import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
 
