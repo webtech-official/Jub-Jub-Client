@@ -1,3 +1,4 @@
+import logo from "./white_logo.png"
 import snow_globe_dom from "./snow_globe_dom.png";
 import ground from "./globe_ground.png";
 import search_icon from "./search_icon.png";
@@ -8,6 +9,7 @@ import facebook from "./facebook.png";
 import twitter from "./twitter.png";
 
 export {
+  logo,
   snow_globe_dom,
   ground,
   search_icon,
