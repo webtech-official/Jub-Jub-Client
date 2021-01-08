@@ -1,11 +1,12 @@
 import React from "react";
 import { MainWrapper } from "./Styled";
-import Lookupcontainer from "../Lookup/Lookupcontainer/Lookupcontainer";
+import { Background } from "../../Styles/index";
 
-const Main = () => {
+const Main = ({ children }) => {
   return (
     <MainWrapper>
-      <Lookupcontainer />
+      {children}
+      <Background textHide={true} />
     </MainWrapper>
   );
 };
