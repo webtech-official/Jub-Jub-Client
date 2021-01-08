@@ -7,13 +7,14 @@ const LookupWrapper = styled.div`
   height: 900px;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 2;
   top: 980px;
 `;
 
 const LookupContainer = styled.div`
   width: 1230px;
-  height: 900px;
+  height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
