@@ -4,7 +4,7 @@ const LookupWrapper = styled.div`
   position: absolute;
   width: 100%;
   min-width: 1440px;
-  height: 900px;
+  height: 950px;
   display: flex;
   justify-content: center;
   align-items: center;
