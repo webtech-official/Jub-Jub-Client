@@ -29,7 +29,7 @@ const Lookupcontainer = () => {
       <Search search={search} onChange={setSearch} onKeyPress={handleSearch} />
       <S.TitleBox>
         <div>
-          <span className="itemNumber">번호</span>
+          <span className="itemNumber">번호 </span>
           <span className="category">카테고리</span>
           <span className="itemName">품명</span>
           <span className="itemAmount">수량</span>
