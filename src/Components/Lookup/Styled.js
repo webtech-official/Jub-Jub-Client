@@ -9,7 +9,7 @@ const LookupWrapper = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 2;
-  top: 980px;
+  top: 960px;
 `;
 
 const LookupContainer = styled.div`
