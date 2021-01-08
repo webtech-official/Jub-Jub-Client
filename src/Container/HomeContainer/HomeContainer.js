@@ -1,6 +1,6 @@
 import React from "react";
 import { Lookup } from "../../Components";
-import Background from "../../Styles/BackGround/Background";
+import {Background} from "../../Styles/index";
 
 const HomeContainer = () => {
   return (
