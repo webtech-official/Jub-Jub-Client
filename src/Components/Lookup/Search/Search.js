@@ -1,16 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import { search_icon } from "../../../img/index";
 
-const Search = () => {
-  const [search, onChange] = useState("");
+const Search = ({ search, onChange, onKeyPress }) => {
   return (
     <>
-      <input
-        type="text"
-        value={search}
-        onChange={(e) => {
-          onChange(e.target.value);
-        }}
-      />
+      <div className="searchArea">
+        <input
+          className="inputBox"
+          type="text"
+          value={search}
+          onChange={(e) => {
+            onChange(e.target.value);
+          }}
+          onKeyPress={onKeyPress}
+        />
+        <img src={search_icon} alt="search_icon"></img>
+      </div>
     </>
   );
 };
