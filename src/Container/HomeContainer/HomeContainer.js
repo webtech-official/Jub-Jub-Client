@@ -6,7 +6,7 @@ const HomeContainer = () => {
   return (
     <>
       <Lookup />
-      <Background size={1950}/>
+      <Background size={1910}/>
     </>
   );
 };
