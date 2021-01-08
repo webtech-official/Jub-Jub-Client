@@ -7,7 +7,6 @@ import Main from "./Main/Main";
 import Mypage from "./Mypage/Mypage";
 import Register from "./Register/Register";
 import Statistics from "./Statistics/Statistics";
-import Background from "./BackGround/Background"
 import Footer from "./Footer/Footer"
 
 export {
@@ -20,6 +19,5 @@ export {
   Mypage,
   Register,
   Statistics,
-  Background,
   Footer
 };

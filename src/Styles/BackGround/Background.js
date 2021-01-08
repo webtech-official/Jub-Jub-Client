@@ -1,7 +1,15 @@
 import React from "react";
-import { BackGroundWrapper, Ground, SnowGlobeDom, TextWrapper } from "./Styled";
+import styled from "@emotion/styled";
+import { Ground, SnowGlobeDom, TextWrapper } from "./Styled";
 
-const Background = () => {
+const Background = ({size}) => {
+  const BackGroundWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  min-width: 1440px;
+  height: ${size}px;
+  background-color: #000000;
+`;
   return (
     <BackGroundWrapper>
       <TextWrapper>
