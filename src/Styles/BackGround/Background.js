@@ -33,7 +33,7 @@ const Background = ({ size, textHide }) => {
 };
 
 Background.defaultProps = {
-  size: 1000,
+  size: 1100,
   textHide: false,
 };
 

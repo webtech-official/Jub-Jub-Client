@@ -1,9 +1,13 @@
 import React from "react";
 import { MainWrapper } from "./Styled";
-import {Lookup} from "../index";
+import Lookupcontainer from "../Lookup/Lookupcontainer/Lookupcontainer";
 
 const Main = () => {
-  return <MainWrapper><Lookup/></MainWrapper>;
+  return (
+    <MainWrapper>
+      <Lookupcontainer />
+    </MainWrapper>
+  );
 };
 
 export default Main;
