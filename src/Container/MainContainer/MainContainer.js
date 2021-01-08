@@ -6,7 +6,7 @@ const MainContainer = () => {
   return (
     <>
       <Main />
-      <Background size={1000} />
+      <Background textHide={true}/>
     </>
   );
 };
