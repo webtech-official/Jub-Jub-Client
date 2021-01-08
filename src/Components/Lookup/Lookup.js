@@ -1,10 +1,13 @@
 import React from "react";
-import { data } from "./dummy.json";
-import LookupItem from "./LookupItem/LookupItem";
+import * as S from "./Styled";
+import Lookupcontainer from "./Lookupcontainer/Lookupcontainer";
 
 const Lookup = () => {
-  const LookupItemList = data.map((item) => <LookupItem itemInfo={item} />);
-  return <>{LookupItemList}</>;
+  return (
+    <S.LookupWrapper>
+      <Lookupcontainer/>
+    </S.LookupWrapper>
+  );
 };
 
 export default Lookup;

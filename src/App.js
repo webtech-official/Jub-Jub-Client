@@ -1,11 +1,6 @@
-import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
-import {
-  HomeContainer,
-  MainContainer,
-  MyPageContainer,
-} from "./Container/index";
-
-import { Header } from "./Components/index";
+import { Route, Router, Switch } from "react-router-dom";
+import { HomeContainer, MainContainer, MyPageContainer } from "./Container/index";
+import { Footer, Header } from "./Components/index";
 import { createBrowserHistory } from "history";
 
 const browserHistory = createBrowserHistory();
@@ -16,10 +11,11 @@ const App = () => {
       <Router history={browserHistory}>
         <Header />
         <Switch>
-          <Route exact path="/" component={MainContainer} />
-          <Route exact path="/Home" component={HomeContainer} />
+          <Route exact path="/" component={HomeContainer} />
+          <Route path="/main" component={MainContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
