@@ -6,6 +6,7 @@ const MainWrapper = styled.div`
   width: 100%;
   min-width: 1870px;
   height: 887px;
+  align-items: center;
 `;
 
 export { MainWrapper };

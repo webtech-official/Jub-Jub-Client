@@ -13,7 +13,7 @@ const LookupWrapper = styled.div`
 `;
 
 const LookupContainer = styled.div`
-  width: 1230px;
+  width: 65%;
   height: 850px;
   display: flex;
   flex-direction: column;

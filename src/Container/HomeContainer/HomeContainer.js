@@ -1,12 +1,15 @@
 import React from "react";
 import { Lookup } from "../../Components";
-import {Background} from "../../Styles/index";
+import { LookupWrapper } from "../../Components/Lookup/Styled";
+import { Background } from "../../Styles/index";
 
 const HomeContainer = () => {
   return (
     <>
-      <Lookup />
-      <Background size={1950}/>
+      <LookupWrapper>
+        <Lookup />
+      </LookupWrapper>
+      <Background size={1950} />
     </>
   );
 };
