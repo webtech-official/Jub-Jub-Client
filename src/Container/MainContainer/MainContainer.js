@@ -1,12 +1,15 @@
 import React from "react";
-import { Main } from "../../Components/index";
-import { LookupContainer } from "../index";
+import { Lookup, Main } from "../../Components";
+import { LookupWrapper } from "../../Components/Lookup/Styled";
+import { Background } from "../../Styles";
+import LookupContainer from "../LookupContainer/LookupContainer";
+
 
 const MainContainer = () => {
   return (
     <>
       <Main>
-        <LookupContainer />
+    <Lookup />
       </Main>
     </>
   );
