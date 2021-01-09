@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import * as S from "./Styled";
 import { data } from "./dummy.json";
-import Search from "./Search/Search";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
+import Search from "./Search/Search";
 import LookupItem from "./LookupItem/LookupItem";
 const Lookup = () => {
   const [page, setPage] = useState(1);

@@ -5,9 +5,7 @@ const MainWrapper = styled.div`
   top: 113px;
   width: 100%;
   min-width: 1870px;
-  height: 987px;
-  display: flex;
-  justify-content: center;
+  height: 887px;
   align-items: center;
 `;
 
