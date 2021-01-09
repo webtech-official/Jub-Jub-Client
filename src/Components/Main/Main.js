@@ -1,9 +1,16 @@
 import React from "react";
 import { MainWrapper } from "./Styled";
-import {Lookup} from "../index";
+import { Background } from "../../Styles";
 
-const Main = () => {
-  return <MainWrapper><Lookup/></MainWrapper>;
+const Main = ({ children }) => {
+  return (
+    <>
+      <MainWrapper>
+        {children}
+        <Background textHide={true} />
+      </MainWrapper>
+    </>
+  );
 };
 
 export default Main;
