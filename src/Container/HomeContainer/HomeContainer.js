@@ -5,8 +5,8 @@ import LookupContainer from "../LookupContainer/LookupContainer";
 const HomeContainer = () => {
   return (
     <>
-      <LookupContainer />
-      <Background size={1950} />
+      <Lookup />
+      <Background size={1910}/>
     </>
   );
 };

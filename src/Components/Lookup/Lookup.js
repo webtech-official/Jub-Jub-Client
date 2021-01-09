@@ -4,7 +4,6 @@ import { data } from "./dummy.json";
 import Search from "./Search/Search";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import LookupItem from "./LookupItem/LookupItem";
-
 const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");

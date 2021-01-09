@@ -7,6 +7,7 @@ const LookupContainer = () => {
     <LookupWrapper>
       <Lookup />
     </LookupWrapper>
+
   );
 };
 
