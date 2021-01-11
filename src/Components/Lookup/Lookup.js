@@ -4,28 +4,20 @@ import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import Search from "./Search/Search";
 import LookupItem from "./LookupItem/LookupItem";
+import Loading from "./Loading/Loading";
 const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [items, setItems] = useState(data);
   const LookupItemList = items
+    .filter((item, index) => items[index].name.includes(search))
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
     .map((item) => <LookupItem itemInfo={item} key={item.id} />);
-  const handleSearch = (e) => {
-    if (e.KeyCode === "Enter") {
-      setItems(
-        ...items,
-        LookupItemList.filter((item, index) =>
-          items[index].name.includes(search)
-        )
-      );
-    }
-  };
   return (
     <S.LookupContainer>
-      <Search search={search} onChange={setSearch} onKeyPress={handleSearch} />
+      <Search search={search} onChange={setSearch} />
       <S.TitleBox>
         <div>
           <span className="itemNumber">번호</span>
@@ -35,7 +27,8 @@ const Lookup = () => {
         </div>
       </S.TitleBox>
       <ItemPage id={page} setId={setPage} length={items.length}>
-        {LookupItemList}
+        {console.log(LookupItemList)}
+        {LookupItemList.length === 0 ? <Loading /> : LookupItemList}
       </ItemPage>
     </S.LookupContainer>
   );
