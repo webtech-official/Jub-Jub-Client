@@ -1,12 +1,24 @@
 import React from "react";
 import { MainWrapper } from "./Styled";
-import { Background } from "../../Styles/index";
+import { Lookup } from "../index";
+import styled from "@emotion/styled";
 
-const Main = ({ children }) => {
+const MainLookupWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  min-width: 1440px;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+`;
+const Main = () => {
   return (
     <MainWrapper>
-      {children}
-      <Background textHide={true} />
+      <MainLookupWrapper>
+        <Lookup />
+      </MainLookupWrapper>
     </MainWrapper>
   );
 };

@@ -1,13 +1,12 @@
 import React from "react";
-import { Main } from "../../Components/index";
-import { LookupContainer } from "../index";
+import { Main } from "../../Components";
+import { Background } from "../../Styles";
 
 const MainContainer = () => {
   return (
     <>
-      <Main>
-        <LookupContainer />
-      </Main>
+      <Main />
+      <Background textHide={true} />
     </>
   );
 };
