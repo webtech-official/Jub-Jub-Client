@@ -3,16 +3,16 @@ const LookupWrapper = styled.div`
   position: absolute;
   width: 100%;
   min-width: 1440px;
-  height: 900px;
+  height: 950px;
   display: flex;
   justify-content: center;
-  z-index: 2;
-  top: 980px;
+  align-items: center;
+  top: 960px;
 `;
 
 const LookupContainer = styled.div`
-  width: 1230px;
-  height: 900px;
+  width: 65%;
+  height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;

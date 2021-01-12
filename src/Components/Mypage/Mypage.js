@@ -13,6 +13,19 @@ const Mypage = () => {
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
     .map((item, index) => <MypageItem itemInfo={item} key={index} />);
+<<<<<<< HEAD
+=======
+  // const handleSearch = (e) => {
+  //   if (e.KeyCode === "Enter") {
+  //     setItems(
+  //       ...items,
+  //       MypageItemList.filter((item, index) =>
+  //         items[index].name.includes(search)
+  //       )
+  //     );
+  //   }
+  // };
+>>>>>>> 88b8be95b82ac2fd980bea8988595606c470d305
   return (
     <S.LookupWrapper>
       <S.LookupSide>

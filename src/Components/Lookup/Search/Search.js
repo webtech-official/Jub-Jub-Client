@@ -1,7 +1,7 @@
 import React from "react";
 import { search_icon } from "../../../img/index";
 
-const Search = ({ search, onChange, onKeyPress }) => {
+const Search = ({ search, onChange }) => {
   return (
     <>
       <div className="searchArea">
@@ -12,7 +12,6 @@ const Search = ({ search, onChange, onKeyPress }) => {
           onChange={(e) => {
             onChange(e.target.value);
           }}
-          onKeyPress={onKeyPress}
         />
         <img src={search_icon} alt="search_icon"></img>
       </div>
