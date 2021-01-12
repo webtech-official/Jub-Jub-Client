@@ -1,14 +1,6 @@
 import styled from "@emotion/styled";
 import { snow_globe_dom, ground } from "../../img/index";
 
-const BackGroundWrapper = styled.div`
-  position: relative;
-  width: 100%;
-  min-width: 1440px;
-  height: 1950px;
-  background-color: #000000;
-`;
-
 const TextWrapper = styled.div`
   position: absolute;
   width: 761px;
@@ -73,4 +65,4 @@ const Ground = styled.div`
   z-index: 0;
 `;
 
-export { BackGroundWrapper, TextWrapper, SnowGlobeDom, Ground };
+export { TextWrapper, SnowGlobeDom, Ground };
