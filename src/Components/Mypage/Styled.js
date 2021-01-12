@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+
 const LookupWrapper = styled.div`
   position: absolute;
   width: 100%;
@@ -10,9 +11,34 @@ const LookupWrapper = styled.div`
   top: 980px;
 `;
 
+const LookupSide = styled.div`
+  width: 285px;
+  height: 804px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .side {
+    padding-top: 40px;
+    font-size: 24px;
+    .myEquipment {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    * {
+      margin-bottom: 20px;
+    }
+    .changePass {
+      font-size: 30px;
+      align-self: end;
+    }
+  }
+`;
+
 const LookupContainer = styled.div`
   width: 1230px;
-  height: 900px;
+  height: 804px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,4 +93,4 @@ const TitleBox = styled.div`
   }
 `;
 
-export { LookupWrapper, LookupContainer, TitleBox };
+export { LookupWrapper, LookupSide, LookupContainer, TitleBox };
