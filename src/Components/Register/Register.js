@@ -1,7 +1,8 @@
 import React from "react";
+import { LoginRegister } from "../../Styles";
 
 const Register = () => {
-  return <div>Register</div>;
+  return <LoginRegister sideMark="!"></LoginRegister>;
 };
 
 export default Register;
