@@ -7,6 +7,7 @@ import right_arrow from "./right_arrow.png";
 import instagram from "./instagram.png";
 import facebook from "./facebook.png";
 import twitter from "./twitter.png";
+import X from "./close.png";
 
 export {
   logo,
@@ -18,4 +19,5 @@ export {
   instagram,
   facebook,
   twitter,
+  X
 };
