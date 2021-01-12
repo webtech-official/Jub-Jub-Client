@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-
 const LookupWrapper = styled.div`
   position: absolute;
   width: 100%;
