@@ -14,7 +14,7 @@ const Mypage = () => {
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
-    .map((item) => <MypageItem itemInfo={item} key={item.rentDate} />);
+    .map((item, index) => <MypageItem itemInfo={item} key={index} />);
   // const handleSearch = (e) => {
   //   if (e.KeyCode === "Enter") {
   //     setItems(

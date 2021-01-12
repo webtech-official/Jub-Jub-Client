@@ -12,6 +12,7 @@ const LookupWrapper = styled.div`
 `;
 
 const LookupSide = styled.div`
+  margin-right: 80px;
   width: 285px;
   height: 804px;
   background-color: white;
@@ -20,6 +21,7 @@ const LookupSide = styled.div`
   flex-direction: column;
   align-items: center;
   .side {
+    height: 100%;
     padding-top: 40px;
     font-size: 24px;
     .myEquipment {
@@ -30,57 +32,48 @@ const LookupSide = styled.div`
       margin-bottom: 20px;
     }
     .changePass {
+      position: absolute;
+      top: 80%;
+      bottom: 0;
       font-size: 30px;
-      align-self: end;
     }
   }
 `;
 
 const LookupContainer = styled.div`
-  width: 1230px;
+  width: 1300px;
   height: 804px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   background-color: #ffffff;
   border-radius: 30px;
-  .searchArea {
-    width: 80%;
-    height: fit-content;
-    display: flex;
-    border-bottom: 3px solid #000000;
-    .inputBox {
-      width: 95%;
-      height: 100%;
-      border: 0;
-      outline: 0ch;
-      font-size: 24px;
-      background-color: rgba(0, 0, 0, 0);
-    }
-  }
   span {
     font-size: 20px;
     color: #ffffff;
     text-align: center;
   }
-  .itemNumber {
-    width: 70px;
-  }
   .category {
-    width: 253px;
+    width: 200px;
   }
   .itemName {
-    width: 380px;
+    width: 250px;
   }
   .itemAmount {
-    width: 296px;
+    width: 220px;
+  }
+  .rentDate {
+    width: 200px;
+  }
+  .btn {
+    width: 220px;
   }
 `;
 
 const TitleBox = styled.div`
+  margin: 45px 0 45px 0;
   width: 90%;
-  height: 75px;
+  height: 85px;
   background-color: #000000;
   border-radius: 10px;
   display: flex;
