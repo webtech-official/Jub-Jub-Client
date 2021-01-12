@@ -38,19 +38,21 @@ const Header = () => {
     );
   }, [token]);
   return (
-    <HeaderWrapper>
-      <Logo src={logo} />
-      <ButtonWrapper>{HeaderMenu}</ButtonWrapper>
+    <>
+      <HeaderWrapper>
+        <Logo src={logo} />
+        <ButtonWrapper>{HeaderMenu}</ButtonWrapper>
+      </HeaderWrapper>
       <Modal
         is_open={is_open.open}
         setOpen={() => {
           setOpen({ open: false });
         }}
       >
-        {is_open.component === "login" && <Login />}
-        {is_open.component === "register" && <Register />}
+        {is_open.component === "login" && <Login setOpen={setOpen} />}
+        {is_open.component === "register" && <Register setOpen={setOpen} />}
       </Modal>
-    </HeaderWrapper>
+    </>
   );
 };
 
