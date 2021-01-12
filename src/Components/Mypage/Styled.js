@@ -8,7 +8,7 @@ const LookupWrapper = styled.div`
   display: flex;
   justify-content: center;
   z-index: 2;
-  top: 980px;
+  top: 252px;
 `;
 
 const LookupSide = styled.div`
