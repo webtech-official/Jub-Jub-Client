@@ -3,11 +3,11 @@ import * as S from "./Styled";
 import { logo, X } from "../../img/index";
 import { LoginRegister } from "../../Styles";
 
-const Login = () => {
+const Login = ({ setOpen }) => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <LoginRegister sideMark="?">
+    <LoginRegister sideMark="?" setOpen={setOpen}>
       <S.LoginContentBox>
         <S.TextBox>
           <div className="bigText">Log In</div>
