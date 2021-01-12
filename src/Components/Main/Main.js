@@ -7,11 +7,10 @@ const MainLookupWrapper = styled.div`
   position: absolute;
   width: 100%;
   min-width: 1440px;
-  height: 850px;
+  height: 987px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
 `;
 const Main = () => {
   return (
