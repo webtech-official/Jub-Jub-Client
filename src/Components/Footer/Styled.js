@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const FooterWrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 260px;
   display: flex;
   flex-direction: column;
