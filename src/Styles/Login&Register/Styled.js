@@ -34,6 +34,11 @@ export const MarkBox = styled.div`
   text-align: center;
   color: #ffffff;
   transform: rotate(-15deg);
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 `;
 
 export const XMarkContainer = styled.div`
