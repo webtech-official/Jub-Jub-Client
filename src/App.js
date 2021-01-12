@@ -1,11 +1,10 @@
-import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
+import { Route, Router, Switch } from "react-router-dom";
 import {
   HomeContainer,
   MainContainer,
   MyPageContainer,
 } from "./Container/index";
-
-import { Background, Header } from "./Components/index";
+import { Footer, Header } from "./Components/index";
 import { createBrowserHistory } from "history";
 
 const browserHistory = createBrowserHistory();
@@ -17,9 +16,10 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/" component={HomeContainer} />
+          <Route path="/main" component={MainContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
         </Switch>
-        <Background />
+        <Footer />
       </Router>
     </>
   );
