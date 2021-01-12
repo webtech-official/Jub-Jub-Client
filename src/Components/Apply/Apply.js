@@ -1,7 +1,12 @@
 import React from "react";
+import { BackApply } from "./Styled";
 
 const Apply = () => {
-  return <div>Apply</div>;
+  return (
+    <BackApply>
+      하핳fdsa
+    </BackApply>
+  );
 };
 
 export default Apply;

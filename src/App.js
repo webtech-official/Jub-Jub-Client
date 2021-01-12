@@ -3,6 +3,7 @@ import {
   HomeContainer,
   MainContainer,
   MyPageContainer,
+  ApplyContainer,
 } from "./Container/index";
 
 import { Background, Header } from "./Components/index";
@@ -18,6 +19,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={HomeContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
+          <Route path="/Apply" component={ApplyContainer} />
         </Switch>
         <Background />
       </Router>
