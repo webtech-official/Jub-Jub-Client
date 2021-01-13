@@ -37,6 +37,7 @@ export const InputBox = styled.div`
       border: 0;
       font-size: 20px;
       padding: 0;
+      outline: 0ch;
     }
   }
 `;
