@@ -1,47 +1,59 @@
 import styled from "@emotion/styled";
 
-const LookupWrapper = styled.div`
+export const MyWrapper = styled.div`
   position: absolute;
   width: 100%;
   min-width: 1440px;
-  height: 900px;
+  height: 987px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   z-index: 2;
-  top: 252px;
+  top: 113px;
 `;
 
-const LookupSide = styled.div`
-  margin-right: 80px;
+export const MyBox = styled.div`
+  width: 1683px;
+  min-width: 1683px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const MySide = styled.div`
   width: 285px;
+  min-width: 285px;
   height: 804px;
   background-color: white;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   .side {
-    height: 100%;
-    padding-top: 40px;
+    height: 90%;
     font-size: 24px;
-    .myEquipment {
-      font-size: 36px;
-      margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .top {
+      .myEquipment {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      * {
+        margin-bottom: 20px;
+      }
     }
-    * {
-      margin-bottom: 20px;
-    }
-    .changePass {
-      position: absolute;
-      top: 80%;
-      bottom: 0;
-      font-size: 30px;
+    .bottom {
+      .changePass {
+        font-size: 30px;
+      }
     }
   }
 `;
 
-const LookupContainer = styled.div`
+export const MyContainer = styled.div`
   width: 1300px;
+  min-width: 1300px;
   height: 804px;
   display: flex;
   flex-direction: column;
@@ -70,7 +82,7 @@ const LookupContainer = styled.div`
   }
 `;
 
-const TitleBox = styled.div`
+export const TitleBox = styled.div`
   margin: 45px 0 45px 0;
   width: 90%;
   height: 85px;
@@ -85,5 +97,3 @@ const TitleBox = styled.div`
     align-items: center;
   }
 `;
-
-export { LookupWrapper, LookupSide, LookupContainer, TitleBox };
