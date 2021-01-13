@@ -48,3 +48,8 @@ export const XMarkContainer = styled.div`
 `;
 
 export const XMark = styled.img``;
+
+export const ModalContentBox = styled.div`
+  height: 80%;
+  margin: auto 40px;
+`;

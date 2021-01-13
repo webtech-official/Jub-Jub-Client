@@ -13,7 +13,7 @@ const LoginRegister = ({ sideMark, children, setOpen }) => {
         <S.XMarkContainer>
           <S.XMark src={X} onClick={() => setOpen({ open: false })} />
         </S.XMarkContainer>
-        {children}
+        <S.ModalContentBox>{children}</S.ModalContentBox>
       </S.RightContainer>
     </S.ModalWrapper>
   );
