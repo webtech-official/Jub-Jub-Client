@@ -1,10 +1,5 @@
 import styled from "@emotion/styled";
 
-export const LoginContentBox = styled.div`
-  height: 80%;
-  margin: auto 40px;
-`;
-
 export const TextBox = styled.div`
   .bigText {
     font-size: 36px;
