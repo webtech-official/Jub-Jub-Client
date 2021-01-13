@@ -6,7 +6,7 @@ const MyPageContainer = () => {
   return (
     <>
       <Mypage />
-      <Background />
+      <Background textHide={true}/>
     </>
   );
 };

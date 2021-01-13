@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import * as S from "./Styled";
-import { logo, X } from "../../img/index";
 import { LoginRegister } from "../../Styles";
 
 const Login = ({ setOpen }) => {
@@ -8,7 +7,6 @@ const Login = ({ setOpen }) => {
   const [password, setPassword] = useState("");
   return (
     <LoginRegister sideMark="?" setOpen={setOpen}>
-      <S.LoginContentBox>
         <S.TextBox>
           <div className="bigText">Log In</div>
           <div className="goRegister">
@@ -37,7 +35,6 @@ const Login = ({ setOpen }) => {
           </div>
         </S.InputBox>
         <S.LoginButton>로그인</S.LoginButton>
-      </S.LoginContentBox>
     </LoginRegister>
   );
 };
