@@ -46,4 +46,5 @@ export const LoginButton = styled.button`
   color: #ffffff;
   font-size: 20px;
   font-family: "Noto Sans KR";
+  cursor: pointer;
 `;
