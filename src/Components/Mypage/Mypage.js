@@ -14,12 +14,12 @@ const Mypage = () => {
     )
     .map((item, index) => <MypageItem itemInfo={item} key={index} />);
   return (
-    <S.LookupWrapper>
-      <S.LookupBox>
-        <S.LookupSide>
+    <S.MyWrapper>
+      <S.MyBox>
+        <S.MySide>
           <MypageSide />
-        </S.LookupSide>
-        <S.LookupContainer>
+        </S.MySide>
+        <S.MyContainer>
           <S.TitleBox>
             <div>
               <span className="category">카테고리</span>
@@ -32,9 +32,9 @@ const Mypage = () => {
           <ItemPage id={page} setId={setPage} length={items.length}>
             {MypageItemList}
           </ItemPage>
-        </S.LookupContainer>
-      </S.LookupBox>
-    </S.LookupWrapper>
+        </S.MyContainer>
+      </S.MyBox>
+    </S.MyWrapper>
   );
 };
 
