@@ -6,7 +6,7 @@ const Background = ({ size, textHide }) => {
   const BackGroundWrapper = styled.div`
     position: relative;
     width: 100%;
-    min-width: 1440px;
+    min-width: 1870px;
     height: ${size}px;
     background-color: #000000;
     z-index: -1;
