@@ -34,7 +34,7 @@ export const MarkBox = styled.div`
   text-align: center;
   color: #ffffff;
   transform: rotate(-15deg);
-  -ms-user-select: none; 
+  -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -47,7 +47,9 @@ export const XMarkContainer = styled.div`
   justify-content: flex-end;
 `;
 
-export const XMark = styled.img``;
+export const XMark = styled.img`
+  cursor: pointer;
+`;
 
 export const ModalContentBox = styled.div`
   height: 80%;
