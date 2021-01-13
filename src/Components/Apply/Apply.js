@@ -1,10 +1,18 @@
 import React from "react";
-import { BackApply } from "./Styled";
+import { BackApply,MainBox,ContentBox,ApplyImg, ApplyBox, HeadingTitle, ApplySort } from "./Styled";
 
 const Apply = () => {
   return (
     <BackApply>
-      하핳fdsa
+      <MainBox>
+        <ContentBox>
+          <ApplyBox>
+            <ApplyImg />
+            <HeadingTitle>test</HeadingTitle>
+            <ApplySort>테스트</ApplySort>
+          </ApplyBox>
+        </ContentBox>
+      </MainBox>
     </BackApply>
   );
 };
