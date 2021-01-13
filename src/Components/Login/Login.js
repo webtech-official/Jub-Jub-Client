@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import * as S from "./Styled";
-import { logo, X } from "../../img/index";
 import { LoginRegister } from "../../Styles";
 
 const Login = ({ setOpen }) => {
