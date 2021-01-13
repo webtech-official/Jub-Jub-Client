@@ -14,25 +14,27 @@ const Mypage = () => {
     )
     .map((item, index) => <MypageItem itemInfo={item} key={index} />);
   return (
-    <S.LookupWrapper>
-      <S.LookupSide>
-        <MypageSide />
-      </S.LookupSide>
-      <S.LookupContainer>
-        <S.TitleBox>
-          <div>
-            <span className="category">카테고리</span>
-            <span className="itemName">품명</span>
-            <span className="itemAmount">수량</span>
-            <span className="rentDate">대여일</span>
-            <span className="btn"></span>
-          </div>
-        </S.TitleBox>
-        <ItemPage id={page} setId={setPage} length={items.length}>
-          {MypageItemList}
-        </ItemPage>
-      </S.LookupContainer>
-    </S.LookupWrapper>
+    <S.MyWrapper>
+      <S.MyBox>
+        <S.MySide>
+          <MypageSide />
+        </S.MySide>
+        <S.MyContainer>
+          <S.TitleBox>
+            <div>
+              <span className="category">카테고리</span>
+              <span className="itemName">품명</span>
+              <span className="itemAmount">수량</span>
+              <span className="rentDate">대여일</span>
+              <span className="btn"></span>
+            </div>
+          </S.TitleBox>
+          <ItemPage id={page} setId={setPage} length={items.length}>
+            {MypageItemList}
+          </ItemPage>
+        </S.MyContainer>
+      </S.MyBox>
+    </S.MyWrapper>
   );
 };
 
