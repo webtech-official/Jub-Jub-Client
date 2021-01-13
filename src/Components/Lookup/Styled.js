@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-
 const LookupWrapper = styled.div`
   position: absolute;
   width: 100%;
@@ -8,12 +7,11 @@ const LookupWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
   top: 960px;
 `;
 
 const LookupContainer = styled.div`
-  width: 1230px;
+  width: 65%;
   height: 850px;
   display: flex;
   flex-direction: column;
