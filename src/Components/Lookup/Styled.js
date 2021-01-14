@@ -5,14 +5,14 @@ const LookupWrapper = styled.div`
   min-width: 1440px;
   height: 950px;
   display: flex;
-  justify-content: center;
   align-items: center;
   top: 960px;
 `;
 
 const LookupContainer = styled.div`
-  width: 65%;
+  width: 1215px;
   height: 850px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
