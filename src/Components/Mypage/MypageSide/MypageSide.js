@@ -1,6 +1,6 @@
 import React from "react";
 
-const MypageSide = ({ statusFilter }) => {
+const MypageSide = ({ statusFilter, setPage }) => {
   const handleFilter = (status) => {
     statusFilter(status);
   };
@@ -13,6 +13,7 @@ const MypageSide = ({ statusFilter }) => {
             className="all"
             onClick={() => {
               handleFilter("");
+              setPage(1);
             }}
           >
             전체
@@ -21,6 +22,7 @@ const MypageSide = ({ statusFilter }) => {
             className="return"
             onClick={() => {
               handleFilter("반납");
+              setPage(1);
             }}
           >
             반납
@@ -29,6 +31,7 @@ const MypageSide = ({ statusFilter }) => {
             className="noReturn"
             onClick={() => {
               handleFilter("대여");
+              setPage(1);
             }}
           >
             대여
@@ -37,6 +40,7 @@ const MypageSide = ({ statusFilter }) => {
             className="overdue"
             onClick={() => {
               handleFilter("연체");
+              setPage(1);
             }}
           >
             연체

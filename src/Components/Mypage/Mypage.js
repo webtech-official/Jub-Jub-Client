@@ -27,7 +27,7 @@ const Mypage = () => {
     <S.MyWrapper>
       <S.MyBox>
         <S.MySide>
-          <MypageSide statusFilter={statusFilter} />
+          <MypageSide statusFilter={statusFilter} setPage={setPage} />
         </S.MySide>
         <S.MyContainer>
           <S.TitleBox>
@@ -40,7 +40,6 @@ const Mypage = () => {
             </div>
           </S.TitleBox>
           <ItemPage id={page} setId={setPage} length={currentLength}>
-            {console.log(MypageItemList)}
             {MypageItemList}
           </ItemPage>
         </S.MyContainer>
