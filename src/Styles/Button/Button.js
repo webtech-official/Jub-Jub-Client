@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { css } from "@emotion/css";
 
-const Button = (props) => {
-  const [btnName] = useState(props.children);
-  const { backGroundColor, onClick } = props;
+const Button = ({ backGroundColor, onClick, children }) => {
+  const [btnName] = useState(children);
   const buttonStyle = css`
     width: ${btnName.length > 3 ? `120px` : `100px`};
     height: fit-content;
