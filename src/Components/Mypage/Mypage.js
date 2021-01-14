@@ -12,8 +12,13 @@ const Mypage = () => {
   const statusFilter = (status) => {
     setStatus(status);
   };
+  const currentLength = items.filter((item) => {
+    return item.state.includes(status);
+  }).length;
   const MypageItemList = items
-    .filter((item) => item.state.includes(status))
+    .filter((item) => {
+      return item.state.includes(status);
+    })
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
@@ -34,7 +39,8 @@ const Mypage = () => {
               <span className="btn"></span>
             </div>
           </S.TitleBox>
-          <ItemPage id={page} setId={setPage} length={items.length}>
+          <ItemPage id={page} setId={setPage} length={currentLength}>
+            {console.log(MypageItemList)}
             {MypageItemList}
           </ItemPage>
         </S.MyContainer>
