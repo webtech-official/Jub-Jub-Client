@@ -8,7 +8,12 @@ import * as S from "./Styled";
 const Mypage = () => {
   const [page, setPage] = useState(1);
   const [items] = useState(data);
+  const [status, setStatus] = useState("");
+  const statusFilter = (status) => {
+    setStatus(status);
+  };
   const MypageItemList = items
+    .filter((item) => item.state.includes(status))
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
@@ -17,7 +22,7 @@ const Mypage = () => {
     <S.MyWrapper>
       <S.MyBox>
         <S.MySide>
-          <MypageSide />
+          <MypageSide statusFilter={statusFilter} />
         </S.MySide>
         <S.MyContainer>
           <S.TitleBox>
