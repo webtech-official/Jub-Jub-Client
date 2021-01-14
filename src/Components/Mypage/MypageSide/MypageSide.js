@@ -5,7 +5,7 @@ const category = [
   { className: "noReturn", filter: "대여" },
   { className: "overdue", filter: "연체" },
 ];
-const MypageSide = ({ statusFilter, setPage }) => {
+const MypageSide = ({ statusFilter, setPage, setOpen }) => {
   const handleFilter = (status) => {
     statusFilter(status);
   };
@@ -28,7 +28,14 @@ const MypageSide = ({ statusFilter, setPage }) => {
           {categories}
         </div>
         <div className="bottom">
-          <div className="changePass">비밀번호 변경</div>
+          <div
+            className="changePass"
+            onClick={() => {
+              setOpen({ open: true, component: "a" });
+            }}
+          >
+            비밀번호 변경
+          </div>
         </div>
       </div>
     </>

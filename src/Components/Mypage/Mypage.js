@@ -4,8 +4,13 @@ import ItemPage from "../../Styles/ItemPage/ItemPage";
 import MypageItem from "./MypageItem/MypageItem";
 import MypageSide from "./MypageSide/MypageSide";
 import * as S from "./Styled";
+import { Modal } from "../../Styles";
 
 const Mypage = () => {
+  const [is_open, setOpen] = useState({
+    open: false,
+    component: null,
+  });
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status, setStatus] = useState("");
@@ -27,7 +32,11 @@ const Mypage = () => {
     <S.MyWrapper>
       <S.MyBox>
         <S.MySide>
-          <MypageSide statusFilter={statusFilter} setPage={setPage} />
+          <MypageSide
+            statusFilter={statusFilter}
+            setPage={setPage}
+            setOpen={setOpen}
+          />
         </S.MySide>
         <S.MyContainer>
           <S.TitleBox>
@@ -44,6 +53,14 @@ const Mypage = () => {
           </ItemPage>
         </S.MyContainer>
       </S.MyBox>
+      <Modal
+        is_open={is_open.open}
+        setOpen={() => {
+          setOpen({ open: false });
+        }}
+      >
+        {is_open.component === "a" && <div>asdasdasd</div>}
+      </Modal>
     </S.MyWrapper>
   );
 };
