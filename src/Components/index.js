@@ -8,6 +8,7 @@ import Mypage from "./Mypage/Mypage";
 import Register from "./Register/Register";
 import Statistics from "./Statistics/Statistics";
 import Footer from "./Footer/Footer";
+import PwChange from "./PwChange/PwChange"
 
 export {
   Admin,
@@ -20,4 +21,5 @@ export {
   Register,
   Statistics,
   Footer,
+  PwChange
 };
