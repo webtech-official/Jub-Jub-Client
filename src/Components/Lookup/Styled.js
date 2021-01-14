@@ -1,19 +1,18 @@
 import styled from "@emotion/styled";
-
 const LookupWrapper = styled.div`
   position: absolute;
   width: 100%;
   min-width: 1440px;
-  height: 900px;
+  height: 950px;
   display: flex;
-  justify-content: center;
-  z-index: 2;
-  top: 980px;
+  align-items: center;
+  top: 960px;
 `;
 
 const LookupContainer = styled.div`
-  width: 1230px;
-  height: 900px;
+  width: 1215px;
+  height: 850px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
