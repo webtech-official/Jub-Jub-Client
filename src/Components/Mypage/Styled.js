@@ -79,6 +79,8 @@ export const MyContainer = styled.div`
   }
   .btn {
     width: 220px;
+    display: flex;
+    justify-content: center;
   }
 `;
 
