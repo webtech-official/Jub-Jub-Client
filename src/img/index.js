@@ -8,6 +8,7 @@ import instagram from "./instagram.png";
 import facebook from "./facebook.png";
 import twitter from "./twitter.png";
 import X from "./close.png";
+import TestImg from "./test.jpg";
 
 export {
   logo,
@@ -19,5 +20,6 @@ export {
   instagram,
   facebook,
   twitter,
-  X
+  X,
+  TestImg
 };
