@@ -17,6 +17,7 @@ import Check from './Check';
 import { Modal } from '../../Styles';
 
 const Apply = () => {
+  let [applSort, setApplSort] = useState("태블릿")
   let [applSum, setApplSum] = useState(0);
   const [is_open, setOpen] = useState({
     open: false,
@@ -29,7 +30,7 @@ const Apply = () => {
         <ApplyImg src={TestImg} />
           <ApplyBox>
             <HeadingTitle>test</HeadingTitle>
-            <ApplySort>테스트</ApplySort>
+            <ApplySort>{ applSort }</ApplySort>
             <BtnBox>
               <BtnI onClick={ () => { applSum >= 1 && setApplSum(applSum - 1) } }>–</BtnI>
               <BtnSum>{ applSum }</BtnSum>
@@ -49,7 +50,7 @@ const Apply = () => {
           is_open={is_open.open}
           setOpen={() => {setOpen({open: false})}}
         >
-          {is_open.component === "check" && <Check />}
+          {is_open.component === "check" && <Check sum={ applSum } sort={ applSort }/>}
         </Modal>
     </BackApply>
   );
