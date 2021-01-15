@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled'
 
 export const TextBox = styled.div`
   .bigText {
@@ -7,17 +7,10 @@ export const TextBox = styled.div`
     padding: 10px;
     font-family: Roboto;
   }
-  .goRegister {
-    font-size: 16px;
-    padding: 10px;
-    .registerKorText {
-      color: #3d9cff;
-    }
-  }
 `;
 
 export const InputBox = styled.div`
-  height: 18%;
+  height: 48%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,8 +30,8 @@ export const InputBox = styled.div`
   }
 `;
 
-export const LoginButton = styled.button`
-  width: 100px;
+export const RegisterButton = styled.button`
+  width: 120px;
   height: 53px;
   border-radius: 10px;
   border: 0;
