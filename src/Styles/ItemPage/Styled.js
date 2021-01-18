@@ -4,8 +4,8 @@ import { left_arrow, right_arrow } from "../../img/index";
 const ContentBox = styled.div`
   width: 90%;
   height: 70%;
-  color: white;
-  background-color: #000000;
+  color: ${(props) => (props.white ? "black" : "white")};
+  background-color: ${(props) => (props.white ? "white" : "black")};
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ const ContentBox = styled.div`
     height: 20%;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid ${(props) => (props.white ? "black" : "white")};
     span {
       font-size: 24px;
       font-weight: bold;
@@ -40,13 +40,15 @@ const ContentBox = styled.div`
     }
     .selectedPage {
       font-weight: bold;
-      text-shadow: 0px 0px 5px #ffffff;
+      text-shadow: 0px 0px 5px ${(props) => (props.white ? "black" : "white")};
     }
     .pageMoveButton {
       width: 24px;
       height: 24px;
       background-size: cover;
       cursor: pointer;
+      color: black;
+      background-color: black;
     }
     .pageNumber {
       width: 60%;
