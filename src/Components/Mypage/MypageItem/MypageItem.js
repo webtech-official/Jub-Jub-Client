@@ -1,7 +1,8 @@
 import React from "react";
+import { EquipmentState } from "../../../Styles";
 
 const MypageItem = ({ itemInfo }) => {
-  const { category, name, amount, rentDate } = itemInfo || {};
+  const { category, name, amount, rentDate, state } = itemInfo || {};
   return (
     <>
       <div className="itemBox">
@@ -9,7 +10,9 @@ const MypageItem = ({ itemInfo }) => {
         <span className="itemName">{name}</span>
         <span className="itemAmount">{amount}</span>
         <span className="rentDate">{rentDate}</span>
-        <span className="btn"></span>
+        <span className="btn">
+          <EquipmentState EqState={state}/>
+        </span>
       </div>
     </>
   );

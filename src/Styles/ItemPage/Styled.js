@@ -55,6 +55,11 @@ const ContentBox = styled.div`
       cursor: pointer;
       span {
         font-size: 24px;
+        -ms-user-select: none;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
       }
     }
   }
