@@ -42,7 +42,7 @@ const Student = () => {
             id={page}
             setId={setPage}
             length={currentLength}
-            color={true}
+            white={true}
           >
             {StudentItemList}
           </ItemPage>
