@@ -8,6 +8,7 @@ import Mypage from "./Mypage/Mypage";
 import Register from "./Register/Register";
 import Statistics from "./Statistics/Statistics";
 import Footer from "./Footer/Footer";
+import Student from "./Student/Student";
 import PwChange from "./PwChange/PwChange"
 
 export {
@@ -21,5 +22,6 @@ export {
   Register,
   Statistics,
   Footer,
+  Student,
   PwChange
 };
