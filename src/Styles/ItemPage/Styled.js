@@ -1,5 +1,10 @@
 import styled from "@emotion/styled";
-import { left_arrow, right_arrow } from "../../img/index";
+import {
+  left_arrow,
+  right_arrow,
+  left_arrow_black,
+  right_arrow_black,
+} from "../../img";
 
 const ContentBox = styled.div`
   width: 90%;
@@ -33,10 +38,10 @@ const ContentBox = styled.div`
     align-items: center;
     justify-content: space-between;
     #left {
-      background-image: url(${left_arrow});
+      background-image: url(${(props) => (props.white ? left_arrow_black : left_arrow)});
     }
     #right {
-      background-image: url(${right_arrow});
+      background-image: url(${(props) => (props.white ? right_arrow_black : right_arrow)});
     }
     .selectedPage {
       font-weight: bold;
@@ -47,8 +52,6 @@ const ContentBox = styled.div`
       height: 24px;
       background-size: cover;
       cursor: pointer;
-      color: black;
-      background-color: black;
     }
     .pageNumber {
       width: 60%;
