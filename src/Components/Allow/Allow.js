@@ -36,10 +36,10 @@ const Allow = () => {
         <S.AllowContainer>
           <S.TitleBox>
             <div>
-              <span className="category">학번</span>
-              <span className="itemName">카테고리</span>
-              <span className="itemAmount">품명</span>
-              <span className="rentDate">수량</span>
+              <span className="classNum">학번</span>
+              <span className="category">카테고리</span>
+              <span className="itemName">품명</span>
+              <span className="amount">수량</span>
               <span className="btn"></span>
             </div>
           </S.TitleBox>

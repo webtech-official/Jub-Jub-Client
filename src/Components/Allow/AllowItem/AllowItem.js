@@ -7,10 +7,10 @@ const AllowItem = ({ itemInfo, setOpen }) => {
   return (
     <>
       <div className="itemBox">
-        <span className="category">{classNum}</span>
+        <span className="classNum">{classNum}</span>
+        <span className="category">{category}</span>
         <span className="itemName">{name}</span>
-        <span className="itemAmount">{category}</span>
-        <span className="rentDate">{amount}</span>
+        <span className="amount">{amount}</span>
         <span className="btn">
           <span className="Yesbtn" 
             onClick={() => {

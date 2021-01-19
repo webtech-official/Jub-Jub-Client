@@ -34,16 +34,16 @@ export const AllowContainer = styled.div`
     color: #ffffff;
     text-align: center;
   }
-  .category {
+  .classNum {
     width: 200px;
   }
   .itemName {
     width: 250px;
   }
-  .itemAmount {
-    width: 220px;
+  .category {
+    width: 250px;
   }
-  .rentDate {
+  .amount {
     width: 200px;
   }
   .btn {
