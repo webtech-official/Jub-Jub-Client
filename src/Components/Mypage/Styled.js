@@ -46,6 +46,7 @@ export const MySide = styled.div`
       .myEquipment {
         font-size: 36px;
         margin-bottom: 20px;
+        cursor: auto;
       }
       * {
         margin-bottom: 20px;

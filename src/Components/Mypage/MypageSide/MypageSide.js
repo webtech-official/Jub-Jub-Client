@@ -1,4 +1,5 @@
 import React from "react";
+
 const category = [
   { className: "all", filter: "" },
   { className: "return", filter: "반납" },
@@ -31,7 +32,7 @@ const MypageSide = ({ statusFilter, setPage, setOpen }) => {
           <div
             className="changePass"
             onClick={() => {
-              setOpen({ open: true, component: "a" });
+              setOpen({ open: true, component: "pwChange" });
             }}
           >
             비밀번호 변경
