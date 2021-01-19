@@ -16,7 +16,8 @@ export const AllowBox = styled.div`
   min-width: 1683px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const AllowContainer = styled.div`

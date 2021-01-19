@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { Modal } from '../../../Styles';
-import AllowM from '../AllowM';
 
-const AllowItem = ({ itemInfo }) => {
+
+const AllowItem = ({ itemInfo, setOpen }) => {
   const { classNum, category, name, amount } = itemInfo || {};
-  let [as, setAs] = useState("");
-  const [is_open, setOpen] = useState({
-    open: false,
-    component: null,
-  });
   return (
     <>
       <div className="itemBox">
@@ -19,24 +14,16 @@ const AllowItem = ({ itemInfo }) => {
         <span className="btn">
           <span className="Yesbtn" 
             onClick={() => {
-              setAs(as = "수락")
-              setOpen({open: true, component:"AllowM"})
+              setOpen({open: true, component:"AllowM", state:"수락"})
             }}
           >수락</span>
           <span className="Nobtn"
             onClick={() => {
-              setAs(as = "거절")
-              setOpen({open: true, component:"AllowM"})
+              setOpen({open: true, component:"AllowM", state:"거절"})
             }}
           >거절</span>
         </span>
       </div>
-      <Modal
-          is_open={is_open.open}
-          setOpen={() => {setOpen({open: false})}}
-        >
-          {is_open.component === "AllowM" && <AllowM state={ as }/>}
-      </Modal>
     </>
   );
 };

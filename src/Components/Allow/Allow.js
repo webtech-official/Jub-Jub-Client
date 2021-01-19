@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import AllowItem from "./AllowItem/AllowItem";
 import * as S from "./Styled";
 import { Modal } from "../../Styles";
+import AllowM from './AllowM';
 
 const Allow = () => {
   const [is_open, setOpen] = useState({
     open: false,
     component: null,
+    state: ""
   });
   const [page, setPage] = useState(1);
   const [items] = useState(data);
@@ -26,8 +28,9 @@ const Allow = () => {
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
-    .map((item, index) => <AllowItem itemInfo={item} key={index} />);
+    .map((item, index) => <AllowItem itemInfo={item} setOpen={setOpen} key={index} />);
   return (
+    <>
     <S.AllowWrapper>
       <S.AllowBox>
         <S.AllowContainer>
@@ -46,6 +49,13 @@ const Allow = () => {
         </S.AllowContainer>
       </S.AllowBox>
     </S.AllowWrapper>
+    <Modal
+          is_open={is_open.open}
+          setOpen={() => {setOpen({open: false})}}
+        >
+          {is_open.component === "AllowM" && <AllowM setOpen={setOpen} state={is_open.state}/>}
+    </Modal>
+    </>
   );
 };
 
