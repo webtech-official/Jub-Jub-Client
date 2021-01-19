@@ -9,6 +9,7 @@ import Register from "./Register/Register";
 import Statistics from "./Statistics/Statistics";
 import Footer from "./Footer/Footer";
 import Student from "./Student/Student";
+import PwChange from "./PwChange/PwChange"
 
 export {
   Admin,
@@ -22,4 +23,5 @@ export {
   Statistics,
   Footer,
   Student,
+  PwChange
 };
