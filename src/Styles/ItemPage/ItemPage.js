@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./Styled";
 
-const ItemPage = ({ id, setId, length, children, color }) => {
+const ItemPage = ({ id, setId, length, children, white }) => {
   const page = [id, id + 1, id + 2, id + 3, id + 4];
   const pages = page.map((p) => (
     <span
@@ -21,7 +21,7 @@ const ItemPage = ({ id, setId, length, children, color }) => {
     </span>
   ));
 
-  if (color === true) {
+  if (white === true) {
     return (
       <S.ContentBox white>
         <div className="items">{children}</div>
