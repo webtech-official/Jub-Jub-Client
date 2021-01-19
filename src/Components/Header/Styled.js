@@ -2,14 +2,11 @@ import styled from "@emotion/styled";
 
 const HeaderWrapper = styled.header`
   width: 100%;
-  min-width: 1870px;
-  height: fit-content;
+  height: 10%;
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  z-index: 1;
 `;
 
 const Logo = styled.img`
@@ -21,6 +18,9 @@ const ButtonWrapper = styled.span`
   display: flex;
   justify-content: space-between;
   margin: 0 25px;
+  @media only screen and (max-width: 700px) {
+    width: 140px;
+  }
 `;
 
 export { HeaderWrapper, Logo, ButtonWrapper };

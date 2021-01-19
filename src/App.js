@@ -4,6 +4,7 @@ import {
   MainContainer,
   MyPageContainer,
 } from "./Container/index";
+import { Background} from "./Styles"
 import { Footer, Header } from "./Components/index";
 import { createBrowserHistory } from "history";
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path="/" component={HomeContainer} />
           <Route path="/main" component={MainContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
+          <Route path="/back" component={Background} />
         </Switch>
         <Footer />
       </Router>

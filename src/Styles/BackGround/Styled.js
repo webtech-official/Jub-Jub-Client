@@ -2,29 +2,41 @@ import styled from "@emotion/styled";
 import { snow_globe_dom, ground } from "../../img/index";
 
 const TextWrapper = styled.div`
-  position: absolute;
-  width: 761px;
-  height: 183px;
-  top: 352px;
-  left: 10%;
+  width : 60%;
+  height: 85%;
+  float: left;
+  @media only screen and (max-width: 700px) {
+    width: 45%;
+    height: 45%;
+    float: none;
+  }
+`;
+
+const Text = styled.div`
+  width: 65%;
+  padding-top: 20%;
+  padding-left: 20%;
+  white-space: nowrap;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   animation: neon 1.5s ease-in-out infinite alternate;
-  z-index: 1;
   .korText {
     font-size: 30px;
   }
   .engText {
     font-size: 80px;
+    display: flex;
+    justify-content: flex-end;
   }
   .firstRow {
     display: flex;
+    padding-bottom : 20px;
   }
   .secondRow {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   @keyframes neon {
     from {
@@ -42,7 +54,28 @@ const TextWrapper = styled.div`
         0 0 15px rgba(0, 0, 0, 0);
     }
   }
-`;
+  @media only screen and (max-width: 700px) {
+    .engText {
+      justify-content: flex-start;
+    }
+    .secondRow {
+      justify-content: flex-start;
+    }
+  }
+`
+
+const SnowContainer = styled.div`
+  width: 40%;
+  height: 85%;
+
+  float: left;
+  position: relative;
+  @media only screen and (max-width: 700px) {
+    width: 40%;
+    height: 40%;
+    float: none;
+  }
+`
 
 const SnowGlobeDom = styled.div`
   width: 473px;
@@ -51,18 +84,25 @@ const SnowGlobeDom = styled.div`
   background-image: url(${snow_globe_dom});
   background-size: cover;
   position: absolute;
-  left: 1154.42px;
-  top: 285px;
+  top: 40%;
+  left: 0;
   z-index: 1;
+  @media only screen and (max-width: 700px) {
+    top: -10%;
+  }
 `;
 
 const Ground = styled.div`
   width: 100%;
-  height: 444px;
+  height: 15%;
   background-image: url(${ground});
-  position: absolute;
-  top: 686px;
-  z-index: 0;
+  float: left;
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+    height: 15%;
+    float: none;
+    background-position: center;
+  }
 `;
 
-export { TextWrapper, SnowGlobeDom, Ground };
+export { TextWrapper, Text, SnowContainer, SnowGlobeDom, Ground };

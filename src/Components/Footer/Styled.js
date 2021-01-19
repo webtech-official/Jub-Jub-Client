@@ -10,6 +10,7 @@ const FooterWrapper = styled.div`
   background-color: #f1f1f1;
   font-size: 20px;
   color: #474747;
+  float: left;
 `;
 
 const IconWrapper = styled.div`

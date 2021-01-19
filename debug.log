@@ -1,0 +1,45 @@
+[0119/112347.261:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\MSG\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\ec0e2b8b-19d2-41f2-a562-85d1a377ce30: ������ ��θ� ã�� �� �����ϴ�. (0x3)
+[0119/112347.266:ERROR:directory_reader_win.cc(43)] FindFirstFile: ������ ��θ� ã�� �� �����ϴ�. (0x3)
+[0119/134403.112:WARNING:process_reader_win.cc(156)] Thread 1540 should be suspended, but previous_suspend_count is 0
+[0119/134403.113:WARNING:process_reader_win.cc(156)] Thread 2912 should be suspended, but previous_suspend_count is 0
+[0119/134403.113:WARNING:process_reader_win.cc(156)] Thread 17736 should be suspended, but previous_suspend_count is 0
+[0119/134403.113:WARNING:process_reader_win.cc(156)] Thread 21308 should be suspended, but previous_suspend_count is 0
+[0119/134403.113:WARNING:process_reader_win.cc(156)] Thread 13848 should be suspended, but previous_suspend_count is 0
+[0119/134403.113:WARNING:process_reader_win.cc(156)] Thread 21408 should be suspended, but previous_suspend_count is 0
+[0119/134403.113:WARNING:process_reader_win.cc(156)] Thread 13504 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 10576 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 15968 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 20620 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 21760 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 18396 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 6200 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 8476 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 14040 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 20300 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 13320 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 14416 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 22332 should be suspended, but previous_suspend_count is 0
+[0119/134403.114:WARNING:process_reader_win.cc(156)] Thread 20044 should be suspended, but previous_suspend_count is 0
+[0119/134403.129:ERROR:process_info.cc(359)] UncheckedAllocate
+[0119/140135.659:WARNING:process_reader_win.cc(156)] Thread 20096 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 21924 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 7940 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 9444 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 23512 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 8028 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 19728 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 13396 should be suspended, but previous_suspend_count is 0
+[0119/140135.660:WARNING:process_reader_win.cc(156)] Thread 17472 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 17260 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 21968 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 13936 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 20824 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 11780 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 20436 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 22640 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 21024 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 7772 should be suspended, but previous_suspend_count is 0
+[0119/140135.661:WARNING:process_reader_win.cc(156)] Thread 22500 should be suspended, but previous_suspend_count is 0
+[0119/140135.662:WARNING:process_reader_win.cc(156)] Thread 19544 should be suspended, but previous_suspend_count is 0
+[0119/140135.662:WARNING:process_reader_win.cc(156)] Thread 20400 should be suspended, but previous_suspend_count is 0
+[0119/140135.669:ERROR:process_info.cc(359)] UncheckedAllocate
