@@ -5,6 +5,7 @@ import MypageItem from "./MypageItem/MypageItem";
 import MypageSide from "./MypageSide/MypageSide";
 import * as S from "./Styled";
 import { Modal } from "../../Styles";
+import { PwChange } from "..";
 
 const Mypage = () => {
   const [is_open, setOpen] = useState({
@@ -29,39 +30,41 @@ const Mypage = () => {
     )
     .map((item, index) => <MypageItem itemInfo={item} key={index} />);
   return (
-    <S.MyWrapper>
-      <S.MyBox>
-        <S.MySide>
-          <MypageSide
-            statusFilter={statusFilter}
-            setPage={setPage}
-            setOpen={setOpen}
-          />
-        </S.MySide>
-        <S.MyContainer>
-          <S.TitleBox>
-            <div>
-              <span className="category">카테고리</span>
-              <span className="itemName">품명</span>
-              <span className="itemAmount">수량</span>
-              <span className="rentDate">대여일</span>
-              <span className="btn"></span>
-            </div>
-          </S.TitleBox>
-          <ItemPage id={page} setId={setPage} length={currentLength}>
-            {MypageItemList}
-          </ItemPage>
-        </S.MyContainer>
-      </S.MyBox>
+    <>
+      <S.MyWrapper>
+        <S.MyBox>
+          <S.MySide>
+            <MypageSide
+              statusFilter={statusFilter}
+              setPage={setPage}
+              setOpen={setOpen}
+            />
+          </S.MySide>
+          <S.MyContainer>
+            <S.TitleBox>
+              <div>
+                <span className="category">카테고리</span>
+                <span className="itemName">품명</span>
+                <span className="itemAmount">수량</span>
+                <span className="rentDate">대여일</span>
+                <span className="btn"></span>
+              </div>
+            </S.TitleBox>
+            <ItemPage id={page} setId={setPage} length={currentLength}>
+              {MypageItemList}
+            </ItemPage>
+          </S.MyContainer>
+        </S.MyBox>
+      </S.MyWrapper>
       <Modal
         is_open={is_open.open}
         setOpen={() => {
           setOpen({ open: false });
         }}
       >
-        {is_open.component === "a" && <div>asdasdasd</div>}
+        {is_open.component === "pwChange" && <PwChange setOpen={setOpen} />}
       </Modal>
-    </S.MyWrapper>
+    </>
   );
 };
 
