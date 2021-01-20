@@ -1,7 +1,7 @@
 import React from "react";
 import { EquipmentState } from "../../../Styles";
 
-const MypageItem = ({ itemInfo }) => {
+const StudentItem = ({ itemInfo }) => {
   const { category, name, amount, rentDate, state } = itemInfo || {};
   return (
     <>
@@ -11,11 +11,11 @@ const MypageItem = ({ itemInfo }) => {
         <span className="itemAmount">{amount}</span>
         <span className="rentDate">{rentDate}</span>
         <span className="btn">
-          <EquipmentState EqState={state}/>
+          <EquipmentState EqState={state} />
         </span>
       </div>
     </>
   );
 };
 
-export default MypageItem;
+export default StudentItem;
