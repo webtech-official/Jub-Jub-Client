@@ -49,7 +49,9 @@ export const ModalContentWrapper = styled.div`
 `;
 
 export const ModalText = styled.div`
-  height: 40%;
+  height: 50%;
+  display: flex;
+  align-items: center;
   color: black;
   font-size: 40px;
   text-align: center;
