@@ -21,7 +21,7 @@ export const ButtonWrapper = styled.span`
   display: flex;
   justify-content: space-between;
   margin: 0 25px;
-  span{
+  span {
     font-size: 16px;
     color: white;
     padding: 12px 2px;
@@ -33,36 +33,39 @@ export const ButtonWrapper = styled.span`
 `;
 
 export const ModalBack = styled.div`
-    width: 600px;
-    height: 400px;
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 `;
 
 export const ModalContentWrapper = styled.div`
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-    margin-top: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
 `;
 
 export const ModalText = styled.div`
-    color:black;
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
 `;
 
 export const CheckBtn = styled.button`
-    width: 100px;
-    height: 65px;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 24px;
-    margin-top: 40px;
-    border: none;
+  width: 100px;
+  height: 65px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+  border: none;
 `;
