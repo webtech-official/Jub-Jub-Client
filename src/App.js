@@ -4,6 +4,7 @@ import {
   MainContainer,
   MyPageContainer,
   ApplyContainer,
+  AllowContainer,
   StudentContainer,
   ManagementContainer,
 } from "./Container/index";

@@ -1,5 +1,6 @@
 import Admin from "./Admin/Admin";
 import Apply from "./Apply/Apply";
+import Allow from "./Allow/Allow";
 import Header from "./Header/Header";
 import Login from "./Login/Login";
 import Lookup from "./Lookup/Lookup";
@@ -15,6 +16,7 @@ import Management from "./Managment/Management";
 export {
   Admin,
   Apply,
+  Allow,
   Header,
   Login,
   Lookup,

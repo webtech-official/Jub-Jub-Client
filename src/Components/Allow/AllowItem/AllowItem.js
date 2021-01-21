@@ -1,14 +1,9 @@
 import React, { useState } from "react";
-import { Modal } from "../../../Styles";
+import { Modal } from '../../../Styles';
+
 
 const AllowItem = ({ itemInfo, setOpen }) => {
   const { classNum, category, name, amount } = itemInfo || {};
-  const handleAllowOpen = () => {
-    setOpen;
-  };
-  const handleAllowOpen = () => {
-    setOpen;
-  };
   return (
     <>
       <div className="itemBox">
@@ -40,3 +35,4 @@ const AllowItem = ({ itemInfo, setOpen }) => {
 };
 
 export default AllowItem;
+

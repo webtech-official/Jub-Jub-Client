@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Login, Register } from "..";
+import LogoutM from "./LogoutM";
 import { logo } from "../../img/index";
 import { Button, Modal } from "../../Styles";
 import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
@@ -9,12 +10,20 @@ const Header = () => {
     open: false,
     component: null,
   });
-  const token = window.localStorage.getItem("token");
+  //const token = window.localStorage.getItem("token");
+  const token = true;
   const HeaderMenu = useMemo(() => {
     return token ? (
       <>
-        <button>마이페이지</button>
-        <button>로그아웃</button>
+        <span>마이페이지</span>
+        <Button
+          backGroundColor="black"
+          onClick={() => {
+            setOpen({ open: true, component: "logout" });
+          }}
+        >
+          로그아웃
+        </Button>
       </>
     ) : (
       <>
@@ -51,6 +60,7 @@ const Header = () => {
       >
         {is_open.component === "login" && <Login setOpen={setOpen} />}
         {is_open.component === "register" && <Register setOpen={setOpen} />}
+        {is_open.component === "logout" && <LogoutM setOpen={setOpen} />}
       </Modal>
     </>
   );
