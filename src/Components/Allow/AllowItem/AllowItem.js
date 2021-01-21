@@ -12,16 +12,22 @@ const AllowItem = ({ itemInfo, setOpen }) => {
         <span className="itemName">{name}</span>
         <span className="amount">{amount}</span>
         <span className="btn">
-          <span className="Yesbtn" 
+          <span
+            className="Yesbtn"
             onClick={() => {
-              setOpen({open: true, component:"AllowM", state:"수락"})
+              setOpen({ open: true, component: "AllowM", state: "수락" });
             }}
-          >수락</span>
-          <span className="Nobtn"
+          >
+            수락
+          </span>
+          <span
+            className="Nobtn"
             onClick={() => {
-              setOpen({open: true, component:"AllowM", state:"거절"})
+              setOpen({ open: true, component: "AllowM", state: "거절" });
             }}
-          >거절</span>
+          >
+            거절
+          </span>
         </span>
       </div>
     </>
@@ -29,3 +35,4 @@ const AllowItem = ({ itemInfo, setOpen }) => {
 };
 
 export default AllowItem;
+
