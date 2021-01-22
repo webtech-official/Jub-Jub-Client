@@ -25,7 +25,7 @@ export const ManagementContainer = styled.div`
 export const ItemInfoWrapper = styled(Link)`
   display: flex;
   border-radius: 8px;
-  background-color: white;
+  background-color: #ffffff;
   margin: 13px 32px;
   white-space: nowrap;
   padding: 30px 90px;
@@ -34,7 +34,7 @@ export const ItemInfoWrapper = styled(Link)`
   span {
     flex: 1;
     font-size: 22px;
-    color: black;
+    color: #000000;
   }
 `;
 
