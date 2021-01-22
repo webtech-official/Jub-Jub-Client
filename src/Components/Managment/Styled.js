@@ -6,8 +6,11 @@ export const ManagementWrapper = styled.div`
   top: 113px;
   width: 100%;
   min-width: 1870px;
-  height: 887px;
+  height: 2107px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
 `;
 
 export const ManagementContainer = styled.div`
@@ -20,6 +23,9 @@ export const ManagementContainer = styled.div`
   justify-content: space-around;
   background-color: #ffffff;
   border-radius: 30px;
+  .classNum{
+    
+  }
 `;
 
 export const ItemInfoWrapper = styled(Link)`

@@ -31,6 +31,7 @@ const ContentBox = styled.div`
       font-weight: bold;
     }
   }
+  
   .controlArea {
     width: 30%;
     height: 20%;
