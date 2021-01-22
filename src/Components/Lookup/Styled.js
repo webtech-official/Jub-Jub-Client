@@ -38,6 +38,9 @@ const LookupContainer = styled.div`
     color: #ffffff;
     text-align: center;
   }
+  .itemBox {
+    cursor: pointer;
+  }
   .itemNumber {
     width: 70px;
   }
