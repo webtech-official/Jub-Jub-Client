@@ -14,7 +14,7 @@ export const ManagementWrapper = styled.div`
 `;
 
 export const ManagementContainer = styled.div`
-  width: 1215px;
+  width: 1315px;
   height: 950px;
   margin: 0 auto;
   display: flex;
@@ -23,8 +23,23 @@ export const ManagementContainer = styled.div`
   justify-content: space-around;
   background-color: #ffffff;
   border-radius: 30px;
+  span{
+    text-align:center;
+  }
   .classNum{
-    
+    width:100px;
+  }
+  .category{
+    width: 250px;
+  }
+  .name{
+    width: 350px;
+  }
+  .amount{
+    width: 200px;
+  }
+  .rentDate{
+    width: 200px;
   }
 `;
 

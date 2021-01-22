@@ -22,7 +22,8 @@ const App = () => {
           <Route exact path="/" component={HomeContainer} />
           <Route path="/main" component={MainContainer} />
           <Route path="/Mypage" component={MyPageContainer} />
-          <Route path="/Apply" component={ApplyContainer} />
+          <Route path="/Apply" component={ApplyContainer} />          
+          <Route path="/Allow" component={AllowContainer} />
           <Route path="/Student/:classnum" component={StudentContainer} />
           <Route path="/Management" component={ManagementContainer} />
         </Switch>
