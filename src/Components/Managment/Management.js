@@ -19,8 +19,8 @@ const Management = () => {
   return (
     <S.ManagementWrapper>
       <S.ManagementContainer>
-      <Search/>
-        <ItemPage id={page} setId={setPage} length={rental.length}>
+        <Search/>
+        <ItemPage id={page} setId={setPage} length={items.length / 3 + 1}>
           <ItemRows page={page} />
         </ItemPage>
       </S.ManagementContainer>
