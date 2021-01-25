@@ -34,10 +34,19 @@ export const MySide = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     .top {
+      div{
+        cursor:pointer;
+      }
       .myEquipment {
         font-size: 36px;
         margin-bottom: 20px;
+        cursor: auto;
       }
       * {
         margin-bottom: 20px;
@@ -46,6 +55,7 @@ export const MySide = styled.div`
     .bottom {
       .changePass {
         font-size: 30px;
+        cursor:pointer;
       }
     }
   }
@@ -79,6 +89,8 @@ export const MyContainer = styled.div`
   }
   .btn {
     width: 220px;
+    display: flex;
+    justify-content: center;
   }
 `;
 

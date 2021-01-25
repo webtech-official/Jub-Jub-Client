@@ -2,19 +2,23 @@ import React, { useState } from "react";
 import * as S from "./Styled";
 import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
-import Search from "./Search/Search";
+import { Search } from "../../Styles/index";
 import LookupItem from "./LookupItem/LookupItem";
 import Loading from "./Loading/Loading";
+import { useHistory } from "react-router-dom";
 const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [items, setItems] = useState(data);
+  const history = useHistory();
   const LookupItemList = items
     .filter((item, index) => items[index].name.includes(search))
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
-    .map((item) => <LookupItem itemInfo={item} key={item.id} />);
+    .map((item) => (
+      <LookupItem itemInfo={item} key={item.id} history={history} />
+    ));
   return (
     <S.LookupContainer>
       <Search search={search} onChange={setSearch} />
@@ -27,7 +31,6 @@ const Lookup = () => {
         </div>
       </S.TitleBox>
       <ItemPage id={page} setId={setPage} length={items.length}>
-        {console.log(LookupItemList)}
         {LookupItemList.length === 0 ? <Loading /> : LookupItemList}
       </ItemPage>
     </S.LookupContainer>
