@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ItemPage } from "../../Styles";
+import { ItemPage, Search } from "../../Styles";
 import ItemRows from "./ItemRows";
 import { student } from "./dummy.json";
 import ItemInfo from "./ItemInfo";
@@ -12,6 +12,7 @@ const Management = () => {
   return (
     <S.ManagementWrapper>
       <S.ManagementContainer>
+        <Search/>
         <ItemPage id={page} setId={setPage} length={items.length / 3 + 1}>
           <ItemRows page={page} />
         </ItemPage>
