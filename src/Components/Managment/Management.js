@@ -13,9 +13,9 @@ const Management = () => {
   return (
     <S.ManagementWrapper>
       <S.ManagementContainer>
-        <Search />
+        <Search search={search} onChange={setSearch} />
         <ItemPage id={page} setId={setPage} length={items.length / 3 + 1}>
-          <ItemRows page={page} />
+          <ItemRows page={page} search={search} />
         </ItemPage>
       </S.ManagementContainer>
       <S.ManagementContainer>
