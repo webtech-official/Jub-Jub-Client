@@ -4,6 +4,7 @@ import LogoutM from "./LogoutM";
 import { logo } from "../../img/index";
 import { Button, Modal } from "../../Styles";
 import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
   const [is_open, setOpen] = useState({
@@ -12,10 +13,14 @@ const Header = () => {
   });
   //const token = window.localStorage.getItem("token");
   const token = true;
+  const history = useHistory();
+  const changeRouterMypage = () => {
+    history.push("/Mypage");
+  };
   const HeaderMenu = useMemo(() => {
     return token ? (
       <>
-        <span>마이페이지</span>
+        <span onClick={changeRouterMypage}>마이페이지</span>
         <Button
           backGroundColor="black"
           onClick={() => {
