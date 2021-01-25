@@ -38,10 +38,10 @@ const ContentBox = styled.div`
     align-items: center;
     justify-content: space-between;
     #left {
-      background-image: url(${(props) => (props.white ? left_arrow_black : left_arrow)});
+      background-image: url(${(props) =>props.white ? left_arrow_black : left_arrow});
     }
     #right {
-      background-image: url(${(props) => (props.white ? right_arrow_black : right_arrow)});
+      background-image: url(${(props) =>props.white ? right_arrow_black : right_arrow});
     }
     .selectedPage {
       font-weight: bold;

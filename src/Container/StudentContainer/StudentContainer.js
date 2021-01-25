@@ -2,10 +2,10 @@ import React from "react";
 import { Student } from "../../Components";
 import { Background } from "../../Styles";
 
-const StudentContainer = () => {
+const StudentContainer = ({ match }) => {
   return (
     <>
-      <Student />
+      <Student match={match} />
       <Background textHide={true} />
     </>
   );
