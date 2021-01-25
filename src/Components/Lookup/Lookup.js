@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as S from "./Styled";
 import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
-import Search from "./Search/Search";
+import { Search } from "../../Styles/index";
 import LookupItem from "./LookupItem/LookupItem";
 import Loading from "./Loading/Loading";
 const Lookup = () => {

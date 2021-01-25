@@ -1,5 +1,5 @@
 import React from "react";
-import { search_icon } from "../../../img/index";
+import { search_icon } from "../../img/index";
 
 const Search = ({ search, onChange }) => {
   return (
