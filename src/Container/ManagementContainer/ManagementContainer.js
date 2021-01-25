@@ -6,7 +6,7 @@ const ManagementContainer = () => {
   return (
     <>
       <Management />
-      <Background textHide={true} />
+      <Background size={2220} textHide={true} />
     </>
   );
 };
