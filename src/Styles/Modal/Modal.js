@@ -8,8 +8,9 @@ const Modal = ({ children, is_open, setOpen }) => {
         onClick={() => {
           setOpen({ open: false, component: null });
         }}
-      ></S.ModalWrapper>
-      <S.ModalContentWrapper>{children}</S.ModalContentWrapper>
+      >
+        <S.ModalContentWrapper>{children}</S.ModalContentWrapper>
+      </S.ModalWrapper>
     </>
   );
   return <>{ModalOpen}</>;

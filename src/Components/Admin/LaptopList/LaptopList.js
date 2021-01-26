@@ -14,7 +14,9 @@ const LaptopList = ({ setOpen }) => {
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
-    .map((item) => <ItemInfo itemInfo={item} key={item.id} setOpen={setOpen} />);
+    .map((item) => (
+      <ItemInfo itemInfo={item} key={item.id} setOpen={setOpen} />
+    ));
   return (
     <S.AdminMainWrapper>
       <S.AdminMainContainer>

@@ -1,12 +1,8 @@
-import React from 'react'
-import * as S from './Styled'
+import React from "react";
+import * as S from "./Styled";
 
 const ModifyModal = () => {
-    return (
-        <S.ModifyWrapper>
-            수정
-        </S.ModifyWrapper>
-    )
-}
+  return <S.ModifyWrapper>수정</S.ModifyWrapper>;
+};
 
-export default ModifyModal
+export default ModifyModal;
