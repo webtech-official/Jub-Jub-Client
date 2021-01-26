@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const AdminMainWrapper = styled.div`
-  width: 1215px;
+  width: 1300px;
   height: 850px;
   margin: 0 auto;
   display: flex;
@@ -43,14 +43,13 @@ export const TitleBox = styled.div`
     width: 200px;
   }
   .btn {
-    width: 100px;
+    width: 200px;
   }
 `;
 
 export const AdminMainContainer = styled.div`
-  width: 1215px;
+  width: 100%;
   height: 850px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,13 +74,25 @@ export const AdminMainContainer = styled.div`
     width: 200px;
   }
   .btn {
-    width: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    .modify {
+      font-weight: 100;
+      color: black;
+      font-size: 18px;
+      width: 84px;
+      padding: 10px 0;
+      background: white;
+      text-align: center;
+      border: 1px black solid;
+      border-radius: 10px;
+    }
   }
-  button {
-    border-radius: 5px;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-  }
+`;
+
+export const ModifyWrapper = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: wheat;
 `;

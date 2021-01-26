@@ -1,6 +1,6 @@
 import React from "react";
 
-const ItemInfo = ({ itemInfo }) => {
+const ItemInfo = ({ itemInfo, setOpen }) => {
   const { id, category, name, amount } = itemInfo;
   return (
     <>
@@ -10,7 +10,14 @@ const ItemInfo = ({ itemInfo }) => {
         <span className="itemName">{name}</span>
         <span className="itemAmount">{amount}</span>
         <span className="btn">
-          <button>수정</button>
+          <span
+            className="modify"
+            onClick={() => {
+              setOpen({ open: true, component: "modify" });
+            }}
+          >
+            수정
+          </span>
         </span>
       </div>
     </>
