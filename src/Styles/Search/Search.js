@@ -1,6 +1,6 @@
 import React from "react";
 import { search_icon } from "../../img/index";
-import * as S from './Styled'
+import * as S from "./Styled";
 
 const Search = ({ search, onChange }) => {
   return (
