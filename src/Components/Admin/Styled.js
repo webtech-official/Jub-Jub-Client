@@ -25,6 +25,26 @@ export const TitleBox = styled.div`
     display: flex;
     align-items: center;
   }
+  span {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .itemNumber {
+    width: 70px;
+  }
+  .category {
+    width: 250px;
+  }
+  .itemName {
+    width: 350px;
+  }
+  .itemAmount {
+    width: 200px;
+  }
+  .btn {
+    width: 100px;
+  }
 `;
 
 export const AdminMainContainer = styled.div`
@@ -42,20 +62,20 @@ export const AdminMainContainer = styled.div`
     color: #ffffff;
     text-align: center;
   }
-  .itemBox {
-    cursor: pointer;
-  }
   .itemNumber {
     width: 70px;
   }
   .category {
-    width: 253px;
+    width: 250px;
   }
   .itemName {
-    width: 380px;
+    width: 350px;
   }
   .itemAmount {
-    width: 296px;
+    width: 200px;
+  }
+  .btn {
+    width: 100px;
   }
   button {
     border-radius: 5px;

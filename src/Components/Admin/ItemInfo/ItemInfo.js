@@ -9,7 +9,9 @@ const ItemInfo = ({ itemInfo }) => {
         <span className="category">{category}</span>
         <span className="itemName">{name}</span>
         <span className="itemAmount">{amount}</span>
-        <button>수정</button>
+        <span className="btn">
+          <button>수정</button>
+        </span>
       </div>
     </>
   );

@@ -6,9 +6,8 @@ import { Background } from "../../Styles";
 const AdminMainWrapper = styled.div`
   position: absolute;
   width: 100%;
-  min-width: 1440px;
   top: 113px;
-  height: 2000px;
+  height: 2010px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -21,7 +20,7 @@ const AdminMainContainer = () => {
         <EquipmentList />
         <LaptopList />
       </AdminMainWrapper>
-      <Background textHide={true} />
+      <Background textHide={true} size={2113}/>
     </>
   );
 };
