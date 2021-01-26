@@ -9,6 +9,7 @@ const MainLookupWrapper = styled.div`
   min-width: 1440px;
   height: 987px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
