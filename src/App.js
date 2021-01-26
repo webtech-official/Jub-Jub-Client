@@ -7,9 +7,9 @@ import {
   AllowContainer,
   StudentContainer,
   ManagementContainer,
+  AdminMainContainer,
 } from "./Container/index";
 import { Footer, Header } from "./Components/index";
-import { createBrowserHistory } from "history";
 
 const App = () => {
   return (
@@ -24,6 +24,7 @@ const App = () => {
           <Route path="/Allow" component={AllowContainer} />
           <Route path="/Student/:classnum" component={StudentContainer} />
           <Route path="/Management" component={ManagementContainer} />
+          <Route path="/Admin/Main" component={AdminMainContainer} />
         </Switch>
         <Footer />
       </Router>
