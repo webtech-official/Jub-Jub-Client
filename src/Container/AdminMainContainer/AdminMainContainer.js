@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { EquipmentList, LaptopList } from "../../Components";
+import { Admin } from "../../Components";
 import { Background } from "../../Styles";
 
 const AdminMainWrapper = styled.div`
@@ -17,8 +17,7 @@ const AdminMainContainer = () => {
   return (
     <>
       <AdminMainWrapper>
-        <EquipmentList />
-        <LaptopList />
+        <Admin/>
       </AdminMainWrapper>
       <Background textHide={true} size={2113}/>
     </>

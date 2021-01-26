@@ -5,7 +5,7 @@ import ItemInfo from "../ItemInfo/ItemInfo";
 import { data } from "./dummy.json";
 import * as S from "../Styled";
 
-const LaptopList = () => {
+const LaptopList = ({ setOpen }) => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [items, setItems] = useState(data);
@@ -14,7 +14,7 @@ const LaptopList = () => {
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
-    .map((item) => <ItemInfo itemInfo={item} key={item.id} />);
+    .map((item) => <ItemInfo itemInfo={item} key={item.id} setOpen={setOpen} />);
   return (
     <S.AdminMainWrapper>
       <S.AdminMainContainer>
@@ -25,6 +25,7 @@ const LaptopList = () => {
             <span className="category">카테고리</span>
             <span className="itemName">품명</span>
             <span className="itemAmount">수량</span>
+            <span className="btn"></span>
           </div>
         </S.TitleBox>
         <ItemPage id={page} setId={setPage} length={items.length}>

@@ -12,8 +12,6 @@ import Footer from "./Footer/Footer";
 import Student from "./Student/Student";
 import PwChange from "./PwChange/PwChange";
 import Management from "./Managment/Management";
-import EquipmentList from "./Admin/EquipmentList/EquipmentList";
-import LaptopList from "./Admin/LaptopList/LaptopList";
 
 export {
   Admin,
@@ -30,6 +28,4 @@ export {
   Student,
   PwChange,
   Management,
-  EquipmentList,
-  LaptopList,
 };
