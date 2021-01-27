@@ -24,40 +24,42 @@ const Apply = () => {
     component: null,
   });
   return (
-    <BackApply>
-      <MainBox>
-        <ContentBox>
-          <ApplyImg src={TestImg} />
-          <ApplyBox>
-            <HeadingTitle>test</HeadingTitle>
-            <ApplySort>{applSort}</ApplySort>
-            <BtnBox>
-              <BtnI
+    <>
+      <BackApply>
+        <MainBox>
+          <ContentBox>
+            <ApplyImg src={TestImg} />
+            <ApplyBox>
+              <HeadingTitle>test</HeadingTitle>
+              <ApplySort>{applSort}</ApplySort>
+              <BtnBox>
+                <BtnI
+                  onClick={() => {
+                    applSum >= 1 && setApplSum(applSum - 1);
+                  }}
+                >
+                  –
+                </BtnI>
+                <BtnSum>{applSum}</BtnSum>
+                <BtnI
+                  onClick={() => {
+                    setApplSum(applSum + 1);
+                  }}
+                >
+                  +
+                </BtnI>
+              </BtnBox>
+              <SubBtn
                 onClick={() => {
-                  applSum >= 1 && setApplSum(applSum - 1);
+                  setOpen({ open: true, component: "check" });
                 }}
               >
-                –
-              </BtnI>
-              <BtnSum>{applSum}</BtnSum>
-              <BtnI
-                onClick={() => {
-                  setApplSum(applSum + 1);
-                }}
-              >
-                +
-              </BtnI>
-            </BtnBox>
-            <SubBtn
-              onClick={() => {
-                setOpen({ open: true, component: "check" });
-              }}
-            >
-              대여
-            </SubBtn>
-          </ApplyBox>
-        </ContentBox>
-      </MainBox>
+                대여
+              </SubBtn>
+            </ApplyBox>
+          </ContentBox>
+        </MainBox>
+      </BackApply>
       <Modal
         is_open={is_open.open}
         setOpen={() => {
@@ -68,7 +70,7 @@ const Apply = () => {
           <Check sum={applSum} sort={applSort} />
         )}
       </Modal>
-    </BackApply>
+    </>
   );
 };
 
