@@ -8,19 +8,21 @@ const Admin = () => {
   const [is_open, setOpen] = useState({
     open: false,
     component: null,
-    eq: "",
+    eqKind: "",
   });
   return (
     <>
-      <EquipmentList setOpen={setOpen} />
-      <LaptopList setOpen={setOpen} />
+      <EquipmentList setOpen={setOpen} eqKind={is_open.eqKind} />
+      <LaptopList setOpen={setOpen} eqKind={is_open.eqKind} />
       <Modal
         is_open={is_open.open}
         setOpen={() => {
           setOpen({ open: false });
         }}
       >
-        {is_open.component === "modify" && <ModifyModal setOpen={setOpen} />}
+        {is_open.component === "modify" && (
+          <ModifyModal setOpen={setOpen} eqKind={is_open.eqKind} />
+        )}
       </Modal>
     </>
   );
