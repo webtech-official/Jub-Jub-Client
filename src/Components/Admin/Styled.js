@@ -132,7 +132,6 @@ export const ModifyContent = styled.div`
 export const ModifyImg = styled.div`
   width: 200px;
   height: 200px;
-  background-color: red;
 `;
 
 export const InputBox = styled.div`
