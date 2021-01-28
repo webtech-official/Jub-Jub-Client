@@ -5,6 +5,7 @@ import ApplyContainer from "./ApplyContainer/ApplyContainer";
 import AllowContainer from "./AllowContainer/AllowContainer";
 import StudentContainer from "./StudentContainer/StudentContainer";
 import ManagementContainer from "./ManagementContainer/ManagementContainer";
+import AdminMainContainer from "./AdminMainContainer/AdminMainContainer";
 
 export {
   HomeContainer,
@@ -14,5 +15,5 @@ export {
   AllowContainer,
   StudentContainer,
   ManagementContainer,
+  AdminMainContainer,
 };
-

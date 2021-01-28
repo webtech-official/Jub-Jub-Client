@@ -11,8 +11,8 @@ const Header = () => {
     open: false,
     component: null,
   });
-  //const token = window.localStorage.getItem("token");
-  const token = true;
+  const token = window.localStorage.getItem("token");
+  // const token = true;
   const history = useHistory();
   const changeRouterMypage = () => {
     history.push("/Mypage");
