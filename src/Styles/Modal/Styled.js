@@ -21,4 +21,5 @@ export const ModalContentWrapper = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 10;
+  top: 0px;
 `;
