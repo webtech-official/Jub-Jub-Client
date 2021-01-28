@@ -1,5 +1,5 @@
 class Student {
-  async equipmentAllowStudent() {
+  async equipmentApplyStudent() {
     try {
     } catch (error) {}
   }
