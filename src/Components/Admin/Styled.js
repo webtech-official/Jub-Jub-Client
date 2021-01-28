@@ -87,6 +87,7 @@ export const AdminMainContainer = styled.div`
       text-align: center;
       border: 1px black solid;
       border-radius: 10px;
+      cursor: pointer;
     }
   }
 `;
@@ -132,7 +133,6 @@ export const ModifyContent = styled.div`
 export const ModifyImg = styled.div`
   width: 200px;
   height: 200px;
-  background-color: red;
 `;
 
 export const InputBox = styled.div`
@@ -214,3 +214,22 @@ export const btnBox = styled.div`
     border: 1px solid #000000
   }
 `;
+
+export const Top = styled.div`
+  display: flex;
+  width: 90%;
+`
+export const AddBtn = styled.span`
+  width: 99px;
+  height: 53px;
+  background-color: #000000;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+`
