@@ -15,7 +15,9 @@ const Header = () => {
   const HeaderMenu = useMemo(() => {
     return token ? (
       <>
-        <span>마이페이지</span>
+        <span>기자재 관리</span>
+        <span>기자재 대여 승인</span>
+        <span>회원 관리</span>
         <Button
           backGroundColor="black"
           onClick={() => {
