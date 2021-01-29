@@ -1,5 +1,4 @@
 import axios from "axios";
-import { BASE_URL } from "../../config/config.json";
 export const methodType = {
   GET: "get",
   POST: "post",
@@ -7,7 +6,7 @@ export const methodType = {
   DELETE: "delete",
 };
 export const ACCESS_TOKEN_NAME = "Authorization";
-let token = window.localStorage.getItem(ACCESS_TOKEN_NAME);
+let token = window.localStorage.getItem("token");
 
 // 토큰 없는 파라미터가 필요한 api 요청
 export const requestApiWithBodyWithoutToken = async (
@@ -23,6 +22,7 @@ export const requestApiWithBodyWithoutToken = async (
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
         "Access-Control-Allow-Credentials": "true",
+        ...header,
       },
     });
     return res;
@@ -80,7 +80,7 @@ export const requestApiWithBodyWithToken = async (
   header
 ) => {
   try {
-    const res = await axios[method](BASE_URL + url, {
+    const res = await axios[method](BASE_URL + url, body, {
       headers: {
         [ACCESS_TOKEN_NAME]: `jwt ${token}`,
         "Access-Control-Allow-Origin": "*",
