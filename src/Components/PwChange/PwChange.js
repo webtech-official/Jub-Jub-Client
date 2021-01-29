@@ -16,6 +16,7 @@ const PwChange = ({ setOpen }) => {
           <input
             placeholder="Current Password"
             type="password"
+            value={currentPw}
             onChange={(e) => {
               setCurrentPw(e.target.value);
             }}
@@ -26,6 +27,7 @@ const PwChange = ({ setOpen }) => {
             <input
               placeholder="New Password"
               type="password"
+              value={newPw}
               onChange={(e) => {
                 setNewPw(e.target.value);
               }}
@@ -35,6 +37,7 @@ const PwChange = ({ setOpen }) => {
             <input
               placeholder="New Password Check"
               type="password"
+              value={newPwCheck}
               onChange={(e) => {
                 setNewPwCheck(e.target.value);
               }}

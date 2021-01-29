@@ -14,10 +14,10 @@ const Allow = () => {
   });
   const [page, setPage] = useState(1);
   const [items] = useState(data);
-  const [status, setStatus] = useState("");
-  const statusFilter = (status) => {
-    setStatus(status);
-  };
+  const [status] = useState("");
+  // const statusFilter = (status) => {
+  //   setStatus(status);
+  // };
   const currentLength = items.filter((item) => {
     return item.classNum.includes(status);
   }).length;

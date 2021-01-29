@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ItemPage, Modal, Search } from "../../../Styles";
+import { ItemPage, Search } from "../../../Styles";
 import Loading from "../../Lookup/Loading/Loading";
 import ItemInfo from "../ItemInfo/ItemInfo";
 import { data } from "./dummy.json";
@@ -8,7 +8,7 @@ import * as S from "../Styled";
 const EquipmentList = ({ setOpen }) => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
-  const [items, setItems] = useState(data);
+  const [items] = useState(data);
   const equipmentList = items
     .filter((item, index) => items[index].name.includes(search))
     .filter(
