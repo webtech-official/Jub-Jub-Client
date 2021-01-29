@@ -23,6 +23,12 @@ const Login = ({ setOpen }) => {
       })
       .catch((err) => console.log(err));
   };
+  const onChangePassword = (e) => {
+    setPassword(e.target.value);
+  };
+  const onChangeId = (e) => {
+    setId(e.target.value);
+  };
   return (
     <LoginRegister sideMark="?" setOpen={setOpen}>
       <S.TextBox>
@@ -34,21 +40,13 @@ const Login = ({ setOpen }) => {
       </S.TextBox>
       <S.InputBox>
         <div className="inputRow">
-          <input
-            placeholder="Email"
-            type="text"
-            onChange={(e) => {
-              setId(e.target.value);
-            }}
-          />
+          <input placeholder="Email" type="text" onChange={onChangeId} />
         </div>
         <div className="inputRow">
           <input
             type="password"
             placeholder="Password"
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
+            onChange={onChangePassword}
           />
         </div>
       </S.InputBox>
