@@ -22,7 +22,16 @@ const EquipmentList = ({ setOpen }) => {
     <>
       <S.AdminMainWrapper>
         <S.AdminMainContainer>
-          <Search search={search} onChange={setSearch} />
+          <S.Top>
+            <Search search={search} onChange={setSearch} />
+            <S.AddBtn
+              onClick={() => {
+                setOpen({ open: true, component: "add" });
+              }}
+            >
+              추가
+            </S.AddBtn>
+          </S.Top>
           <S.TitleBox>
             <div>
               <span className="itemNumber">번호</span>
