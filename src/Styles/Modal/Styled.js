@@ -10,6 +10,7 @@ export const ModalWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.25);
+  top: 0px;
 `;
 
 export const ModalContentWrapper = styled.div`
@@ -20,4 +21,5 @@ export const ModalContentWrapper = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 10;
+  top: 0px;
 `;
