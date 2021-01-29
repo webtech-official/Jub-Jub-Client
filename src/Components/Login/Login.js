@@ -33,7 +33,7 @@ const Login = ({ setOpen }) => {
     <LoginRegister sideMark="?" setOpen={setOpen}>
       <S.TextBox>
         <div className="bigText">Log In</div>
-        <div className="goRegister">
+        <div className="goRegister" onClick={()=> setOpen({ open: true, component: "register" })}>
           가입하고 대여하기.
           <span className="registerKorText">회원가입</span>
         </div>
