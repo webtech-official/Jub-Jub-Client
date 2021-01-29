@@ -8,7 +8,7 @@ import * as S from "../Styled";
 const LaptopList = ({ setOpen }) => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
-  const [items, setItems] = useState(data);
+  const [items] = useState(data);
   const LookupItemList = items
     .filter((item, index) => items[index].name.includes(search))
     .filter(

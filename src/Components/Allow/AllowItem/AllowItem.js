@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { Modal } from '../../../Styles';
-
+import React from "react";
 
 const AllowItem = ({ itemInfo, setOpen }) => {
   const { classNum, category, name, amount } = itemInfo || {};
@@ -35,4 +33,3 @@ const AllowItem = ({ itemInfo, setOpen }) => {
 };
 
 export default AllowItem;
-

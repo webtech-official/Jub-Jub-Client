@@ -9,7 +9,7 @@ import { useHistory } from "react-router-dom";
 const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
-  const [items, setItems] = useState(data);
+  const [items] = useState(data);
   const history = useHistory();
   const LookupItemList = items
     .filter((item, index) => items[index].name.includes(search))

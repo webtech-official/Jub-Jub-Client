@@ -7,7 +7,7 @@ import RentalList from "./Rental/RentalList";
 
 const Management = () => {
   const [page, setPage] = useState(1);
-  const [items, setItems] = useState(student);
+  const [items] = useState(student);
   const [search, setSearch] = useState("");
 
   return (

@@ -3,14 +3,13 @@ import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import StudentItem from "./StudentItem/StudentItem";
 import * as S from "./Styled";
-import { Modal } from "../../Styles";
 import { student } from "../Managment/dummy.json";
 
 const Student = ({ match }) => {
-  const [is_open, setOpen] = useState({
-    open: false,
-    component: null,
-  });
+  // const [is_open, setOpen] = useState({
+  //   open: false,
+  //   component: null,
+  // });
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status] = useState("");

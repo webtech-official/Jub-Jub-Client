@@ -12,7 +12,7 @@ const Register = ({ setOpen }) => {
   const handleRegister = () => {
     if (password === pwcheck) {
       Auth.signup(classNumber, id, name, password).then((res) => {
-        const { code, msg } = res.data;
+        const { msg } = res.data;
         alert(msg);
         setOpen({ open: false });
       });
