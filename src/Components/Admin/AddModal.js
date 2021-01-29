@@ -36,14 +36,14 @@ const AddModal = ({ setOpen }) => {
             </S.InputBox>
           </S.Content>
         </S.ModifyContent>
-        <S.imgUpload>
+        <S.ImgUpload>
           <label for="file">이미지 업로드</label>
           <input type="file" id="file" />
-        </S.imgUpload>
-        <S.btnBox>
+        </S.ImgUpload>
+        <S.BtnBox>
           <span className="modifyBtn">추가</span>
           <span className="deleteBtn">삭제</span>
-        </S.btnBox>
+        </S.BtnBox>
       </S.ModifyContainer>
     </S.ModifyWrapper>
   );
