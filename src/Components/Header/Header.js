@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { Login, Register } from "..";
 import LogoutM from "./LogoutM";
 import { logo } from "../../img/index";
@@ -14,9 +14,9 @@ const Header = () => {
   const token = window.localStorage.getItem("token");
   // const token = true;
   const history = useHistory();
-  const changeRouterMypage = () => {
+  const changeRouterMypage = useCallback(() => {
     history.push("/Mypage");
-  };
+  }, [history]);
   const HeaderMenu = useMemo(() => {
     return token ? (
       <>
@@ -50,7 +50,7 @@ const Header = () => {
         </Button>
       </>
     );
-  }, [token]);
+  }, [changeRouterMypage, token]);
   return (
     <>
       <HeaderWrapper>

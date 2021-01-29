@@ -162,7 +162,7 @@ export const Content = styled.div`
   width: 450px;
 `;
 
-export const imgUpload = styled.div`
+export const ImgUpload = styled.div`
   width: 100%;
   height: 100px;
   display: flex;
@@ -189,7 +189,7 @@ export const imgUpload = styled.div`
   }
 `;
 
-export const btnBox = styled.div`
+export const BtnBox = styled.div`
   width: 35%;
   margin: 0 auto;
   display: flex;
@@ -211,7 +211,7 @@ export const btnBox = styled.div`
   .deleteBtn {
     background-color: #ffffff;
     color: #000000;
-    border: 1px solid #000000
+    border: 1px solid #000000;
   }
 `;
 
