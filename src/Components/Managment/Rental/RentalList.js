@@ -5,8 +5,7 @@ import RentalCheck from "./RentalCheck";
 
 const RentalList = () => {
   const [page, setPage] = useState(1);
-  const [rental, setRental] = useState(data);
-  const [search, setSearch] = useState("");
+  const [rental] = useState(data);
   const RentalList = rental
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5

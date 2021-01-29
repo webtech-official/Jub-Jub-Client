@@ -14,12 +14,7 @@ const Admin = () => {
     <>
       <EquipmentList setOpen={setOpen} eqKind={is_open.eqKind} />
       <LaptopList setOpen={setOpen} eqKind={is_open.eqKind} />
-      <Modal
-        is_open={is_open.open}
-        setOpen={() => {
-          setOpen({ open: false });
-        }}
-      >
+      <Modal is_open={is_open.open} setOpen={() => setOpen({ open: false })}>
         {is_open.component === "modify" && (
           <ModifyModal setOpen={setOpen} eqKind={is_open.eqKind} />
         )}
