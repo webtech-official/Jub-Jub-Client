@@ -1,9 +1,10 @@
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { Login, Register } from "..";
 import LogoutM from "./LogoutM";
 import { logo } from "../../img/index";
 import { Button, Modal } from "../../Styles";
 import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
   const [is_open, setOpen] = useState({
@@ -11,22 +12,42 @@ const Header = () => {
     component: null,
   });
   //const token = window.localStorage.getItem("token");
+  const admintoken = window.localStorage.getItem("admintoken");
   const token = true;
+  // const admintoken = true;
+  const history = useHistory();
+  const changeRouterMypage = useCallback(() => {
+    history.push("/Mypage");
+  }, [history]);
   const HeaderMenu = useMemo(() => {
     return token ? (
-      <>
-        <span>기자재 관리</span>
-        <span>기자재 대여 승인</span>
-        <span>회원 관리</span>
-        <Button
-          backGroundColor="black"
-          onClick={() => {
-            setOpen({ open: true, component: "logout" });
-          }}
-        >
-          로그아웃
-        </Button>
-      </>
+      admintoken ? (
+        <>
+          <span>기자재 관리</span>
+          <span>기자재 대여 승인</span>
+          <span>회원 관리</span>
+          <Button
+            backGroundColor="black"
+            onClick={() => {
+              setOpen({ open: true, component: "logout" });
+            }}
+          >
+            로그아웃
+          </Button>
+        </>
+      ) : (
+        <>
+          <span onClick={changeRouterMypage}>마이페이지</span>
+          <Button
+            backGroundColor="black"
+            onClick={() => {
+              setOpen({ open: true, component: "logout" });
+            }}
+          >
+            로그아웃
+          </Button>
+        </>
+      )
     ) : (
       <>
         <Button
@@ -52,7 +73,7 @@ const Header = () => {
     <>
       <HeaderWrapper>
         <Logo src={logo} />
-        <ButtonWrapper>{HeaderMenu}</ButtonWrapper>
+        <ButtonWrapper admin={admintoken}>{HeaderMenu}</ButtonWrapper>
       </HeaderWrapper>
       <Modal
         is_open={is_open.open}
