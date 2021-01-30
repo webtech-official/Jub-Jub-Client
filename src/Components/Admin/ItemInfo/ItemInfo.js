@@ -12,7 +12,9 @@ const ItemInfo = ({ itemInfo, setOpen }) => {
         <span className="btn">
           <span
             className="modify"
-            onClick={setOpen({ open: true, component: "modify" })}
+            onClick={() => {
+              setOpen({ open: true, component: "modify" });
+            }}
           >
             수정
           </span>
