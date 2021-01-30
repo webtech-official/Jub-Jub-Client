@@ -11,25 +11,43 @@ const Header = () => {
     open: false,
     component: null,
   });
-  const token = window.localStorage.getItem("token");
-  // const token = true;
+  //const token = window.localStorage.getItem("token");
+  const admintoken = window.localStorage.getItem("admintoken");
+  const token = true;
+  // const admintoken = true;
   const history = useHistory();
   const changeRouterMypage = useCallback(() => {
     history.push("/Mypage");
   }, [history]);
   const HeaderMenu = useMemo(() => {
     return token ? (
-      <>
-        <span onClick={changeRouterMypage}>마이페이지</span>
-        <Button
-          backGroundColor="black"
-          onClick={() => {
-            setOpen({ open: true, component: "logout" });
-          }}
-        >
-          로그아웃
-        </Button>
-      </>
+      admintoken ? (
+        <>
+          <span>기자재 관리</span>
+          <span>기자재 대여 승인</span>
+          <span>회원 관리</span>
+          <Button
+            backGroundColor="black"
+            onClick={() => {
+              setOpen({ open: true, component: "logout" });
+            }}
+          >
+            로그아웃
+          </Button>
+        </>
+      ) : (
+        <>
+          <span onClick={changeRouterMypage}>마이페이지</span>
+          <Button
+            backGroundColor="black"
+            onClick={() => {
+              setOpen({ open: true, component: "logout" });
+            }}
+          >
+            로그아웃
+          </Button>
+        </>
+      )
     ) : (
       <>
         <Button
@@ -55,7 +73,7 @@ const Header = () => {
     <>
       <HeaderWrapper>
         <Logo src={logo} />
-        <ButtonWrapper>{HeaderMenu}</ButtonWrapper>
+        <ButtonWrapper admin={admintoken}>{HeaderMenu}</ButtonWrapper>
       </HeaderWrapper>
       <Modal
         is_open={is_open.open}

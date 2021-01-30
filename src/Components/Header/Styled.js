@@ -17,19 +17,47 @@ export const Logo = styled.img`
 `;
 
 export const ButtonWrapper = styled.span`
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 25px;
+  ${(props) =>
+    props.admin
+      ? `
+      width: 80%;
+      `
+      : `
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 25px;
+      `}
+
   span {
     font-size: 16px;
     color: white;
+    ${(props) =>
+      props.admin
+        ? `
+        float: left;
+      margin-left: 12%;
+      `
+        : `
+
+      `}
     padding: 12px 2px;
     &:hover {
       filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
       cursor: pointer;
     }
   }
+  ${(props) =>
+    props.admin
+      ? `
+        button {
+    float: right;
+    margin-right: 30px;
+  }
+      `
+      : `
+
+      `}
 `;
 
 export const ModalBack = styled.div`
