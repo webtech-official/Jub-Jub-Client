@@ -1,13 +1,25 @@
 import React, { useState } from "react";
 import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
+import Auth from "../../assets/Api/Auth";
 
 const Register = ({ setOpen }) => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [pwcheck, setPwcheck] = useState("");
   const [name, setName] = useState("");
-  const [classNumer, setClassNumer] = useState("");
+  const [classNumber, setClassNumber] = useState("");
+  const handleRegister = () => {
+    if (password === pwcheck) {
+      Auth.signup(classNumber, id, name, password).then((res) => {
+        const { msg } = res.data;
+        alert(msg);
+        setOpen({ open: false });
+      });
+    } else {
+      alert("패스워드가 다릅니다");
+    }
+  };
   return (
     <LoginRegister sideMark="!" setOpen={setOpen}>
       <S.TextBox>
@@ -26,7 +38,7 @@ const Register = ({ setOpen }) => {
         <div className="inputRow">
           <input
             placeholder="Password"
-            type="text"
+            type="password"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
@@ -35,7 +47,7 @@ const Register = ({ setOpen }) => {
         <div className="inputRow">
           <input
             placeholder="Password Check"
-            type="text"
+            type="password"
             onChange={(e) => {
               setPwcheck(e.target.value);
             }}
@@ -53,14 +65,14 @@ const Register = ({ setOpen }) => {
         <div className="inputRow">
           <input
             placeholder="Class Number (ex 1101)"
-            type="text"
+            type="number"
             onChange={(e) => {
-              setClassNumer(e.target.value);
+              setClassNumber(e.target.value);
             }}
           />
         </div>
       </S.InputBox>
-      <S.RegisterButton>회원가입</S.RegisterButton>
+      <S.RegisterButton onClick={handleRegister}>회원가입</S.RegisterButton>
     </LoginRegister>
   );
 };

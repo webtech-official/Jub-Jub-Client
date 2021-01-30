@@ -68,7 +68,7 @@ const Header = () => {
         </Button>
       </>
     );
-  }, [token]);
+  }, [changeRouterMypage, token]);
   return (
     <>
       <HeaderWrapper>

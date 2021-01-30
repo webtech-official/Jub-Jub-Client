@@ -1,9 +1,10 @@
 import React from "react";
-import { search_icon } from "../../../img/index";
+import { search_icon } from "../../img/index";
+import * as S from "./Styled";
 
-const Search = ({ search, onChange }) => {
+const Search = ({ search, onChange, size }) => {
   return (
-    <>
+    <S.SearchBox size={size}>
       <div className="searchArea">
         <input
           className="inputBox"
@@ -15,7 +16,7 @@ const Search = ({ search, onChange }) => {
         />
         <img src={search_icon} alt="search_icon"></img>
       </div>
-    </>
+    </S.SearchBox>
   );
 };
 

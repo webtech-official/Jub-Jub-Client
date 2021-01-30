@@ -6,7 +6,7 @@ const ItemPage = ({ id, setId, length, children, white }) => {
   const pages = page.map((p) => (
     <span
       key={p}
-      className={p === id ? `selectedPage` : ``}
+      className={p === id && `selectedPage`}
       onClick={() => {
         if (p > parseInt(length / 5) + 1) {
           alert("더 이상 존재하지 않습니다.");

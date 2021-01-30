@@ -10,6 +10,7 @@ export const TextBox = styled.div`
   .goRegister {
     font-size: 16px;
     padding: 10px;
+    cursor: pointer;
     .registerKorText {
       color: #3d9cff;
     }
