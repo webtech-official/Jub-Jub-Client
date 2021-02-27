@@ -17,7 +17,7 @@ const Main = () => {
   return (
     <MainWrapper>
       <MainLookupWrapper>
-        <Lookup />
+        <Lookup />  
       </MainLookupWrapper>
     </MainWrapper>
   );

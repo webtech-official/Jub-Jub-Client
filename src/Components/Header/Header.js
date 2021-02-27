@@ -11,9 +11,8 @@ const Header = () => {
     open: false,
     component: null,
   });
-  //const token = window.localStorage.getItem("token");
+  const token = window.localStorage.getItem("jupjup_token");
   const admintoken = window.localStorage.getItem("admintoken");
-  const token = true;
   // const admintoken = true;
   const history = useHistory();
   const changeRouterMypage = useCallback(() => {
@@ -68,7 +67,7 @@ const Header = () => {
         </Button>
       </>
     );
-  }, [changeRouterMypage, token]);
+  }, [changeRouterMypage, token, admintoken]);
   return (
     <>
       <HeaderWrapper>

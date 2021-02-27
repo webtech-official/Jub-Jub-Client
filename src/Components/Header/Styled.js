@@ -66,7 +66,14 @@ export const ModalBack = styled.div`
   border-radius: 10px;
   background-color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+export const ModalCloseBtnImage = styled.img`
+justify-content: right;
+float: right;
+align-self: right;
+align-items: right;
 `;
 
 export const ModalContentWrapper = styled.div`

@@ -5,6 +5,9 @@ export const AUTH = {
   signup: () => {
     return `/signup`;
   },
+  logout : () => {
+    return `/logout`
+  }
 };
 
 export const ADMIN = {

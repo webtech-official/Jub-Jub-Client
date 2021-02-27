@@ -17,7 +17,7 @@ const Login = ({ setOpen }) => {
         alert(msg);
         setOpen({ open: false });
         if (code >= 0) {
-          window.localStorage.setItem("token", data);
+          window.localStorage.setItem("jupjup_token", data.accessToken);
           history.push("/Main");
         }
       })
