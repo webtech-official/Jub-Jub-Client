@@ -6,7 +6,6 @@ export const methodType = {
   DELETE: "delete",
 };
 export const ACCESS_TOKEN_NAME = "Authorization";
-let token = window.localStorage.getItem("jupjup_token");
 
 // 토큰 없는 파라미터가 필요한 api 요청
 export const requestApiWithBodyWithoutToken = async (

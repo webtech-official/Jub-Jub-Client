@@ -1,11 +1,20 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import Auth from '../../assets/Api/Auth'
 import { X } from '../../img'
 import * as S from './Styled'
 
 const LogoutM = ({setOpen}) => {
+    const history = useHistory();
     const handleLogout = () => {
-        Auth.logout().then(res => console.log(res))
+        Auth.logout().then(res => {
+            if(res.data.code >= 0) {
+                alert(res.data.msg);
+                window.localStorage.clear();
+                setOpen(false)
+                history.push("/")
+            }
+        })
     }
     return (
         <S.ModalBack>

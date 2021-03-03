@@ -44,7 +44,7 @@ class Auth {
     try {
       const response = requestApiWithoutBodyWithToken(
         BASE_URL,
-        methodType.GET,
+        methodType.POST,
         AUTH.logout(),
         {}
       )
