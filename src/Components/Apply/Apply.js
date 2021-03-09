@@ -31,7 +31,7 @@ const Apply = ({match}) => {
     const applyItem = equipmentList.filter(
       item => item.equ_Idx === parseInt(match.params.id))[0];
   useEffect(() => {
-    Admin.equipmentDetail(match.params.id).then(res => {
+    Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
       console.log(res.data)
     })
   })

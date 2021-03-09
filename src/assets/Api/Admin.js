@@ -70,12 +70,12 @@ class Admin {
     }
   }
   //기자재 상세 조회
-  async equipmentDetail(eqa_Idx) {
+  async equipmentDetail(idx) {
     try {
       const response = requestApiWithoutBodyWithToken(
         BASE_URL,
         methodType.GET,
-        ADMIN.equipmentDetail(eqa_Idx),
+        ADMIN.equipmentDetail(idx),
         {}
       );
       return response;
