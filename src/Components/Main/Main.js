@@ -1,25 +1,15 @@
 import React from "react";
-import { MainWrapper } from "./Styled";
+import * as S from "./Styled";
 import { Lookup } from "../index";
-import styled from "@emotion/styled";
 
-const MainLookupWrapper = styled.div`
-  position: absolute;
-  width: 100%;
-  min-width: 1440px;
-  height: 987px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
+
 const Main = () => {
   return (
-    <MainWrapper>
-      <MainLookupWrapper>
+    <S.MainWrapper>
+      <S.MainLookupWrapper>
         <Lookup />  
-      </MainLookupWrapper>
-    </MainWrapper>
+      </S.MainLookupWrapper>
+    </S.MainWrapper>
   );
 };
 

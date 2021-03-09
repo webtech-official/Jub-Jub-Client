@@ -1,4 +1,4 @@
-import { methodType, requestApiWithBodyWithoutToken, requestApiWithoutBodyWithToken } from "../lib/requestApi";
+import { methodType, requestApiWithBodyWithoutToken, requestApiWithoutBodyWithoutToken, requestApiWithoutBodyWithToken } from "../lib/requestApi";
 import { BASE_URL } from "../../config/config.json";
 import { AUTH } from "../lib/requestUrl";
 class Auth {
@@ -46,6 +46,19 @@ class Auth {
         BASE_URL,
         methodType.POST,
         AUTH.logout(),
+        {}
+      )
+      return response;
+    } catch (error) {
+      throw new Error(error)
+    }
+  }
+  async loadUserInfo() {
+    try {
+      const response = requestApiWithoutBodyWithToken(
+        BASE_URL,
+        methodType.GET,
+        AUTH.userinfo(),
         {}
       )
       return response;

@@ -11,13 +11,17 @@ const EquipmentState = ({ EqState }) => {
         setBgColor("#ffffff");
         setFontColor("#000000");
         break;
-      case "반납":
+      case "대기":
         setBgColor("#000000");
         setFontColor("#ffffff");
         setBorderState("1px solid #ffffff");
         break;
-      case "연체":
+      case "승인":
         setBgColor("#FFE600");
+        setFontColor("#000000");
+        break;
+      case "거절":
+        setBgColor("#FF0000");
         setFontColor("#000000");
         break;
       default:

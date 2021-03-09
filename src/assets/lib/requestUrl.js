@@ -7,6 +7,9 @@ export const AUTH = {
   },
   logout : () => {
     return `/logout`
+  },
+  userinfo: () => {
+    return `/userinfo`
   }
 };
 
@@ -18,7 +21,7 @@ export const ADMIN = {
     return `/approved/${eqa_Idx}`;
   },
   equipment: () => {
-    return `/equipment`;
+    return `/equipment/`;
   }, //POST - 기자재 등록, GET - 기자재 전체 조회
   equipmentDetail: (name) => {
     return `/equipment/${name}`;

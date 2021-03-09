@@ -1,8 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import Auth from '../../assets/Api/Auth'
-import { X } from '../../img'
-import * as S from './Styled'
+import Auth from '../../../assets/Api/Auth'
+import { X } from '../../../img'
+import * as S from '../Styled'
 
 const LogoutM = ({setOpen}) => {
     const history = useHistory();

@@ -52,7 +52,6 @@ const Student = ({ match }) => {
           >
             {StudentItemList}
           </ItemPage>
-          <div className="graph">김기홍 학생의 연체 그래프</div>
         </S.MyContainer>
       </S.MyBox>
     </S.MyWrapper>

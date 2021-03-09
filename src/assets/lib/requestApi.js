@@ -63,7 +63,7 @@ export const requestApiWithoutBodyWithToken = async (
     const accessToken = window.localStorage.getItem("jupjup_token");
     const res = await axios[method](BASE_URL + url, {
       headers: {
-        [ACCESS_TOKEN_NAME]: `jwt ${accessToken}`,
+        [ACCESS_TOKEN_NAME]: `${accessToken}`,
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "Content-Type,Authorization",
         "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
