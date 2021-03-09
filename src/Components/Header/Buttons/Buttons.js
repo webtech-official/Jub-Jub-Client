@@ -10,7 +10,7 @@ const Buttons = ({token, authority, setOpen}) => {
         <>
          {
           token ? (
-            authority === "ROLE_ADMIN" ? (
+            authority[0] === "ROLE_ADMIN" ? (
                 <>
                   <span>기자재 관리</span>
                   <span>기자재 대여 승인</span>
