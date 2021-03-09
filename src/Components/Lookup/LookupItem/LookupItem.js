@@ -7,9 +7,9 @@ const LookupItem = ({ itemInfo, history }) => {
   const userInfo = useRecoilValue(authStore)
   const {roles} = userInfo;
   const handleDetailInfo = () => {
-    if(roles === "ROLE_ADMIN") {
+    if(roles[0] === "ROLE_ADMIN") {
       alert("[관리자는 신청할 수 없습니다]")
-    } else if(roles === "ROLE_USER") {
+    } else if(roles[0] === "ROLE_USER") {
       history.push(`/Apply/${equ_Idx}`);
     } else {
       alert("[로그인을 해야합니다]")
