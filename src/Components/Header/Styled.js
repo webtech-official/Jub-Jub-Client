@@ -18,7 +18,7 @@ export const Logo = styled.img`
 
 export const ButtonWrapper = styled.div`
   ${(props) =>
-    props.admin === "ROLE_ADMIN"
+    props.admin[0] === "ROLE_ADMIN"
       ? `
         width: 80%;
       ` : `
@@ -32,7 +32,7 @@ export const ButtonWrapper = styled.div`
     font-size: 16px;
     color: white;
     ${(props) =>
-    props.admin === "ROLE_ADMIN"
+    props.admin[0] === "ROLE_ADMIN"
         ? `
         float: left;
         margin-left: 12%;
@@ -45,7 +45,7 @@ export const ButtonWrapper = styled.div`
     }
   }
   ${(props) =>
-    props.admin === "ROLE_ADMIN"
+    props.admin[0] === "ROLE_ADMIN"
       ? `
         button {
     float: right;

@@ -31,8 +31,8 @@ const Header = () => {
     <>
       <HeaderWrapper>
         <Logo src={logo} />
-        <ButtonWrapper admin={roles}>
-          <Buttons token={token} authority={roles} setOpen={setOpen} />
+        <ButtonWrapper admin={roles || ""}>
+          <Buttons token={token} authority={roles || ""} setOpen={setOpen} />
         </ButtonWrapper>
       </HeaderWrapper>
       <Modal

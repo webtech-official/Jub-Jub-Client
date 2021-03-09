@@ -23,8 +23,8 @@ export const ADMIN = {
   equipment: () => {
     return `/equipment/`;
   }, //POST - 기자재 등록, GET - 기자재 전체 조회
-  equipmentDetail: (name) => {
-    return `/equipment/${name}`;
+  equipmentDetail: (eqa_idx) => {
+    return `/equipment/findidx/${eqa_idx}`;
   }, ///GET - 상세 조회, PUT - 기자재 수량 변경
   equipmentAllUpdate: (oldName) => {
     return `/equipmentAll/${oldName}`;

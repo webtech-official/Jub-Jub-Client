@@ -1,10 +1,11 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import * as S from "./Styled"
 import { TestImg } from "../../img/index";
 import Check from "./Check";
 import { Modal } from "../../Styles";
 import { useRecoilValue } from "recoil";
 import { equipmentListState } from "../../Util/AdminStore/AdminStore";
+import Admin from "../../assets/Api/Admin";
 
 const Apply = ({match}) => {
   let [applSort] = useState("태블릿");
@@ -29,6 +30,11 @@ const Apply = ({match}) => {
   console.log(equipmentList, "apply equipment")
     const applyItem = equipmentList.filter(
       item => item.equ_Idx === parseInt(match.params.id))[0];
+  useEffect(() => {
+    Admin.equipmentDetail(match.params.id).then(res => {
+      console.log(res.data)
+    })
+  })
    return (
     <>
       <S.BackApply>

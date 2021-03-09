@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useRecoilValue } from "recoil";
+import Admin from "../../../assets/Api/Admin";
 import { authStore } from "../../../Util/AuthStore/AuthStore";
 
 const LookupItem = ({ itemInfo, history }) => {
@@ -16,9 +17,6 @@ const LookupItem = ({ itemInfo, history }) => {
       console.log(userInfo)
     }
   };
-  useEffect(() => {
-
-  })
   return (
     <>
       <div className="itemBox" onClick={handleDetailInfo}>
