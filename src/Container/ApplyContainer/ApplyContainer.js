@@ -2,10 +2,10 @@ import React from "react";
 import { Apply } from "../../Components";
 import { Background } from "../../Styles/index";
 
-const ApplyContainer = () => {
+const ApplyContainer = ({match}) => {
   return (
     <>
-      <Apply />
+      <Apply match={match} />
       <Background textHide="true" />
     </>
   );

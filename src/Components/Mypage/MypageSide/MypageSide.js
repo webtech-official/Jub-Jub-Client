@@ -2,9 +2,10 @@ import React from "react";
 
 const category = [
   { className: "all", filter: "" },
-  { className: "return", filter: "반납" },
-  { className: "noReturn", filter: "대여" },
-  { className: "overdue", filter: "연체" },
+  { className: "wait", filter: "대기" },
+  { className: "rental", filter: "대여" },
+  { className: "accept", filter: "승인" },
+  { className: "reject", filter: "거절" },
 ];
 const MypageSide = ({ statusFilter, setPage, setOpen }) => {
   const handleFilter = (status) => {

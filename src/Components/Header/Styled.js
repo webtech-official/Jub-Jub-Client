@@ -16,20 +16,45 @@ export const Logo = styled.img`
   margin: 15px 25px;
 `;
 
-export const ButtonWrapper = styled.span`
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 25px;
+export const ButtonWrapper = styled.div`
+  ${(props) =>
+    props.admin[0] === "ROLE_ADMIN"
+      ? `
+        width: 80%;
+      ` : `
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 25px;
+      `
+    }
   span {
     font-size: 16px;
     color: white;
+    ${(props) =>
+    props.admin[0] === "ROLE_ADMIN"
+        ? `
+        float: left;
+        margin-left: 12%;
+      `: ``
+    }
     padding: 12px 2px;
     &:hover {
       filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
       cursor: pointer;
     }
   }
+  ${(props) =>
+    props.admin[0] === "ROLE_ADMIN"
+      ? `
+        button {
+    float: right;
+    margin-right: 30px;
+  }
+      `
+      : `
+
+      `}
 `;
 
 export const ModalBack = styled.div`
@@ -38,7 +63,14 @@ export const ModalBack = styled.div`
   border-radius: 10px;
   background-color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+export const ModalCloseBtnImage = styled.img`
+  justify-content: right;
+  float: right;
+  align-self: right;
+  align-items: right;
 `;
 
 export const ModalContentWrapper = styled.div`

@@ -6,7 +6,6 @@ export const MyWrapper = styled.div`
   width: 100%;
   height: 1780px;
   display: flex;
-  align-items: center;
   justify-content: center;
   z-index: 2;
   top: 113px;
@@ -19,9 +18,9 @@ export const MyBox = styled.div`
 `;
 
 export const MyContainer = styled.div`
-  width: 1200px;
+  width: 1000px;
   min-width: 1300px;
-  height: 1650px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;

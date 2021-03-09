@@ -5,14 +5,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -25,14 +25,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -45,14 +45,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -65,14 +65,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -85,14 +85,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -105,14 +105,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -125,14 +125,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -145,14 +145,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -165,14 +165,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -185,14 +185,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -205,14 +205,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -225,14 +225,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -245,14 +245,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -265,14 +265,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -285,14 +285,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -305,14 +305,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -325,14 +325,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -345,14 +345,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -365,14 +365,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -385,14 +385,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -405,14 +405,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -425,14 +425,35 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "대여"
+    },    
+    {
+      "category": "마우스",
+      "name": "로지텍 마우스",
+      "amount": 2,
+      "rentDate": "2021-01-10",
+      "state": "대기"
+    },
+    {
+      "category": "모니터",
+      "name": "DELL 모니터",
+      "amount": 1,
+      "rentDate": "2022-02-20",
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -445,14 +466,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -465,14 +486,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -485,14 +506,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -505,14 +526,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -525,14 +546,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -545,14 +566,14 @@
       "name": "로지텍 마우스",
       "amount": 2,
       "rentDate": "2021-01-10",
-      "state": "반납"
+      "state": "대기"
     },
     {
       "category": "모니터",
       "name": "DELL 모니터",
       "amount": 1,
       "rentDate": "2022-02-20",
-      "state": "연체"
+      "state": "승인"
     },
     {
       "category": "모터",
@@ -560,26 +581,153 @@
       "amount": 4,
       "rentDate": "2023-03-30",
       "state": "대여"
-    },    {
-      "category": "마우스",
-      "name": "로지텍 마우스",
-      "amount": 2,
-      "rentDate": "2021-01-10",
-      "state": "반납"
-    },
-    {
-      "category": "모니터",
-      "name": "DELL 모니터",
-      "amount": 1,
-      "rentDate": "2022-02-20",
-      "state": "연체"
     },
     {
       "category": "모터",
       "name": "DC모터",
       "amount": 4,
       "rentDate": "2023-03-30",
-      "state": "대여"
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
+    },
+    {
+      "category": "모터",
+      "name": "DC모터",
+      "amount": 4,
+      "rentDate": "2023-03-30",
+      "state": "거절"
     }
   ]
 }

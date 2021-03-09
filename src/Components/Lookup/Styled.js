@@ -41,6 +41,9 @@ const LookupContainer = styled.div`
   }
 `;
 
+export const LookupItemTitleWrapper = styled.div`
+`;
+
 const TitleBox = styled.div`
   width: 90%;
   height: 75px;

@@ -5,6 +5,12 @@ export const AUTH = {
   signup: () => {
     return `/signup`;
   },
+  logout : () => {
+    return `/logout`
+  },
+  userinfo: () => {
+    return `/userinfo`
+  }
 };
 
 export const ADMIN = {
@@ -15,10 +21,10 @@ export const ADMIN = {
     return `/approved/${eqa_Idx}`;
   },
   equipment: () => {
-    return `/equipment`;
+    return `/equipment/`;
   }, //POST - 기자재 등록, GET - 기자재 전체 조회
-  equipmentDetail: (name) => {
-    return `/equipment/${name}`;
+  equipmentDetail: (idx) => {
+    return `/equipment/findidx/${idx}`;
   }, ///GET - 상세 조회, PUT - 기자재 수량 변경
   equipmentAllUpdate: (oldName) => {
     return `/equipmentAll/${oldName}`;

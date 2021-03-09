@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./Styled";
 import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
@@ -6,19 +6,31 @@ import { Search } from "../../Styles/index";
 import LookupItem from "./LookupItem/LookupItem";
 import Loading from "./Loading/Loading";
 import { useHistory } from "react-router-dom";
+import Admin from "../../assets/Api/Admin";
+import { useRecoilState } from "recoil";
+import {equipmentListState} from "../../Util/AdminStore/AdminStore"
 const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [items] = useState(data);
+  const [equipmentList, setEquipmentList] = useRecoilState(equipmentListState)
+  useEffect(() => {
+    Admin.equipmentInfoAll().then(res => {
+      console.log(res)
+      setEquipmentList(res.data.list)
+    })
+  },[setEquipmentList])
+  console.log(equipmentList, "asd")
   const history = useHistory();
-  const LookupItemList = items
-    .filter((item, index) => items[index].name.includes(search))
+  const LookupItemList = equipmentList
+    .filter((item, index) => equipmentList[index].name.includes(search))
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
     .map((item) => (
-      <LookupItem itemInfo={item} key={item.id} history={history} />
+      <LookupItem itemInfo={item} key={item.equ_Idx} history={history} />
     ));
+    console.log(equipmentList) 
   return (
     <S.LookupContainer>
       <Search search={search} onChange={setSearch} />
@@ -30,7 +42,7 @@ const Lookup = () => {
           <span className="itemAmount">수량</span>
         </div>
       </S.TitleBox>
-      <ItemPage id={page} setId={setPage} length={items.length}>
+      <ItemPage id={page} setId={setPage} length={equipmentList.length}>
         {LookupItemList.length === 0 ? <Loading /> : LookupItemList}
       </ItemPage>
     </S.LookupContainer>

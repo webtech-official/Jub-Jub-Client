@@ -1,24 +1,16 @@
-import React, { useCallback, useState } from "react";
-import {
-  BackApply,
-  MainBox,
-  ContentBox,
-  ApplyImg,
-  ApplyBox,
-  HeadingTitle,
-  ApplySort,
-  BtnBox,
-  BtnI,
-  BtnSum,
-  SubBtn,
-} from "./Styled";
+import React, { useCallback, useEffect, useState } from "react";
+import * as S from "./Styled"
 import { TestImg } from "../../img/index";
 import Check from "./Check";
 import { Modal } from "../../Styles";
+import { useRecoilValue } from "recoil";
+import { equipmentListState } from "../../Util/AdminStore/AdminStore";
+import Admin from "../../assets/Api/Admin";
 
-const Apply = () => {
+const Apply = ({match}) => {
   let [applSort] = useState("태블릿");
   let [applSum, setApplSum] = useState(0);
+  const equipmentList = useRecoilValue(equipmentListState);
   const [is_open, setOpen] = useState({
     open: false,
     component: null,
@@ -35,25 +27,33 @@ const Apply = () => {
   const nextBtn = useCallback(() => {
     setApplSum(applSum + 1);
   }, [applSum]);
-  return (
+  console.log(equipmentList, "apply equipment")
+    const applyItem = equipmentList.filter(
+      item => item.equ_Idx === parseInt(match.params.id))[0];
+  useEffect(() => {
+    Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
+      console.log(res.data)
+    })
+  })
+   return (
     <>
-      <BackApply>
-        <MainBox>
-          <ContentBox>
-            <ApplyImg src={TestImg} />
-            <ApplyBox>
-              <HeadingTitle>test</HeadingTitle>
-              <ApplySort>{applSort}</ApplySort>
-              <BtnBox>
-                <BtnI onClick={prevBtn}>–</BtnI>
-                <BtnSum>{applSum}</BtnSum>
-                <BtnI onClick={nextBtn}>+</BtnI>
-              </BtnBox>
-              <SubBtn onClick={allowModalOpen}>대여</SubBtn>
-            </ApplyBox>
-          </ContentBox>
-        </MainBox>
-      </BackApply>
+      <S.BackApply>
+        <S.MainBox>
+          <S.ContentBox>
+            <S.ApplyImg src={TestImg} />
+            <S.ApplyBox>
+              <S.HeadingTitle>{"name"}</S.HeadingTitle>
+              <S.ApplySort>{"content"}</S.ApplySort>
+              <S.BtnBox>
+                <S.BtnI onClick={prevBtn}>–</S.BtnI>
+                <S.BtnSum>{applSum}</S.BtnSum>
+                <S.BtnI onClick={nextBtn}>+</S.BtnI>
+              </S.BtnBox>
+              <S.SubBtn onClick={allowModalOpen}>대여</S.SubBtn>
+            </S.ApplyBox>
+          </S.ContentBox>
+        </S.MainBox>
+      </S.BackApply>
       <Modal is_open={is_open.open} setOpen={CloseModal}>
         {is_open.component === "check" && (
           <Check sum={applSum} sort={applSort} />

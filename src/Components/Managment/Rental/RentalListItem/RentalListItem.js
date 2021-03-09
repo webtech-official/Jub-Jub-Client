@@ -1,6 +1,6 @@
 import React from "react";
 
-const RentalCheck = ({ itemInfo }) => {
+const RentalListItem = ({ itemInfo }) => {
   const { classNum, category, amount, name, rentDate } = itemInfo || {};
   return (
     <>
@@ -15,4 +15,4 @@ const RentalCheck = ({ itemInfo }) => {
   );
 };
 
-export default RentalCheck;
+export default RentalListItem;

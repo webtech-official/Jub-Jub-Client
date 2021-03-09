@@ -1,66 +1,44 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Login, Register } from "..";
-import LogoutM from "./LogoutM";
+import LogoutM from "./LogoutModal/LogoutM";
 import { logo } from "../../img/index";
-import { Button, Modal } from "../../Styles";
+import { Modal } from "../../Styles";
 import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
-import { useHistory } from "react-router-dom";
+import { useRecoilValue, useSetRecoilState } from "recoil";
+import { authStore } from "../../Util/AuthStore/AuthStore";
+import Buttons from "./Buttons/Buttons";
+import Auth from "../../assets/Api/Auth";
 
 const Header = () => {
   const [is_open, setOpen] = useState({
     open: false,
     component: null,
   });
-  const token = window.localStorage.getItem("token");
-  // const token = true;
-  const history = useHistory();
-  const changeRouterMypage = useCallback(() => {
-    history.push("/Mypage");
-  }, [history]);
-  const HeaderMenu = useMemo(() => {
-    return token ? (
-      <>
-        <span onClick={changeRouterMypage}>마이페이지</span>
-        <Button
-          backGroundColor="black"
-          onClick={() => {
-            setOpen({ open: true, component: "logout" });
-          }}
-        >
-          로그아웃
-        </Button>
-      </>
-    ) : (
-      <>
-        <Button
-          backGroundColor="black"
-          onClick={() => {
-            setOpen({ open: true, component: "login" });
-          }}
-        >
-          로그인
-        </Button>
-        <Button
-          backGroundColor="black"
-          onClick={() => {
-            setOpen({ open: true, component: "register" });
-          }}
-        >
-          회원가입
-        </Button>
-      </>
-    );
-  }, [changeRouterMypage, token]);
+  const userInfo = useRecoilValue(authStore)
+  const setUserInfo = useSetRecoilState(authStore)
+  const token = window.localStorage.getItem("jupjup_token");
+  useEffect(()=> {
+    if(token) {
+      Auth.loadUserInfo().then((res) => {
+      console.log(res)
+      setUserInfo(res.data.data)
+     })
+    }
+  }, [  setUserInfo])
+  const {auth_Idx, classNumber, email, name, roles} = userInfo || {};
+  console.log(roles, "asdasd")
   return (
     <>
       <HeaderWrapper>
         <Logo src={logo} />
-        <ButtonWrapper>{HeaderMenu}</ButtonWrapper>
+        <ButtonWrapper admin={roles || ""}>
+          <Buttons token={token} authority={roles || ""} setOpen={setOpen} />
+        </ButtonWrapper>
       </HeaderWrapper>
       <Modal
         is_open={is_open.open}
         setOpen={() => {
-          setOpen({ open: false });
+          setOpen({ open: false });   
         }}
       >
         {is_open.component === "login" && <Login setOpen={setOpen} />}

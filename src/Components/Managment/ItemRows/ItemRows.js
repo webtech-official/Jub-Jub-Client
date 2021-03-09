@@ -1,7 +1,7 @@
 import React from "react";
-import { student } from "./dummy.json";
-import ItemInfo from "./ItemInfo";
-import * as S from "./Styled";
+import { student } from "../dummy.json";
+import ItemInfo from "../ItemInfo/ItemInfo";
+import * as S from "../Styled";
 
 const ItemRows = ({ page, search }) => {
   const rows = student

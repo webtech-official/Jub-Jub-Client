@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { ItemPage, Search } from "../../Styles";
-import ItemRows from "./ItemRows";
+import ItemRows from "./ItemRows/ItemRows";
 import { student } from "./dummy.json";
 import * as S from "./Styled";
-import RentalList from "./Rental/RentalList";
+import RentalList from "./Rental/RentalList/RentalList";
 
 const Management = () => {
   const [page, setPage] = useState(1);
