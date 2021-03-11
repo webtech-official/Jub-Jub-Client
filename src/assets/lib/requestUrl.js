@@ -15,10 +15,10 @@ export const AUTH = {
 
 export const ADMIN = {
   applyView: () => {
-    return `/applyview`;
+    return `/admin/applyview`;
   },
   approved: (eqa_Idx) => {
-    return `/approved/${eqa_Idx}`;
+    return `/admin/approved/${eqa_Idx}`;
   },
   equipment: () => {
     return `/equipment/`;
@@ -27,14 +27,17 @@ export const ADMIN = {
     return `/equipment/findidx/${idx}`;
   }, ///GET - 상세 조회, PUT - 기자재 수량 변경
   equipmentAllUpdate: (oldName) => {
-    return `/equipmentAll/${oldName}`;
+    return `/admin/equipmentAll/${oldName}`;
   },
   reject: (eqa_Idx) => {
-    return `/reject/${eqa_Idx}`;
+    return `/admin/reject/${eqa_Idx}`;
   },
   return: (eqa_Idx) => {
-    return `/return/${eqa_Idx}`;
+    return `/admin/return/${eqa_Idx}`;
   },
+  rental : (eqa_Idx) => {
+    return `/admin/rental/${eqa_Idx}`
+  }
 };
 
 export const STUDENT = {
@@ -45,10 +48,10 @@ export const STUDENT = {
 
 export const LAPTOP = {
   laptop: () => {
-    return `/laptop`;
+    return `/admin/laptop`;
   }, //GET - 노트북 전체 조회, POST - 노트북 등록
   laptopDetail: (laptopSerialNumber) => {
-    return `/laptop/${laptopSerialNumber}`;
+    return `/admin/laptop/${laptopSerialNumber}`;
   }, // GET - 노트북 조회, PUT - 노트북 수정
 };
 
