@@ -1,14 +1,14 @@
 import React from "react";
 
 const ItemInfo = ({ itemInfo, setOpen }) => {
-  const { id, category, name, amount } = itemInfo;
+  const { equ_Idx, content, name, count } = itemInfo;
   return (
     <>
       <div className="itemBox">
-        <span className="itemNumber">{id}</span>
-        <span className="category">{category}</span>
+        <span className="itemNumber">{equ_Idx}</span>
+        <span className="category">{content}</span>
         <span className="itemName">{name}</span>
-        <span className="itemAmount">{amount}</span>
+        <span className="itemAmount">{count}</span>
         <span className="btn">
           <span
             className="modify"

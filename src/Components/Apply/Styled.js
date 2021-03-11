@@ -29,7 +29,8 @@ const ContentBox = styled.div`
 `;
 
 const ApplyImg = styled.img`
-  width: 50%;
+  width: 45%;
+  margin : 5%;
 `;
 
 const ApplyBox = styled.div`
@@ -85,8 +86,26 @@ const SubBtn = styled.button`
   border-radius: 10px;
   border: none;
   font-size: 22px;
-  margin-top: 240px;
+  margin-top: 200px;
 `;
+
+const ReasonWrapper = styled.div`
+  display : flex;
+  flex-direction: column;
+`;
+
+const ReasonTitle = styled.span`
+  font-size: 20px;
+  margin : 8px 0px;
+`;
+
+const ReasonInput = styled.input`
+  padding : 7px;
+  font-size: 18px;
+  margin-left : 5px;
+  border : 2px solid black;
+`;
+
 
 const ModalBack = styled.div`
   width: 600px;
@@ -122,7 +141,7 @@ const CheckBtn = styled.button`
   border-radius: 10px;
   text-align: center;
   font-size: 24px;
-  margin-top: 40px;
+  margin-top: 30px;
   border: none;
 `;
 export {
@@ -137,6 +156,9 @@ export {
   BtnI,
   BtnSum,
   SubBtn,
+  ReasonWrapper,
+  ReasonTitle,
+  ReasonInput,
   ModalBack,
   CheckBtn,
   ModalContentWrapper,

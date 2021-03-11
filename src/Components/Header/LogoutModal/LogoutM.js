@@ -18,9 +18,9 @@ const LogoutM = ({setOpen}) => {
     }
     return (
         <S.ModalBack>
-            <div>
+            <S.ModalCloseBtnImageWrapper>
                 <S.ModalCloseBtnImage src={X} alt="close_btn" onClick={() => setOpen(false)}/>
-            </div>                
+            </S.ModalCloseBtnImageWrapper>                
             <S.ModalContentWrapper>
                 <S.ModalText>
                     로그아웃 하시겠습니까?

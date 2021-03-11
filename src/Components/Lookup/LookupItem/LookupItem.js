@@ -1,16 +1,14 @@
 import React, { useEffect } from "react";
 import { useRecoilValue } from "recoil";
-import Admin from "../../../assets/Api/Admin";
 import { authStore } from "../../../Util/AuthStore/AuthStore";
 
 const LookupItem = ({ itemInfo, history }) => {
   const { equ_Idx, content, name, count } = itemInfo;
   const userInfo = useRecoilValue(authStore)
-  const {roles} = userInfo;
+  const { roles } = userInfo || {}
   const handleDetailInfo = () => {
-    if(roles[0] === "ROLE_ADMIN") {
-      alert("[관리자는 신청할 수 없습니다]")
-    } else if(roles[0] === "ROLE_USER") {
+    console.log(roles[0], "lookupitem roles")
+    if(roles) {
       history.push(`/Apply/${equ_Idx}`);
     } else {
       alert("[로그인을 해야합니다]")

@@ -12,7 +12,6 @@ import {equipmentListState} from "../../Util/AdminStore/AdminStore"
 const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
-  const [items] = useState(data);
   const [equipmentList, setEquipmentList] = useRecoilState(equipmentListState)
   useEffect(() => {
     Admin.equipmentInfoAll().then(res => {

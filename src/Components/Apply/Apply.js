@@ -1,54 +1,72 @@
 import React, { useCallback, useEffect, useState } from "react";
 import * as S from "./Styled"
-import { TestImg } from "../../img/index";
 import Check from "./Check";
 import { Modal } from "../../Styles";
-import { useRecoilValue } from "recoil";
-import { equipmentListState } from "../../Util/AdminStore/AdminStore";
+import { useRecoilState } from "recoil";
+import { equipmentItemState } from "../../Util/AdminStore/AdminStore";
 import Admin from "../../assets/Api/Admin";
+import Student from "../../assets/Api/Student";
+import { useHistory } from "react-router";
 
 const Apply = ({match}) => {
-  let [applSort] = useState("태블릿");
   let [applSum, setApplSum] = useState(0);
-  const equipmentList = useRecoilValue(equipmentListState);
+  const [reason, setReason] = useState("")
+  const [equipmentItem, setEquipmentItem] = useRecoilState(equipmentItemState)
   const [is_open, setOpen] = useState({
     open: false,
     component: null,
   });
+  const history = useHistory();
+  const {equ_Idx, content, count, name, img_equipment} = equipmentItem; 
+  const handleChangeReason = useCallback((e) => {
+    setReason(e.target.value)
+  }, []);
   const CloseModal = () => {
     setOpen({ is_open: false });
   };
   const prevBtn = useCallback(() => {
     applSum >= 1 && setApplSum(applSum - 1);
   }, [applSum]);
+  const nextBtn = useCallback(() => {
+    console.log(count, applSum)
+    applSum < count ? setApplSum(applSum + 1) : alert("최대 수량입니다.");
+  }, [applSum, count]);
   const allowModalOpen = () => {
     setOpen({ open: true, component: "check" });
   };
-  const nextBtn = useCallback(() => {
-    setApplSum(applSum + 1);
-  }, [applSum]);
-  console.log(equipmentList, "apply equipment")
-    const applyItem = equipmentList.filter(
-      item => item.equ_Idx === parseInt(match.params.id))[0];
   useEffect(() => {
     Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
-      console.log(res.data)
+      console.log(res.data, equipmentItem ,"api equipdetail")
+      setEquipmentItem(res.data.data)
     })
-  })
-   return (
+  }, [match.params.id, setEquipmentItem])
+  const handleApply = () => {
+    Student.equipmentApplyStudent(name, applSum, reason).then(res => {
+      alert(res.data.msg)
+      setOpen(false)
+      history.push("/")
+    })
+  }
+  console.log(equipmentItem, "equipmentItem")
+  console.log(content)
+  return (
     <>
       <S.BackApply>
         <S.MainBox>
           <S.ContentBox>
-            <S.ApplyImg src={TestImg} />
+            <S.ApplyImg src={img_equipment} alt="ItemImage" />
             <S.ApplyBox>
-              <S.HeadingTitle>{"name"}</S.HeadingTitle>
-              <S.ApplySort>{"content"}</S.ApplySort>
+              <S.HeadingTitle>{name}</S.HeadingTitle>
+              <S.ApplySort>{content}</S.ApplySort>
               <S.BtnBox>
                 <S.BtnI onClick={prevBtn}>–</S.BtnI>
                 <S.BtnSum>{applSum}</S.BtnSum>
                 <S.BtnI onClick={nextBtn}>+</S.BtnI>
               </S.BtnBox>
+              <S.ReasonWrapper>
+                <S.ReasonTitle>목적</S.ReasonTitle>
+                <S.ReasonInput type="text" value={reason} onChange={handleChangeReason} />
+              </S.ReasonWrapper>
               <S.SubBtn onClick={allowModalOpen}>대여</S.SubBtn>
             </S.ApplyBox>
           </S.ContentBox>
@@ -56,7 +74,7 @@ const Apply = ({match}) => {
       </S.BackApply>
       <Modal is_open={is_open.open} setOpen={CloseModal}>
         {is_open.component === "check" && (
-          <Check sum={applSum} sort={applSort} />
+          <Check sum={applSum} sort={content} handleApply={handleApply} />
         )}
       </Modal>
     </>
