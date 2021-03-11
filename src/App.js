@@ -11,12 +11,14 @@ import {
 } from "./Container/index";
 import { Footer, Header } from "./Components/index";
 import { RecoilRoot } from "recoil";
+import { GlobalStyle } from "./Styles";
 
 const App = () => {
   return (
     <>
       <RecoilRoot>
         <Router>
+          <GlobalStyle />
           <Header />
           <Switch>
             <Route exact path="/" component={HomeContainer} />
