@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ItemPage, Search } from "../../../Styles";
 import Loading from "../../Lookup/Loading/Loading";
 import ItemInfo from "../ItemInfo/ItemInfo";
 import { data } from "./dummy.json";
 import * as S from "../Styled";
+import { constSelector, useRecoilState } from "recoil";
+import { laptopListState, laptopSpecListState } from "../../../Util/LaptopStore/LaptopStore";
+import Laptop from "../../../assets/Api/Laptop";
+import { fireEvent } from "@testing-library/dom";
 
 const LaptopList = ({ setOpen }) => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [items] = useState(data);
+  const [laptopList, setLaptopList] = useRecoilState(laptopListState)
+  const [laptopSpecList, setLaptopSpecList] = useRecoilState(laptopSpecListState)
+  useEffect(() => {
+    Laptop.laptopInfoAll().then(res => {
+      console.log(res)
+      setLaptopList(res.data.list)
+    })
+  }, [])
+  
   const LookupItemList = items
     .filter((item, index) => items[index].name.includes(search))
     .filter(

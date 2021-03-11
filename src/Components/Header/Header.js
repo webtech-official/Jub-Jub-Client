@@ -14,25 +14,28 @@ const Header = () => {
     open: false,
     component: null,
   });
+  const [roles, setRoles] = useState([
+    ""
+  ])
   const userInfo = useRecoilValue(authStore)
   const setUserInfo = useSetRecoilState(authStore)
   const token = window.localStorage.getItem("jupjup_token");
   useEffect(()=> {
     if(token) {
-      Auth.loadUserInfo().then((res) => {
-      console.log(res)
-      setUserInfo(res.data.data)
-     })
+        Auth.loadUserInfo().then((res) => {
+        console.log(res, "userInfo api")
+        setUserInfo(res.data)
+        setRoles(res.data.roles[0])
+      })
     }
-  }, [  setUserInfo])
-  const {auth_Idx, classNumber, email, name, roles} = userInfo || {};
-  console.log(roles, "asdasd")
+  }, [setUserInfo])
+  console.log(userInfo, "userInfo")
   return (
     <>
       <HeaderWrapper>
         <Logo src={logo} />
-        <ButtonWrapper admin={roles || ""}>
-          <Buttons token={token} authority={roles || ""} setOpen={setOpen} />
+        <ButtonWrapper roles={roles}>
+          <Buttons token={token} roles={roles} setOpen={setOpen} />
         </ButtonWrapper>
       </HeaderWrapper>
       <Modal

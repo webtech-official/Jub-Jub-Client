@@ -1,7 +1,8 @@
 import React from "react";
 import * as S from "./Styled";
 
-const Check = ({ sum, sort }) => {
+const Check = ({ sum, sort, handleApply }) => {
+  console.log(sort)
   return (
     <S.ModalBack>
       <S.ModalContentWrapper>
@@ -26,7 +27,7 @@ const Check = ({ sum, sort }) => {
             ""
           )}
         </S.ModalText>
-        <S.CheckBtn>확인</S.CheckBtn>
+        <S.CheckBtn onClick={handleApply}>확인</S.CheckBtn>
       </S.ModalContentWrapper>
     </S.ModalBack>
   );

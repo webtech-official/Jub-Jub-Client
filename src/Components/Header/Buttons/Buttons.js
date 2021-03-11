@@ -1,18 +1,24 @@
 import React from 'react'
 import { useHistory } from 'react-router';
 import {Button} from "../../../Styles/index";
-const Buttons = ({token, authority, setOpen}) => {
+
+
+const Buttons = ({token, roles, setOpen}) => {
   const history = useHistory(); 
   const changeRouterMypage = () => {
     history.push("/Mypage");
   }
+  const changeRouterAdmin = () => {
+    history.push("/Admin/Main")
+  }
+  console.log(roles, "buttons roles")
     return (
         <>
          {
           token ? (
-            authority[0] === "ROLE_ADMIN" ? (
+            roles === "ROLE_ADMIN" ? (
                 <>
-                  <span>기자재 관리</span>
+                  <span onClick={changeRouterAdmin}>기자재 관리</span>
                   <span>기자재 대여 승인</span>
                   <span>회원 관리</span>
                   <Button

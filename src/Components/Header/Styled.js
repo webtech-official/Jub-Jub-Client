@@ -18,7 +18,7 @@ export const Logo = styled.img`
 
 export const ButtonWrapper = styled.div`
   ${(props) =>
-    props.admin[0] === "ROLE_ADMIN"
+    props.roles === "ROLE_ADMIN"
       ? `
         width: 80%;
       ` : `
@@ -32,7 +32,7 @@ export const ButtonWrapper = styled.div`
     font-size: 16px;
     color: white;
     ${(props) =>
-    props.admin[0] === "ROLE_ADMIN"
+    props.roles === "ROLE_ADMIN"
         ? `
         float: left;
         margin-left: 12%;
@@ -45,7 +45,7 @@ export const ButtonWrapper = styled.div`
     }
   }
   ${(props) =>
-    props.admin[0] === "ROLE_ADMIN"
+    props.roles === "ROLE_ADMIN"
       ? `
         button {
     float: right;
@@ -65,6 +65,12 @@ export const ModalBack = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const ModalCloseBtnImageWrapper = styled.div`
+  display: flex;
+  justify-content: right;
+  float: right;   
 `;
 export const ModalCloseBtnImage = styled.img`
   justify-content: right;
