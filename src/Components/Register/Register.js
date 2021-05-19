@@ -3,7 +3,7 @@ import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
 import Auth from "../../assets/Api/Auth";
 
-const Register = ({ setOpen }) => {
+const Register = ({ toggleModal }) => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [pwcheck, setPwcheck] = useState("");
@@ -11,17 +11,18 @@ const Register = ({ setOpen }) => {
   const [classNumber, setClassNumber] = useState("");
   const handleRegister = () => {
     if (password === pwcheck) {
-      Auth.signup(classNumber, id, name, password).then((res) => {
-        const { msg } = res.data;
-        alert(msg);
-        setOpen({ open: false });
-      });
+      // Auth.signup(classNumber, id, name, password).then((res) => {
+      //   const { msg } = res.data;
+      //   alert(msg);
+      //   setOpen({ open: false });
+      // });
+      toggleModal()
     } else {
       alert("패스워드가 다릅니다");
     }
   };
   return (
-    <LoginRegister sideMark="!" setOpen={setOpen}>
+    <LoginRegister sideMark="!" toggleModal={toggleModal}>
       <S.TextBox>
         <div className="bigText">Register</div>
       </S.TextBox>

@@ -3,24 +3,23 @@ import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
 import Auth from "../../assets/Api/Auth";
 import { useHistory } from "react-router-dom";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useRecoilValue } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";
+import { loginSelector } from "../../Util/AuthStore/AuthSelector";
 
-const Login = ({ setOpen }) => {
-  const [id, setId] = useState("");
+const Login = ({ toggleModal , setModalName}) => {
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userInfo, setUserInfo] = useRecoilState(authStore)
 
   const history = useHistory();
-  
   const handleLogin = () => {
-    console.log(Auth.login(id, password));
-    Auth.login(id, password)
+    Auth.login(email, password)
       .then((res) => {
         const { code, data, msg } = res.data;
         console.log(data);
         alert(msg);
-        setOpen({ open: false });
+        toggleModal()
         if (code >= 0) {
           console.log(res.data)
           const {authority, classNum, email, name} = res.data.data;
@@ -30,19 +29,23 @@ const Login = ({ setOpen }) => {
         }
       })
       .catch((err) => console.log(err));
+    toggleModal()
+    history.push('/Main')
   }; 
   const onChangePassword = useCallback((e) => {
     setPassword(e.target.value);
   },[]);
   const onChangeId = useCallback((e) => {
-    setId(e.target.value);
-  },[]);
+    setEmail(e.target.value);
+  }, []);
+  const renderRegisterModal = () => {
+    setModalName("register")
+  }
   return (
-    <LoginRegister sideMark="?" setOpen={setOpen}>
-      {console.log(userInfo)}
+    <LoginRegister sideMark="?" toggleModal={toggleModal}>
       <S.TextBox>
         <div className="bigText">Log In</div>
-        <div className="goRegister" onClick={()=> setOpen({ open: true, component: "register" })}>
+        <div className="goRegister" onClick={renderRegisterModal}>
           가입하고 대여하기.
           <span className="registerKorText">회원가입</span>
         </div>

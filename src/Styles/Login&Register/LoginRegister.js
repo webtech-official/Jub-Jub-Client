@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./Styled";
 import { logo, X } from "../../img/index";
 
-const LoginRegister = ({ sideMark, children, setOpen }) => {
+const LoginRegister = ({ sideMark, children, toggleModal }) => {
   return (
     <S.ModalWrapper>
       <S.LeftContainer>
@@ -11,7 +11,7 @@ const LoginRegister = ({ sideMark, children, setOpen }) => {
       </S.LeftContainer>
       <S.RightContainer>
         <S.XMarkContainer>
-          <S.XMark src={X} onClick={() => setOpen({ open: false })} />
+          <S.XMark src={X} onClick={toggleModal} />
         </S.XMarkContainer>
         <S.ModalContentBox>{children}</S.ModalContentBox>
       </S.RightContainer>
