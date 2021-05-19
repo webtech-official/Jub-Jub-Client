@@ -3,6 +3,7 @@ import * as S from "./Styled";
 
 const Check = ({ sum, sort, handleApply }) => {
   console.log(sort)
+const Check = ({ sum, description, handleApply }) => {
   return (
     <S.ModalBack>
       <S.ModalContentWrapper>

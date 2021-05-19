@@ -22,7 +22,7 @@ const Apply = ({match}) => {
     setReason(e.target.value)
   }, []);
   const CloseModal = () => {
-    setOpen({ is_open: false });
+    toggleModal()
   };
   const prevBtn = useCallback(() => {
     applSum >= 1 && setApplSum(applSum - 1);
@@ -32,7 +32,7 @@ const Apply = ({match}) => {
     applSum < count ? setApplSum(applSum + 1) : alert("최대 수량입니다.");
   }, [applSum, count]);
   const allowModalOpen = () => {
-    setOpen({ open: true, component: "check" });
+    toggleModal()
   };
   useEffect(() => {
     Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
@@ -43,12 +43,15 @@ const Apply = ({match}) => {
   const handleApply = () => {
     Student.equipmentApplyStudent(name, applSum, reason).then(res => {
       alert(res.data.msg)
-      setOpen(false)
       history.push("/")
     })
+    toggleModal()
   }
   console.log(equipmentItem, "equipmentItem")
   console.log(content)
+  //리팩토링
+  const { isShow, toggleModal } = useModal();
+
   return (
     <>
       <S.BackApply>
@@ -72,11 +75,9 @@ const Apply = ({match}) => {
           </S.ContentBox>
         </S.MainBox>
       </S.BackApply>
-      <Modal is_open={is_open.open} setOpen={CloseModal}>
-        {is_open.component === "check" && (
-          <Check sum={applSum} sort={content} handleApply={handleApply} />
-        )}
-      </Modal>
+      <ModalPortal isShow={isShow}>
+          <Check sum={applSum} description={description} handleApply={handleApply} />
+      </ModalPortal>
     </>
   );
 };
