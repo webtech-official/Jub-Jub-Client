@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import StudentItem from "./StudentItem/StudentItem";
 import * as S from "./Styled";
-import { student } from "../Managment/dummy.json";
+import { auth_table } from "../../data/auth_table.json"
+import { equipment_allow_table } from "../../data/equipment_allow_table.json"
+import {equipment_table} from "../../data/equipment_table.json"
 
 const Student = ({ match }) => {
   // const [is_open, setOpen] = useState({
@@ -11,20 +12,15 @@ const Student = ({ match }) => {
   //   component: null,
   // });
   const [page, setPage] = useState(1);
-  const [items] = useState(data);
+  const [items] = useState(equipment_allow_table.filter(val => val.u_Idx === 33));
   const [status] = useState("");
-  const currentLength = items.filter((item) => {
-    return item.state.includes(status);
-  }).length;
+  const currentLength = items.length;
   const StudentItemList = items
-    .filter((item) => {
-      return item.state.includes(status);
-    })
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
-    .map((item, index) => <StudentItem itemInfo={item} key={index} />);
-  const user = student.filter(
+    .map((item, index) => <StudentItem itemInfo={{name : equipment_table[index].name, description : equipment_table[index].description}} allowInfo={item} key={index} />);
+  const user = auth_table.filter(
     (item) => item.classnum === parseInt(match.params.classnum)
   );
   const { classnum, name } = user[0];
