@@ -1,19 +1,20 @@
 import React from "react";
 
-const ItemInfo = ({ itemInfo, setOpen }) => {
-  const { equ_Idx, content, name, count } = itemInfo;
+const ItemInfo = ({ itemInfo, toggleModal, setModalName }) => {
+  const { equ_Idx, description, name, amount } = itemInfo || {};
   return (
     <>
       <div className="itemBox">
         <span className="itemNumber">{equ_Idx}</span>
-        <span className="category">{content}</span>
+        <span className="category">{description}</span>
         <span className="itemName">{name}</span>
-        <span className="itemAmount">{count}</span>
+        <span className="itemAmount">{amount}</span>
         <span className="btn">
           <span
             className="modify"
             onClick={() => {
-              setOpen({ open: true, component: "modify" });
+              toggleModal()
+              setModalName("modify")
             }}
           >
             수정

@@ -1,23 +1,21 @@
 import React, { useState } from "react";
-import { Modal } from "../../Styles";
+import useModal from "../../hooks/useModal";
+import ModalPortal from "../ModalPortal/ModalPortal";
 import AddModal from "./AddModal";
 import EquipmentList from "./EquipmentList/EquipmentList";
-import LaptopList from "./LaptopList/LaptopList";
 import ModifyModal from "./ModifyModal";
 
 const Admin = () => {
-  const [is_open, setOpen] = useState({
-    open: false,
-    component: null,
-  });
+  //리팩토링
+  const { isShow, toggleModal } = useModal();
+  const [modalName, setModalName] = useState("")
   return (
     <>
-      <EquipmentList setOpen={setOpen} />
-      <LaptopList setOpen={setOpen} />
-      <Modal is_open={is_open.open} setOpen={() => setOpen({ open: false })}>
-        {is_open.component === "add" && <AddModal setOpen={setOpen} />}
-        {is_open.component === "modify" && <ModifyModal setOpen={setOpen} />}
-      </Modal>
+      <EquipmentList toggleModal={toggleModal} setModalName={setModalName} />
+      <ModalPortal isShow={isShow} toggleModal={toggleModal}>
+        {modalName === "add" && <AddModal toggleModal={toggleModal} />}
+        {modalName === "modify" && <ModifyModal toggleModal={toggleModal} />}
+      </ModalPortal>
     </>
   );
 };
