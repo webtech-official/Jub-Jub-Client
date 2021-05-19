@@ -1,11 +1,35 @@
-# Jup-Jup-Client
+# JUPJUP
 
-JUP-JUP-Client
+## 서비스 소개
+줍줍은 교내 기자재 관리대장과 대여를 편리하게 만들어 관리 및 대여를 쉽게한 웹 서비스 입니다.
 
-# PR 규칙
+## 기능 
 
-1. Projects에 개발해야 할 것들 작성하기
-2. {seq}-{desc} 형식으로 develop에서 branch 만들기
-3. 개발해야할 것들에 필요한 파일만 건드리고, develop으로 PR 날리기
-4. PR 보고 내가 리뷰 해주면 marge 하기
-5. 개발 시작과 동시에 Project에서 자신이 맡은 블럭 In Progress로 옮기고 marge까지 완료가 되면 Done으로 옮기기
+### **기자재 관리**
+ - 현재 기자재 조회
+ - 기자재 추가
+ - 기자재 정보 수정 및 삭제
+
+### **기자재 대여**
+ - 기자재 대여
+ - 기자재 대여 로그 조회
+ - 기자재 대여 수락 및 거절
+ - 기자재 대여 연체 확인
+
+### **노트북**
+ - 학생 노트북 정보 확인
+ - 노트북 대여 및 스펙 조회
+ - 노트북 스펙 수정
+
+### **학생**
+ - 각 학생의 대여 로그 조회
+ - 학생 대여 통계 조회
+ - 학생 정보 확인
+
+
+## FE 개발 
+ - 신이삭 https://github.com/towel1017
+ - 유영재 https://github.com/pdlma0904
+ - 문상규 https://github.com/sanggyu0929
+ - 이선우 https://github.com/Goolgae
+ - 이서린 https://github.com/iseolin76
