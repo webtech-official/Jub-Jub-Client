@@ -8,4 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     option:focus {
         outline : none;
     }
+
+    button {
+        cursor: pointer;
+    }
 `;
