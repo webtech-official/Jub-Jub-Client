@@ -12,12 +12,12 @@ const NameContent = () => {
   );
 };
 
-const ModifyModal = ({ setOpen }) => {
+const ModifyModal = ({ toggleModal }) => {
   return (
     <S.ModifyWrapper>
       <S.ModifyContainer>
         <S.XContainer>
-          <S.XMark src={X} onClick={() => setOpen({ open: false })} />
+          <S.XMark src={X} onClick={toggleModal} />
         </S.XContainer>
         <S.ModifyContent>
           <S.ModifyImg></S.ModifyImg>
@@ -41,8 +41,8 @@ const ModifyModal = ({ setOpen }) => {
           <input type="file" id="file" />
         </S.ImgUpload>
         <S.BtnBox>
-          <span className="modifyBtn">수정</span>
-          <span className="deleteBtn">삭제</span>
+          <span className="modifyBtn" onClick={toggleModal} >수정</span>
+          <span className="deleteBtn" onClick={toggleModal} >삭제</span>
         </S.BtnBox>
       </S.ModifyContainer>
     </S.ModifyWrapper>
