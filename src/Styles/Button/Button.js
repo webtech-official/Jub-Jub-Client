@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { css } from "@emotion/css";
+import React from "react";
+import styled from "@emotion/styled";
 
-const Button = ({ backGroundColor, onClick, children }) => {
-  const [btnName] = useState(children);
-  const buttonStyle = css`
-    width: ${btnName.length > 3 ? `120px` : `100px`};
+  export const Button = styled.button`
+    width: ${(props) => props.isBig ? "120px" : "100px"};
     height: fit-content;
-    background-color: ${backGroundColor};
+    background-color: ${(props) => `${props.backGroundColor}`};
     font-size: 16px;
     border: 1px solid #ffffff;
     border-radius: 10px;
@@ -19,11 +17,3 @@ const Button = ({ backGroundColor, onClick, children }) => {
       cursor: pointer;
     }
   `;
-  return (
-    <button className={buttonStyle} onClick={onClick}>
-      {btnName}
-    </button>
-  );
-};
-
-export default Button;
