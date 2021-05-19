@@ -50,6 +50,7 @@ export const AllowContainer = styled.div`
     width: 220px;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
     .Nobtn {
       font-weight:100;
       color: black;
@@ -127,4 +128,5 @@ export const CheckBtn = styled.button`
     font-size: 24px;
     margin-top: 40px;
     border: none;
+    cursor:pointer;
 `;

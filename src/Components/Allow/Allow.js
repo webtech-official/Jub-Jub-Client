@@ -3,21 +3,21 @@ import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import AllowItem from "./AllowItem/AllowItem";
 import * as S from "./Styled";
-import { Modal } from "../../Styles";
-import AllowM from "./AllowM";
+import AllowModal from "./AllowModal";
+import useModal from "../../hooks/useModal";
+import ModalPortal from "../ModalPortal/ModalPortal";
 
 const Allow = () => {
-  const [is_open, setOpen] = useState({
-    open: false,
-    component: null,
-    state: "",
-  });
+
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status] = useState("");
   // const statusFilter = (status) => {
   //   setStatus(status);
-  // };
+  // }; 
+  // 리팩토링
+  const {isShow, toggleModal} = useModal()
+  const [isAllow, setAllow] = useState(false)
   const currentLength = items.filter((item) => {
     return item.classNum.includes(status);
   }).length;
@@ -29,7 +29,7 @@ const Allow = () => {
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
     .map((item, index) => (
-      <AllowItem itemInfo={item} setOpen={setOpen} key={index} />
+      <AllowItem itemInfo={item} setAllow={setAllow} toggleModal={toggleModal} key={index} />
     ));
   return (
     <>
@@ -51,16 +51,11 @@ const Allow = () => {
           </S.AllowContainer>
         </S.AllowBox>
       </S.AllowWrapper>
-      <Modal
-        is_open={is_open.open}
-        setOpen={() => {
-          setOpen({ open: false });
-        }}
+      <ModalPortal
+        isShow={isShow}
       >
-        {is_open.component === "AllowM" && (
-          <AllowM setOpen={setOpen} state={is_open.state} />
-        )}
-      </Modal>
+          <AllowModal toggleModal={toggleModal} isAllow={isAllow} />
+      </ModalPortal>
     </>
   );
 };
