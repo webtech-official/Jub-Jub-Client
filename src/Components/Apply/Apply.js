@@ -1,23 +1,23 @@
 import React, { useCallback, useEffect, useState } from "react";
 import * as S from "./Styled"
 import Check from "./Check";
-import { Modal } from "../../Styles";
 import { useRecoilState } from "recoil";
 import { equipmentItemState } from "../../Util/AdminStore/AdminStore";
 import Admin from "../../assets/Api/Admin";
+import {equipment_table} from "../../data/equipment_table.json"
 import Student from "../../assets/Api/Student";
 import { useHistory } from "react-router";
+import ModalPortal from "../ModalPortal/ModalPortal";
+import useModal from "../../hooks/useModal";
+
+const oneThings = ['노트북', '태블릿', '모니터']
 
 const Apply = ({match}) => {
-  let [applSum, setApplSum] = useState(0);
+  const [applSum, setApplSum] = useState(0);
   const [reason, setReason] = useState("")
-  const [equipmentItem, setEquipmentItem] = useRecoilState(equipmentItemState)
-  const [is_open, setOpen] = useState({
-    open: false,
-    component: null,
-  });
+  const [equipmentItem, setEquipmentItem] = useState(equipment_table[2])
   const history = useHistory();
-  const {equ_Idx, content, count, name, img_equipment} = equipmentItem; 
+  const {equ_Idx, description, amount, name, img_equipment} = equipmentItem; 
   const handleChangeReason = useCallback((e) => {
     setReason(e.target.value)
   }, []);
@@ -28,27 +28,31 @@ const Apply = ({match}) => {
     applSum >= 1 && setApplSum(applSum - 1);
   }, [applSum]);
   const nextBtn = useCallback(() => {
-    console.log(count, applSum)
-    applSum < count ? setApplSum(applSum + 1) : alert("최대 수량입니다.");
-  }, [applSum, count]);
+    console.log(amount, applSum)
+    applSum < amount ? setApplSum(applSum + 1) : alert("최대 수량입니다.");
+  }, [applSum, amount]);
   const allowModalOpen = () => {
     toggleModal()
   };
-  useEffect(() => {
-    Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
-      console.log(res.data, equipmentItem ,"api equipdetail")
-      setEquipmentItem(res.data.data)
-    })
-  }, [match.params.id, setEquipmentItem])
+  // useEffect(() => {
+  //   Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
+  //     console.log(res.data, equipmentItem ,"api equipdetail")
+  //     setEquipmentItem(res.data.data)
+  //   })
+  // }, [match.params.id, setEquipmentItem])
   const handleApply = () => {
-    Student.equipmentApplyStudent(name, applSum, reason).then(res => {
-      alert(res.data.msg)
-      history.push("/")
-    })
+    // Student.equipmentApplyStudent(name, applSum, reason).then(res => {
+    //   alert(res.data.msg)
+    //   setOpen(false)
+    //   history.push("/")
+    // })
+    if (applSum === 0) {
+    } else if ((oneThings.indexOf(description) !== -1) && applSum > 1) {
+    } else {
+      history.push('/Main')
+    }
     toggleModal()
   }
-  console.log(equipmentItem, "equipmentItem")
-  console.log(content)
   //리팩토링
   const { isShow, toggleModal } = useModal();
 
@@ -60,7 +64,7 @@ const Apply = ({match}) => {
             <S.ApplyImg src={img_equipment} alt="ItemImage" />
             <S.ApplyBox>
               <S.HeadingTitle>{name}</S.HeadingTitle>
-              <S.ApplySort>{content}</S.ApplySort>
+              <S.ApplySort>{description}</S.ApplySort>
               <S.BtnBox>
                 <S.BtnI onClick={prevBtn}>–</S.BtnI>
                 <S.BtnSum>{applSum}</S.BtnSum>
