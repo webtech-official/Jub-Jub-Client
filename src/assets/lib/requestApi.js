@@ -1,4 +1,5 @@
 import axios from "axios";
+import { BASE_URL, BASE_HEADER } from "../../config/config.json";
 export const methodType = {
   GET: "get",
   POST: "post",
@@ -9,7 +10,6 @@ export const ACCESS_TOKEN_NAME = "Authorization";
 
 // 토큰 없는 파라미터가 필요한 api 요청
 export const requestApiWithBodyWithoutToken = async (
-  BASE_URL,
   method,
   url,
   body,
@@ -18,10 +18,7 @@ export const requestApiWithBodyWithoutToken = async (
   try {
     const res = await axios[method](BASE_URL + url, body, {
       headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type,Authorization",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
-        "Access-Control-Allow-Credentials": "true",
+        BASE_HEADER,
         ...header,
       },
     });
@@ -32,7 +29,6 @@ export const requestApiWithBodyWithoutToken = async (
 };
 //토큰과 파라미터 없는 api 요청
 export const requestApiWithoutBodyWithoutToken = async (
-  BASE_URL,
   method,
   url,
   header
@@ -40,10 +36,7 @@ export const requestApiWithoutBodyWithoutToken = async (
   try {
     const res = await axios[method](BASE_URL + url, {
       headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type,Authorization",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
-        "Access-Control-Allow-Credentials": "true",
+        BASE_HEADER,
         ...header,
       },
     });
@@ -54,7 +47,6 @@ export const requestApiWithoutBodyWithoutToken = async (
 };
 //토큰이 필요한 파라미터 없는 api 요청
 export const requestApiWithoutBodyWithToken = async (
-  BASE_URL,
   method,
   url,
   header
@@ -64,10 +56,7 @@ export const requestApiWithoutBodyWithToken = async (
     const res = await axios[method](BASE_URL + url, {
       headers: {
         [ACCESS_TOKEN_NAME]: `${accessToken}`,
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type,Authorization",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
-        "Access-Control-Allow-Credentials": "true",
+        BASE_HEADER,
         ...header,
       },
     });
@@ -79,7 +68,6 @@ export const requestApiWithoutBodyWithToken = async (
 
 //토큰과 파라미터가 모두 필요한 API 요청
 export const requestApiWithBodyWithToken = async (
-  BASE_URL,
   method,
   body,
   url,
@@ -90,10 +78,7 @@ export const requestApiWithBodyWithToken = async (
     const res = await axios[method](BASE_URL + url, body, {
       headers: {
         "Authorization" : `${accessToken}`,
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type,Authorization",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
-        "Access-Control-Allow-Credentials": "true",
+        BASE_HEADER,
         ...header,
       },
     });

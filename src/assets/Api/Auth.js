@@ -1,5 +1,4 @@
-import { methodType, requestApiWithBodyWithoutToken, requestApiWithoutBodyWithoutToken, requestApiWithoutBodyWithToken } from "../lib/requestApi";
-import { BASE_URL } from "../../config/config.json";
+import { methodType, requestApiWithBodyWithoutToken, requestApiWithoutBodyWithToken } from "../lib/requestApi";
 import { AUTH } from "../lib/requestUrl";
 class Auth {
   async login(email, password) {
@@ -9,7 +8,6 @@ class Auth {
         password,
       };
       const response = requestApiWithBodyWithoutToken(
-        BASE_URL,
         methodType.POST,
         AUTH.login(),
         body,
@@ -29,7 +27,6 @@ class Auth {
         password,
       };
       const response = requestApiWithBodyWithoutToken(
-        BASE_URL,
         methodType.POST,
         AUTH.signup(),
         body,
@@ -43,7 +40,6 @@ class Auth {
   async logout() {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.POST,
         AUTH.logout(),
         {}
@@ -56,7 +52,6 @@ class Auth {
   async loadUserInfo() {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.GET,
         AUTH.userinfo(),
         {}

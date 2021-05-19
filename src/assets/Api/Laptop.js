@@ -1,4 +1,3 @@
-import { BASE_URL } from "../../config/config.json";
 import {
   methodType,
   requestApiWithBodyWithToken,
@@ -9,7 +8,6 @@ class Laptop {
   async laptopInfoAll() {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.GET,
         LAPTOP.laptop(),
         {}
@@ -37,7 +35,6 @@ class Laptop {
         studentName,
       };
       const response = requestApiWithBodyWithToken(
-        BASE_URL,
         methodType.POST,
         body,
         LAPTOP.laptop(),
@@ -51,7 +48,6 @@ class Laptop {
   async laptopDetail(laptopSerialNumber) {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.GET,
         LAPTOP.laptopDetail(laptopSerialNumber),
         {}
@@ -68,7 +64,6 @@ class Laptop {
         laptopName,
       };
       const response = requestApiWithBodyWithToken(
-        BASE_URL,
         methodType.PUT,
         body,
         LAPTOP.laptopDetail(laptopSerialNumber),
