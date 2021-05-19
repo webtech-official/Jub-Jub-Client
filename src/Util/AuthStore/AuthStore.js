@@ -2,5 +2,9 @@ import { atom } from "recoil";
 
 export const authStore = atom({
     key : "userInfoState",
-    default  : {},
+    default: {
+        roles: "ROLE_ADMIN"
+    },
 })
+
+
