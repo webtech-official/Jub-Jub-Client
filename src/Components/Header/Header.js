@@ -1,55 +1,45 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Login, Register } from "..";
-import LogoutM from "./LogoutModal/LogoutM";
+import LogoutModal from "../LogoutModal/LogoutModal";
 import { logo } from "../../img/index";
-import { Modal } from "../../Styles";
 import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
-import { useRecoilValue, useSetRecoilState } from "recoil";
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";
 import Buttons from "./Buttons/Buttons";
 import Auth from "../../assets/Api/Auth";
+import useModal from "../../hooks/useModal";
+import ModalPortal from "../ModalPortal/ModalPortal";
+import { userInfoSelector } from "../../Util/AuthStore/AuthSelector";
 
 const Header = () => {
-  const [is_open, setOpen] = useState({
-    open: false,
-    component: null,
-  });
-  const [roles, setRoles] = useState([
-    ""
-  ])
-  const userInfo = useRecoilValue(authStore)
-  const setUserInfo = useSetRecoilState(authStore)
+  const [userInfo, setUserInfo] = useRecoilState(authStore)
+  const loadUserInfo = useRecoilValue(userInfoSelector)
   const token = window.localStorage.getItem("jupjup_token");
-  useEffect(()=> {
-    if(token) {
-        Auth.loadUserInfo().then((res) => {
-        console.log(res, "userInfo api")
-        setUserInfo(res.data)
-        setRoles(res.data.roles[0])
-      })
-    }
-  }, [setUserInfo])
-  console.log(userInfo, "userInfo")
+  // useEffect(()=> {
+  //   setUserInfo(loadUserInfo)
+  // }, [setUserInfo, loadUserInfo])
+  // console.log({}, "userInfo")
+  //새로 작성한 리펙토링 코드 
+  const {isShow, toggleModal} = useModal()
+  const [modalName, setModalName] = useState("register")
+  const {roles} = userInfo || ""
   return (
     <>
       <HeaderWrapper>
         <Logo src={logo} />
         <ButtonWrapper roles={roles}>
-          <Buttons token={token} roles={roles} setOpen={setOpen} />
+          <Buttons token={token} roles={roles} setModalName={setModalName} toggleModal={toggleModal}/>
         </ButtonWrapper>
       </HeaderWrapper>
-      <Modal
-        is_open={is_open.open}
-        setOpen={() => {
-          setOpen({ open: false });   
-        }}
-      >
-        {is_open.component === "login" && <Login setOpen={setOpen} />}
-        {is_open.component === "register" && <Register setOpen={setOpen} />}
-        {is_open.component === "logout" && <LogoutM setOpen={setOpen} />}
-      </Modal>
+      <ModalPortal isShow={isShow}>
+        {modalName === "login" && <Login toggleModal={toggleModal} setModalName={setModalName} />}
+        {modalName === "register" && <Register toggleModal={toggleModal} />}
+        {modalName === "logout" && <LogoutModal toggleModal={toggleModal} />}
+      </ModalPortal>
     </>
   );
 };
+
+
 
 export default Header;
