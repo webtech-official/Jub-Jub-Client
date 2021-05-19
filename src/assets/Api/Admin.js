@@ -3,14 +3,12 @@ import {
   requestApiWithBodyWithToken,
   requestApiWithoutBodyWithToken,
 } from "../lib/requestApi";
-import { BASE_URL } from "../../config/config.json";
 import { ADMIN } from "../lib/requestUrl";
 class Admin {
   //신청 전체 조회
   async applyView() {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.GET,
         ADMIN.applyView(),
         {}
@@ -24,7 +22,6 @@ class Admin {
   async approved(eqa_Idx) {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.PUT,
         ADMIN.approved(eqa_Idx),
         {}
@@ -44,7 +41,6 @@ class Admin {
         name,
       };
       const response = requestApiWithBodyWithToken(
-        BASE_URL,
         methodType.POST,
         body,
         ADMIN.equipment(),
@@ -59,7 +55,6 @@ class Admin {
   async equipmentInfoAll() {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.GET,
         ADMIN.equipment(),
         {}
@@ -73,7 +68,6 @@ class Admin {
   async equipmentDetail(idx) {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.GET,
         ADMIN.equipmentDetail(idx),
         {}
@@ -91,7 +85,6 @@ class Admin {
         name,
       };
       const response = requestApiWithBodyWithToken(
-        BASE_URL,
         methodType.PUT,
         body,
         ADMIN.equipmentDetail(name),
@@ -111,14 +104,21 @@ class Admin {
         img_equipment,
         newName,
       };
-      const response = requestApiWithBodyWithToken(BASE_URL, methodType.PUT);
-    } catch (error) {}
+      const response = requestApiWithBodyWithToken(
+        methodType.PUT,
+        body,
+        ADMIN.equipmentAllUpdate(oldName),
+        {}
+      );
+      return response;
+    } catch (error) {
+      throw new Error(error)
+    }
   }
   //신청 거절
   async reject(eqa_Idx) {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.PUT,
         ADMIN.reject(eqa_Idx),
         {}
@@ -132,7 +132,6 @@ class Admin {
   async return(eqa_idx) {
     try {
       const response = requestApiWithoutBodyWithToken(
-        BASE_URL,
         methodType.PUT,
         ADMIN.return(eqa_idx),
         {}

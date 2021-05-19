@@ -1,0 +1,904 @@
+{
+      "equipment_allow_table" : [
+	{
+		"equ_Idx": 25,
+		"u_Idx": 71,
+		"apply_Idx": 1,
+		"amount": 36,
+		"region": "Lorem",
+		"status": 2,
+		"allow_at": "2020-09-05PDT02:09:09"
+	},
+	{
+		"equ_Idx": 1,
+		"u_Idx": 33,
+		"apply_Idx": 2,
+		"amount": 14,
+		"region": "Lorem ipsum dolor",
+		"status": 2,
+		"allow_at": "2121-04-15PDT07:04:26"
+	},
+	{
+		"equ_Idx": 29,
+		"u_Idx": 72,
+		"apply_Idx": 3,
+		"amount": 16,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 2,
+		"allow_at": "2020-12-27PST07:12:05"
+	},
+	{
+		"equ_Idx": 32,
+		"u_Idx": 29,
+		"apply_Idx": 4,
+		"amount": 7,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 1,
+		"allow_at": "2020-06-03PDT09:06:18"
+	},
+	{
+		"equ_Idx": 7,
+		"u_Idx": 67,
+		"apply_Idx": 5,
+		"amount": 21,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 3,
+		"allow_at": "2222-04-09PDT04:04:48"
+	},
+	{
+		"equ_Idx": 44,
+		"u_Idx": 26,
+		"apply_Idx": 6,
+		"amount": 16,
+		"region": "Lorem ipsum dolor sit",
+		"status": 3,
+		"allow_at": "2020-11-25PST06:11:34"
+	},
+	{
+		"equ_Idx": 15,
+		"u_Idx": 70,
+		"apply_Idx": 7,
+		"amount": 50,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 2,
+		"allow_at": "2121-10-13PDT11:10:50"
+	},
+	{
+		"equ_Idx": 14,
+		"u_Idx": 92,
+		"apply_Idx": 8,
+		"amount": 33,
+		"region": "Lorem ipsum dolor sit",
+		"status": 3,
+		"allow_at": "2121-12-30PST05:12:18"
+	},
+	{
+		"equ_Idx": 16,
+		"u_Idx": 60,
+		"apply_Idx": 9,
+		"amount": 13,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 3,
+		"allow_at": "2121-08-15PDT05:08:01"
+	},
+	{
+		"equ_Idx": 26,
+		"u_Idx": 33,
+		"apply_Idx": 10,
+		"amount": 48,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 2,
+		"allow_at": "2121-09-24PDT03:09:35"
+	},
+	{
+		"equ_Idx": 31,
+		"u_Idx": 46,
+		"apply_Idx": 11,
+		"amount": 34,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 1,
+		"allow_at": "2121-03-22PDT04:03:41"
+	},
+	{
+		"equ_Idx": 40,
+		"u_Idx": 15,
+		"apply_Idx": 12,
+		"amount": 50,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 1,
+		"allow_at": "2020-08-14PDT03:08:36"
+	},
+	{
+		"equ_Idx": 12,
+		"u_Idx": 49,
+		"apply_Idx": 13,
+		"amount": 12,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 1,
+		"allow_at": "2222-04-28PDT01:04:22"
+	},
+	{
+		"equ_Idx": 21,
+		"u_Idx": 37,
+		"apply_Idx": 14,
+		"amount": 11,
+		"region": "Lorem ipsum dolor",
+		"status": 1,
+		"allow_at": "2020-09-13PDT02:09:02"
+	},
+	{
+		"equ_Idx": 20,
+		"u_Idx": 39,
+		"apply_Idx": 15,
+		"amount": 48,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 2,
+		"allow_at": "2121-04-29PDT02:04:24"
+	},
+	{
+		"equ_Idx": 21,
+		"u_Idx": 69,
+		"apply_Idx": 16,
+		"amount": 48,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 1,
+		"allow_at": "2020-05-19PDT08:05:20"
+	},
+	{
+		"equ_Idx": 48,
+		"u_Idx": 19,
+		"apply_Idx": 17,
+		"amount": 45,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 3,
+		"allow_at": "2121-05-10PDT07:05:56"
+	},
+	{
+		"equ_Idx": 23,
+		"u_Idx": 74,
+		"apply_Idx": 18,
+		"amount": 27,
+		"region": "Lorem ipsum",
+		"status": 3,
+		"allow_at": "2121-04-03PDT03:04:38"
+	},
+	{
+		"equ_Idx": 38,
+		"u_Idx": 54,
+		"apply_Idx": 19,
+		"amount": 1,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 1,
+		"allow_at": "2121-12-07PST08:12:09"
+	},
+	{
+		"equ_Idx": 19,
+		"u_Idx": 25,
+		"apply_Idx": 20,
+		"amount": 50,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 1,
+		"allow_at": "2020-12-13PST04:12:57"
+	},
+	{
+		"equ_Idx": 45,
+		"u_Idx": 98,
+		"apply_Idx": 21,
+		"amount": 50,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 1,
+		"allow_at": "2121-01-11PST02:01:17"
+	},
+	{
+		"equ_Idx": 48,
+		"u_Idx": 26,
+		"apply_Idx": 22,
+		"amount": 48,
+		"region": "Lorem ipsum dolor",
+		"status": 1,
+		"allow_at": "2020-12-25PST08:12:35"
+	},
+	{
+		"equ_Idx": 12,
+		"u_Idx": 25,
+		"apply_Idx": 23,
+		"amount": 37,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 1,
+		"allow_at": "2121-04-30PDT10:04:32"
+	},
+	{
+		"equ_Idx": 18,
+		"u_Idx": 44,
+		"apply_Idx": 24,
+		"amount": 22,
+		"region": "Lorem",
+		"status": 2,
+		"allow_at": "2121-06-02PDT06:06:37"
+	},
+	{
+		"equ_Idx": 2,
+		"u_Idx": 71,
+		"apply_Idx": 25,
+		"amount": 30,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+		"status": 1,
+		"allow_at": "2020-11-17PST02:11:22"
+	},
+	{
+		"equ_Idx": 12,
+		"u_Idx": 14,
+		"apply_Idx": 26,
+		"amount": 43,
+		"region": "Lorem",
+		"status": 3,
+		"allow_at": "2121-08-16PDT04:08:21"
+	},
+	{
+		"equ_Idx": 45,
+		"u_Idx": 69,
+		"apply_Idx": 27,
+		"amount": 2,
+		"region": "Lorem ipsum",
+		"status": 3,
+		"allow_at": "2020-06-18PDT10:06:03"
+	},
+	{
+		"equ_Idx": 23,
+		"u_Idx": 48,
+		"apply_Idx": 28,
+		"amount": 46,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 2,
+		"allow_at": "2020-08-30PDT10:08:15"
+	},
+	{
+		"equ_Idx": 50,
+		"u_Idx": 98,
+		"apply_Idx": 29,
+		"amount": 21,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 3,
+		"allow_at": "2121-12-17PST11:12:22"
+	},
+	{
+		"equ_Idx": 31,
+		"u_Idx": 14,
+		"apply_Idx": 30,
+		"amount": 8,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 3,
+		"allow_at": "2121-05-12PDT02:05:26"
+	},
+	{
+		"equ_Idx": 21,
+		"u_Idx": 79,
+		"apply_Idx": 31,
+		"amount": 37,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 3,
+		"allow_at": "2020-07-11PDT01:07:14"
+	},
+	{
+		"equ_Idx": 14,
+		"u_Idx": 31,
+		"apply_Idx": 32,
+		"amount": 36,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 2,
+		"allow_at": "2020-08-16PDT01:08:10"
+	},
+	{
+		"equ_Idx": 28,
+		"u_Idx": 56,
+		"apply_Idx": 33,
+		"amount": 40,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 3,
+		"allow_at": "2121-07-13PDT05:07:55"
+	},
+	{
+		"equ_Idx": 29,
+		"u_Idx": 93,
+		"apply_Idx": 34,
+		"amount": 49,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 1,
+		"allow_at": "2222-02-07PST10:02:14"
+	},
+	{
+		"equ_Idx": 41,
+		"u_Idx": 30,
+		"apply_Idx": 35,
+		"amount": 16,
+		"region": "Lorem ipsum dolor",
+		"status": 3,
+		"allow_at": "2121-05-31PDT11:05:11"
+	},
+	{
+		"equ_Idx": 35,
+		"u_Idx": 60,
+		"apply_Idx": 36,
+		"amount": 17,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 3,
+		"allow_at": "2020-12-19PST07:12:41"
+	},
+	{
+		"equ_Idx": 34,
+		"u_Idx": 21,
+		"apply_Idx": 37,
+		"amount": 4,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 3,
+		"allow_at": "2020-05-15PDT07:05:44"
+	},
+	{
+		"equ_Idx": 12,
+		"u_Idx": 57,
+		"apply_Idx": 38,
+		"amount": 32,
+		"region": "Lorem ipsum",
+		"status": 2,
+		"allow_at": "2222-03-17PDT05:03:15"
+	},
+	{
+		"equ_Idx": 35,
+		"u_Idx": 22,
+		"apply_Idx": 39,
+		"amount": 37,
+		"region": "Lorem ipsum dolor",
+		"status": 1,
+		"allow_at": "2121-09-12PDT07:09:47"
+	},
+	{
+		"equ_Idx": 47,
+		"u_Idx": 53,
+		"apply_Idx": 40,
+		"amount": 18,
+		"region": "Lorem ipsum dolor",
+		"status": 2,
+		"allow_at": "2121-01-31PST05:01:59"
+	},
+	{
+		"equ_Idx": 13,
+		"u_Idx": 37,
+		"apply_Idx": 41,
+		"amount": 22,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 2,
+		"allow_at": "2222-02-02PST12:02:23"
+	},
+	{
+		"equ_Idx": 12,
+		"u_Idx": 46,
+		"apply_Idx": 42,
+		"amount": 28,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 2,
+		"allow_at": "2121-06-06PDT03:06:06"
+	},
+	{
+		"equ_Idx": 17,
+		"u_Idx": 19,
+		"apply_Idx": 43,
+		"amount": 40,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 1,
+		"allow_at": "2222-01-20PST06:01:25"
+	},
+	{
+		"equ_Idx": 40,
+		"u_Idx": 80,
+		"apply_Idx": 44,
+		"amount": 6,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+		"status": 1,
+		"allow_at": "2020-07-08PDT08:07:29"
+	},
+	{
+		"equ_Idx": 1,
+		"u_Idx": 97,
+		"apply_Idx": 45,
+		"amount": 43,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 2,
+		"allow_at": "2020-06-29PDT06:06:27"
+	},
+	{
+		"equ_Idx": 38,
+		"u_Idx": 41,
+		"apply_Idx": 46,
+		"amount": 46,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 2,
+		"allow_at": "2121-09-27PDT05:09:04"
+	},
+	{
+		"equ_Idx": 7,
+		"u_Idx": 50,
+		"apply_Idx": 47,
+		"amount": 2,
+		"region": "Lorem ipsum dolor sit",
+		"status": 1,
+		"allow_at": "2121-02-24PST05:02:53"
+	},
+	{
+		"equ_Idx": 30,
+		"u_Idx": 45,
+		"apply_Idx": 48,
+		"amount": 6,
+		"region": "Lorem ipsum dolor sit",
+		"status": 1,
+		"allow_at": "2020-12-28PST01:12:44"
+	},
+	{
+		"equ_Idx": 29,
+		"u_Idx": 52,
+		"apply_Idx": 49,
+		"amount": 34,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 1,
+		"allow_at": "2121-03-27PDT11:03:23"
+	},
+	{
+		"equ_Idx": 1,
+		"u_Idx": 70,
+		"apply_Idx": 50,
+		"amount": 48,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 2,
+		"allow_at": "2121-06-17PDT09:06:03"
+	},
+	{
+		"equ_Idx": 38,
+		"u_Idx": 27,
+		"apply_Idx": 51,
+		"amount": 33,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 3,
+		"allow_at": "2020-09-26PDT08:09:14"
+	},
+	{
+		"equ_Idx": 26,
+		"u_Idx": 81,
+		"apply_Idx": 52,
+		"amount": 37,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 2,
+		"allow_at": "2121-12-28PST01:12:51"
+	},
+	{
+		"equ_Idx": 28,
+		"u_Idx": 65,
+		"apply_Idx": 53,
+		"amount": 31,
+		"region": "Lorem ipsum dolor",
+		"status": 3,
+		"allow_at": "2222-03-28PDT12:03:55"
+	},
+	{
+		"equ_Idx": 10,
+		"u_Idx": 60,
+		"apply_Idx": 54,
+		"amount": 28,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 1,
+		"allow_at": "2121-09-15PDT03:09:17"
+	},
+	{
+		"equ_Idx": 41,
+		"u_Idx": 66,
+		"apply_Idx": 55,
+		"amount": 18,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 1,
+		"allow_at": "2121-09-19PDT08:09:25"
+	},
+	{
+		"equ_Idx": 3,
+		"u_Idx": 68,
+		"apply_Idx": 56,
+		"amount": 41,
+		"region": "Lorem ipsum",
+		"status": 3,
+		"allow_at": "2121-05-14PDT09:05:39"
+	},
+	{
+		"equ_Idx": 1,
+		"u_Idx": 94,
+		"apply_Idx": 57,
+		"amount": 50,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 2,
+		"allow_at": "2121-09-29PDT12:09:43"
+	},
+	{
+		"equ_Idx": 32,
+		"u_Idx": 99,
+		"apply_Idx": 58,
+		"amount": 43,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 1,
+		"allow_at": "2121-05-24PDT11:05:57"
+	},
+	{
+		"equ_Idx": 14,
+		"u_Idx": 38,
+		"apply_Idx": 59,
+		"amount": 30,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 2,
+		"allow_at": "2222-05-08PDT12:05:19"
+	},
+	{
+		"equ_Idx": 16,
+		"u_Idx": 99,
+		"apply_Idx": 60,
+		"amount": 33,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 3,
+		"allow_at": "2222-01-22PST09:01:20"
+	},
+	{
+		"equ_Idx": 25,
+		"u_Idx": 38,
+		"apply_Idx": 61,
+		"amount": 45,
+		"region": "Lorem",
+		"status": 2,
+		"allow_at": "2222-03-08PST06:03:23"
+	},
+	{
+		"equ_Idx": 48,
+		"u_Idx": 77,
+		"apply_Idx": 62,
+		"amount": 35,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 2,
+		"allow_at": "2222-04-17PDT02:04:01"
+	},
+	{
+		"equ_Idx": 9,
+		"u_Idx": 83,
+		"apply_Idx": 63,
+		"amount": 27,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 3,
+		"allow_at": "2020-08-10PDT11:08:29"
+	},
+	{
+		"equ_Idx": 26,
+		"u_Idx": 33,
+		"apply_Idx": 64,
+		"amount": 32,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 2,
+		"allow_at": "2222-01-07PST06:01:53"
+	},
+	{
+		"equ_Idx": 50,
+		"u_Idx": 29,
+		"apply_Idx": 65,
+		"amount": 10,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 3,
+		"allow_at": "2121-01-02PST05:01:05"
+	},
+	{
+		"equ_Idx": 22,
+		"u_Idx": 56,
+		"apply_Idx": 66,
+		"amount": 36,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+		"status": 3,
+		"allow_at": "2222-02-05PST12:02:24"
+	},
+	{
+		"equ_Idx": 40,
+		"u_Idx": 71,
+		"apply_Idx": 67,
+		"amount": 13,
+		"region": "Lorem ipsum dolor sit",
+		"status": 1,
+		"allow_at": "2222-02-14PST09:02:52"
+	},
+	{
+		"equ_Idx": 5,
+		"u_Idx": 70,
+		"apply_Idx": 68,
+		"amount": 13,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 2,
+		"allow_at": "2121-01-20PST12:01:02"
+	},
+	{
+		"equ_Idx": 25,
+		"u_Idx": 75,
+		"apply_Idx": 69,
+		"amount": 16,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 3,
+		"allow_at": "2121-10-11PDT09:10:09"
+	},
+	{
+		"equ_Idx": 31,
+		"u_Idx": 22,
+		"apply_Idx": 70,
+		"amount": 8,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 1,
+		"allow_at": "2121-08-13PDT02:08:43"
+	},
+	{
+		"equ_Idx": 28,
+		"u_Idx": 54,
+		"apply_Idx": 71,
+		"amount": 6,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+		"status": 2,
+		"allow_at": "2222-04-29PDT11:04:09"
+	},
+	{
+		"equ_Idx": 22,
+		"u_Idx": 89,
+		"apply_Idx": 72,
+		"amount": 37,
+		"region": "Lorem ipsum",
+		"status": 3,
+		"allow_at": "2222-03-19PDT01:03:40"
+	},
+	{
+		"equ_Idx": 49,
+		"u_Idx": 32,
+		"apply_Idx": 73,
+		"amount": 16,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 3,
+		"allow_at": "2121-03-03PST06:03:24"
+	},
+	{
+		"equ_Idx": 16,
+		"u_Idx": 47,
+		"apply_Idx": 74,
+		"amount": 8,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 2,
+		"allow_at": "2222-04-21PDT06:04:58"
+	},
+	{
+		"equ_Idx": 27,
+		"u_Idx": 85,
+		"apply_Idx": 75,
+		"amount": 9,
+		"region": "Lorem",
+		"status": 1,
+		"allow_at": "2020-07-11PDT04:07:02"
+	},
+	{
+		"equ_Idx": 15,
+		"u_Idx": 98,
+		"apply_Idx": 76,
+		"amount": 11,
+		"region": "Lorem ipsum dolor",
+		"status": 3,
+		"allow_at": "2020-12-15PST10:12:54"
+	},
+	{
+		"equ_Idx": 25,
+		"u_Idx": 50,
+		"apply_Idx": 77,
+		"amount": 9,
+		"region": "Lorem ipsum dolor sit",
+		"status": 2,
+		"allow_at": "2121-04-17PDT11:04:28"
+	},
+	{
+		"equ_Idx": 32,
+		"u_Idx": 26,
+		"apply_Idx": 78,
+		"amount": 17,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 1,
+		"allow_at": "2020-08-28PDT03:08:30"
+	},
+	{
+		"equ_Idx": 45,
+		"u_Idx": 92,
+		"apply_Idx": 79,
+		"amount": 41,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 3,
+		"allow_at": "2222-01-30PST05:01:23"
+	},
+	{
+		"equ_Idx": 30,
+		"u_Idx": 34,
+		"apply_Idx": 80,
+		"amount": 44,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 1,
+		"allow_at": "2121-07-29PDT02:07:28"
+	},
+	{
+		"equ_Idx": 4,
+		"u_Idx": 20,
+		"apply_Idx": 81,
+		"amount": 38,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+		"status": 3,
+		"allow_at": "2020-07-24PDT12:07:40"
+	},
+	{
+		"equ_Idx": 16,
+		"u_Idx": 94,
+		"apply_Idx": 82,
+		"amount": 5,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 2,
+		"allow_at": "2020-05-31PDT10:05:30"
+	},
+	{
+		"equ_Idx": 17,
+		"u_Idx": 63,
+		"apply_Idx": 83,
+		"amount": 41,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 2,
+		"allow_at": "2121-09-29PDT05:09:13"
+	},
+	{
+		"equ_Idx": 42,
+		"u_Idx": 15,
+		"apply_Idx": 84,
+		"amount": 29,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 1,
+		"allow_at": "2121-01-14PST05:01:36"
+	},
+	{
+		"equ_Idx": 2,
+		"u_Idx": 43,
+		"apply_Idx": 85,
+		"amount": 43,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 2,
+		"allow_at": "2121-02-20PST04:02:29"
+	},
+	{
+		"equ_Idx": 21,
+		"u_Idx": 77,
+		"apply_Idx": 86,
+		"amount": 49,
+		"region": "Lorem ipsum",
+		"status": 3,
+		"allow_at": "2121-12-14PST03:12:01"
+	},
+	{
+		"equ_Idx": 1,
+		"u_Idx": 50,
+		"apply_Idx": 87,
+		"amount": 4,
+		"region": "Lorem ipsum dolor",
+		"status": 1,
+		"allow_at": "2222-04-29PDT02:04:46"
+	},
+	{
+		"equ_Idx": 43,
+		"u_Idx": 80,
+		"apply_Idx": 88,
+		"amount": 34,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 3,
+		"allow_at": "2121-08-13PDT01:08:54"
+	},
+	{
+		"equ_Idx": 44,
+		"u_Idx": 43,
+		"apply_Idx": 89,
+		"amount": 46,
+		"region": "Lorem ipsum dolor",
+		"status": 3,
+		"allow_at": "2121-03-18PDT02:03:49"
+	},
+	{
+		"equ_Idx": 36,
+		"u_Idx": 75,
+		"apply_Idx": 90,
+		"amount": 3,
+		"region": "Lorem ipsum dolor sit",
+		"status": 2,
+		"allow_at": "2222-04-30PDT11:04:15"
+	},
+	{
+		"equ_Idx": 49,
+		"u_Idx": 12,
+		"apply_Idx": 91,
+		"amount": 7,
+		"region": "Lorem ipsum",
+		"status": 3,
+		"allow_at": "2121-05-21PDT04:05:30"
+	},
+	{
+		"equ_Idx": 22,
+		"u_Idx": 59,
+		"apply_Idx": 92,
+		"amount": 48,
+		"region": "Lorem ipsum dolor sit amet, consectetuer",
+		"status": 1,
+		"allow_at": "2020-07-09PDT04:07:56"
+	},
+	{
+		"equ_Idx": 23,
+		"u_Idx": 61,
+		"apply_Idx": 93,
+		"amount": 40,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"status": 1,
+		"allow_at": "2121-11-05PDT03:11:38"
+	},
+	{
+		"equ_Idx": 33,
+		"u_Idx": 13,
+		"apply_Idx": 94,
+		"amount": 35,
+		"region": "Lorem ipsum dolor sit amet,",
+		"status": 3,
+		"allow_at": "2121-07-24PDT08:07:02"
+	},
+	{
+		"equ_Idx": 2,
+		"u_Idx": 48,
+		"apply_Idx": 95,
+		"amount": 4,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 2,
+		"allow_at": "2020-06-30PDT10:06:37"
+	},
+	{
+		"equ_Idx": 4,
+		"u_Idx": 86,
+		"apply_Idx": 96,
+		"amount": 35,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+		"status": 3,
+		"allow_at": "2020-11-04PST08:11:03"
+	},
+	{
+		"equ_Idx": 48,
+		"u_Idx": 74,
+		"apply_Idx": 97,
+		"amount": 36,
+		"region": "Lorem ipsum dolor",
+		"status": 1,
+		"allow_at": "2121-04-17PDT10:04:06"
+	},
+	{
+		"equ_Idx": 2,
+		"u_Idx": 6,
+		"apply_Idx": 98,
+		"amount": 27,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur",
+		"status": 3,
+		"allow_at": "2222-01-27PST09:01:23"
+	},
+	{
+		"equ_Idx": 47,
+		"u_Idx": 34,
+		"apply_Idx": 99,
+		"amount": 30,
+		"region": "Lorem ipsum dolor",
+		"status": 2,
+		"allow_at": "2121-05-23PDT07:05:15"
+	},
+	{
+		"equ_Idx": 36,
+		"u_Idx": 75,
+		"apply_Idx": 100,
+		"amount": 2,
+		"region": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+		"status": 3,
+		"allow_at": "2121-12-18PST07:12:44"
+	}
+]
+}

@@ -12,6 +12,7 @@ import Footer from "./Footer/Footer";
 import Student from "./Student/Student";
 import PwChange from "./PwChange/PwChange";
 import Management from "./Managment/Management";
+import ModalPortal from "./ModalPortal/ModalPortal";
 
 export {
   Admin,
@@ -28,4 +29,5 @@ export {
   Student,
   PwChange,
   Management,
+  ModalPortal
 };

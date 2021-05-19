@@ -12,12 +12,12 @@ const NameContent = () => {
     );
   };
 
-const AddModal = ({ setOpen }) => {
+const AddModal = ({ toggleModal }) => {
   return (
     <S.ModifyWrapper>
       <S.ModifyContainer>
         <S.XContainer>
-          <S.XMark src={X} onClick={() => setOpen({ open: false })} />
+          <S.XMark src={X} onClick={toggleModal}/>
         </S.XContainer>
         <S.ModifyContent>
           <S.ModifyImg></S.ModifyImg>

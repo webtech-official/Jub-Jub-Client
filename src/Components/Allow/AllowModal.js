@@ -1,14 +1,14 @@
 import React from "react";
 import * as S from "./Styled";
 
-const Check = ({state}) => {
+const AllowModal = ({isAllow, toggleModal}) => {
     return (
         <S.ModalBack>
             <S.ModalContentWrapper>
                 <S.ModalText>
-                    { state } 하시겠습니까?
+                    { isAllow ? "수락" : "거절" } 하시겠습니까?
                 </S.ModalText>
-                <S.CheckBtn>
+                <S.CheckBtn onClick={toggleModal}>
                 확인
                 </S.CheckBtn>
             </S.ModalContentWrapper>
@@ -16,4 +16,4 @@ const Check = ({state}) => {
     )
 }
 
-export default Check;
+export default AllowModal;

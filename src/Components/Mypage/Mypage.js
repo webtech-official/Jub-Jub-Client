@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import MypageItem from "./MypageItem/MypageItem";
 import MypageSide from "./MypageSide/MypageSide";
 import * as S from "./Styled";
-import { Modal } from "../../Styles";
 import { PwChange } from "..";
+import ModalPortal from "../ModalPortal/ModalPortal";
+import useModal from "../../hooks/useModal";
+import { useRecoilValue } from "recoil";
+import {myEquipmentSelector} from "../../Util/MypageStore/MypageSelector"
 
 const Mypage = () => {
-  const [is_open, setOpen] = useState({
-    open: false,
-    component: null,
-  });
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status, setStatus] = useState("");
+  const myRentalList = useRecoilValue(myEquipmentSelector)
   const statusFilter = (status) => {
     setStatus(status);
   };
@@ -36,8 +36,6 @@ const Mypage = () => {
           <S.MySide>
             <MypageSide
               statusFilter={statusFilter}
-              setPage={setPage}
-              setOpen={setOpen}
             />
           </S.MySide>
           <S.MyContainer>
@@ -50,20 +48,14 @@ const Mypage = () => {
                 <span className="btn"></span>
               </div>
             </S.TitleBox>
-            <ItemPage id={page} setId={setPage} length={currentLength}>
-              {MypageItemList}
-            </ItemPage>
+            <Suspense fallback={<div>loading...</div>}>
+              <ItemPage id={page} setId={setPage} length={currentLength}>
+                {MypageItemList}
+              </ItemPage>
+            </Suspense>
           </S.MyContainer>
         </S.MyBox>
       </S.MyWrapper>
-      <Modal
-        is_open={is_open.open}
-        setOpen={() => {
-          setOpen({ open: false });
-        }}
-      >
-        {is_open.component === "pwChange" && <PwChange setOpen={setOpen} />}
-      </Modal>
     </>
   );
 };

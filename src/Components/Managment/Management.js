@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { ItemPage, Search } from "../../Styles";
 import ItemRows from "./ItemRows/ItemRows";
-import { student } from "./dummy.json";
+import { auth_table } from "../../data/auth_table.json";
 import * as S from "./Styled";
 import RentalList from "./Rental/RentalList/RentalList";
 
 const Management = () => {
   const [page, setPage] = useState(1);
-  const [items] = useState(student);
+  const [items] = useState(auth_table);
   const [search, setSearch] = useState("");
 
   return (

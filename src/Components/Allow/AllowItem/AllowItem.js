@@ -1,6 +1,6 @@
 import React from "react";
 
-const AllowItem = ({ itemInfo, setOpen }) => {
+const AllowItem = ({ itemInfo, toggleModal, setAllow }) => {
   const { classNum, category, name, amount } = itemInfo || {};
   return (
     <>
@@ -13,7 +13,8 @@ const AllowItem = ({ itemInfo, setOpen }) => {
           <span
             className="Yesbtn"
             onClick={() => {
-              setOpen({ open: true, component: "AllowM", state: "수락" });
+              toggleModal();
+              setAllow(true)
             }}
           >
             수락
@@ -21,7 +22,8 @@ const AllowItem = ({ itemInfo, setOpen }) => {
           <span
             className="Nobtn"
             onClick={() => {
-              setOpen({ open: true, component: "AllowM", state: "거절" });
+              toggleModal()
+              setAllow(false)
             }}
           >
             거절

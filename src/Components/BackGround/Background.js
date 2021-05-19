@@ -24,7 +24,7 @@ const Background = ({ size, textHide }) => {
           </div>
         </TextWrapper>
       ) : (
-        ""
+        null
       )}
       <SnowGlobeDom />
       <Ground />

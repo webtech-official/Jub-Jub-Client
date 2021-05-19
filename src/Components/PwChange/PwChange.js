@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
 
-const PwChange = ({ setOpen }) => {
+const PwChange = ({ toggleModal }) => {
   const [currentPw, setCurrentPw] = useState("");
   const [newPw, setNewPw] = useState("");
   const [newPwCheck, setNewPwCheck] = useState("");
   return (
-    <LoginRegister sideMark="&" setOpen={setOpen}>
+    <LoginRegister sideMark="&" toggleModal={toggleModal}>
       <S.TextBox>
         <div className="bigText">비밀번호 변경</div>
       </S.TextBox>
@@ -45,7 +45,7 @@ const PwChange = ({ setOpen }) => {
           </div>
         </div>
       </S.InputBox>
-      <S.LoginButton>변경</S.LoginButton>
+      <S.LoginButton onClick={toggleModal}>변경</S.LoginButton>
     </LoginRegister>
   );
 };

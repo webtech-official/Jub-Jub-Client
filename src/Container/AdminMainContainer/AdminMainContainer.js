@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
-import React from "react";
+import React from "react"
 import { Admin } from "../../Components";
 import { Background } from "../../Styles";
 
 const AdminMainWrapper = styled.div`
   position: absolute;
   width: 100%;
-  top: 113px;
-  height: 2010px;
+  top: 0px;
+  height: 1080px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -19,7 +19,7 @@ const AdminMainContainer = () => {
       <AdminMainWrapper>
         <Admin/>
       </AdminMainWrapper>
-      <Background textHide={true} size={2113}/>
+      <Background textHide={true} size={1080}/>
     </>
   );
 };
