@@ -1,0 +1,804 @@
+{
+      "laptop_spec_table" : [
+	{
+		"spec_Idx": 1,
+		"gpu": "Bulandshahr",
+		"cpu": "Anguilla",
+		"ram": "natoque penatibus",
+		"ssd": "ante",
+		"hdd": "Amet Consectetuer Associates"
+	},
+	{
+		"spec_Idx": 2,
+		"gpu": "Casperia",
+		"cpu": "Sint Maarten",
+		"ram": "non arcu.",
+		"ssd": "In",
+		"hdd": "Pharetra Ut Company"
+	},
+	{
+		"spec_Idx": 3,
+		"gpu": "Ivangorod",
+		"cpu": "Iceland",
+		"ram": "Praesent eu",
+		"ssd": "Donec",
+		"hdd": "A Institute"
+	},
+	{
+		"spec_Idx": 4,
+		"gpu": "Bally",
+		"cpu": "Burundi",
+		"ram": "nibh lacinia",
+		"ssd": "rhoncus",
+		"hdd": "Sit Incorporated"
+	},
+	{
+		"spec_Idx": 5,
+		"gpu": "San José",
+		"cpu": "Korea, North",
+		"ram": "sit amet",
+		"ssd": "faucibus",
+		"hdd": "Nullam Vitae Foundation"
+	},
+	{
+		"spec_Idx": 6,
+		"gpu": "Salvirola",
+		"cpu": "Honduras",
+		"ram": "luctus sit",
+		"ssd": "netus",
+		"hdd": "Aliquam Corp."
+	},
+	{
+		"spec_Idx": 7,
+		"gpu": "Castro",
+		"cpu": "American Samoa",
+		"ram": "ac orci.",
+		"ssd": "ante",
+		"hdd": "Volutpat Ornare Facilisis Company"
+	},
+	{
+		"spec_Idx": 8,
+		"gpu": "Sylvan Lake",
+		"cpu": "Kazakhstan",
+		"ram": "tellus eu",
+		"ssd": "Suspendisse",
+		"hdd": "Nec Corp."
+	},
+	{
+		"spec_Idx": 9,
+		"gpu": "Würzburg",
+		"cpu": "Mali",
+		"ram": "ipsum dolor",
+		"ssd": "interdum.",
+		"hdd": "At Incorporated"
+	},
+	{
+		"spec_Idx": 10,
+		"gpu": "Pierrefonds",
+		"cpu": "Cyprus",
+		"ram": "Integer eu",
+		"ssd": "auctor",
+		"hdd": "Nulla Donec Non Consulting"
+	},
+	{
+		"spec_Idx": 11,
+		"gpu": "Mattersburg",
+		"cpu": "Belarus",
+		"ram": "euismod est",
+		"ssd": "in,",
+		"hdd": "Iaculis PC"
+	},
+	{
+		"spec_Idx": 12,
+		"gpu": "Porvenir",
+		"cpu": "Holy See (Vatican City State)",
+		"ram": "ultricies dignissim",
+		"ssd": "nunc,",
+		"hdd": "Sem Corp."
+	},
+	{
+		"spec_Idx": 13,
+		"gpu": "Houdemont",
+		"cpu": "Indonesia",
+		"ram": "hendrerit a,",
+		"ssd": "nunc",
+		"hdd": "Neque In Associates"
+	},
+	{
+		"spec_Idx": 14,
+		"gpu": "Talcahuano",
+		"cpu": "Gibraltar",
+		"ram": "turpis vitae",
+		"ssd": "in",
+		"hdd": "Purus Accumsan Interdum Inc."
+	},
+	{
+		"spec_Idx": 15,
+		"gpu": "Venezia",
+		"cpu": "Central African Republic",
+		"ram": "iaculis quis,",
+		"ssd": "Sed",
+		"hdd": "Quis Institute"
+	},
+	{
+		"spec_Idx": 16,
+		"gpu": "Oberpullendorf",
+		"cpu": "Reunion",
+		"ram": "vitae, posuere",
+		"ssd": "Quisque",
+		"hdd": "Mauris LLC"
+	},
+	{
+		"spec_Idx": 17,
+		"gpu": "Charsadda",
+		"cpu": "Cape Verde",
+		"ram": "cursus purus.",
+		"ssd": "odio",
+		"hdd": "Sodales Nisi Foundation"
+	},
+	{
+		"spec_Idx": 18,
+		"gpu": "Cerreto di Spoleto",
+		"cpu": "Togo",
+		"ram": "diam luctus",
+		"ssd": "et",
+		"hdd": "Proin Foundation"
+	},
+	{
+		"spec_Idx": 19,
+		"gpu": "Jacksonville",
+		"cpu": "Namibia",
+		"ram": "mattis. Integer",
+		"ssd": "lacus.",
+		"hdd": "In Magna Industries"
+	},
+	{
+		"spec_Idx": 20,
+		"gpu": "Cavaion Veronese",
+		"cpu": "Angola",
+		"ram": "sagittis. Duis",
+		"ssd": "sit",
+		"hdd": "Nulla Aliquet Institute"
+	},
+	{
+		"spec_Idx": 21,
+		"gpu": "Montebello",
+		"cpu": "Reunion",
+		"ram": "a, malesuada",
+		"ssd": "non",
+		"hdd": "Mi Pede PC"
+	},
+	{
+		"spec_Idx": 22,
+		"gpu": "Baie-Comeau",
+		"cpu": "Bonaire, Sint Eustatius and Saba",
+		"ram": "semper et,",
+		"ssd": "Nulla",
+		"hdd": "Sed Foundation"
+	},
+	{
+		"spec_Idx": 23,
+		"gpu": "Hindeloopen",
+		"cpu": "Macao",
+		"ram": "malesuada vel,",
+		"ssd": "tempus",
+		"hdd": "Nunc Id PC"
+	},
+	{
+		"spec_Idx": 24,
+		"gpu": "Navsari",
+		"cpu": "British Indian Ocean Territory",
+		"ram": "Nulla eu",
+		"ssd": "cursus",
+		"hdd": "Felis Adipiscing Associates"
+	},
+	{
+		"spec_Idx": 25,
+		"gpu": "North Las Vegas",
+		"cpu": "Chile",
+		"ram": "molestie tortor",
+		"ssd": "lorem,",
+		"hdd": "Amet Consectetuer PC"
+	},
+	{
+		"spec_Idx": 26,
+		"gpu": "Pietraroja",
+		"cpu": "Italy",
+		"ram": "Sed nec",
+		"ssd": "massa.",
+		"hdd": "Mauris Non Industries"
+	},
+	{
+		"spec_Idx": 27,
+		"gpu": "Steenhuffel",
+		"cpu": "Heard Island and Mcdonald Islands",
+		"ram": "Praesent luctus.",
+		"ssd": "Duis",
+		"hdd": "Fringilla Porttitor Corporation"
+	},
+	{
+		"spec_Idx": 28,
+		"gpu": "Bradford",
+		"cpu": "Croatia",
+		"ram": "Aenean egestas",
+		"ssd": "amet",
+		"hdd": "Eget Massa Suspendisse Limited"
+	},
+	{
+		"spec_Idx": 29,
+		"gpu": "Tambaram",
+		"cpu": "Guyana",
+		"ram": "Ut nec",
+		"ssd": "magna",
+		"hdd": "Tincidunt Vehicula Inc."
+	},
+	{
+		"spec_Idx": 30,
+		"gpu": "Seilles",
+		"cpu": "United States Minor Outlying Islands",
+		"ram": "arcu iaculis",
+		"ssd": "mauris.",
+		"hdd": "Sem Pellentesque PC"
+	},
+	{
+		"spec_Idx": 31,
+		"gpu": "Shimoga",
+		"cpu": "Ireland",
+		"ram": "eleifend egestas.",
+		"ssd": "vitae",
+		"hdd": "Eros Nam Consequat Ltd"
+	},
+	{
+		"spec_Idx": 32,
+		"gpu": "Castiglione a Casauria",
+		"cpu": "India",
+		"ram": "consequat auctor,",
+		"ssd": "aliquet",
+		"hdd": "Malesuada LLC"
+	},
+	{
+		"spec_Idx": 33,
+		"gpu": "Sluizen",
+		"cpu": "Portugal",
+		"ram": "purus. Nullam",
+		"ssd": "diam",
+		"hdd": "Vestibulum Lorem Sit Industries"
+	},
+	{
+		"spec_Idx": 34,
+		"gpu": "Liévin",
+		"cpu": "Kenya",
+		"ram": "aliquet, metus",
+		"ssd": "elit",
+		"hdd": "Sociis LLC"
+	},
+	{
+		"spec_Idx": 35,
+		"gpu": "El Quisco",
+		"cpu": "Saint Barthélemy",
+		"ram": "diam nunc,",
+		"ssd": "ornare.",
+		"hdd": "Imperdiet Non Consulting"
+	},
+	{
+		"spec_Idx": 36,
+		"gpu": "Padre Hurtado",
+		"cpu": "Holy See (Vatican City State)",
+		"ram": "laoreet, libero",
+		"ssd": "Nulla",
+		"hdd": "Urna Industries"
+	},
+	{
+		"spec_Idx": 37,
+		"gpu": "Romford",
+		"cpu": "Ethiopia",
+		"ram": "sit amet",
+		"ssd": "sit",
+		"hdd": "Sem LLP"
+	},
+	{
+		"spec_Idx": 38,
+		"gpu": "Rivi�re-du-Loup",
+		"cpu": "Benin",
+		"ram": "semper egestas,",
+		"ssd": "aliquet",
+		"hdd": "At Libero Morbi LLC"
+	},
+	{
+		"spec_Idx": 39,
+		"gpu": "Burntisland",
+		"cpu": "Timor-Leste",
+		"ram": "Suspendisse aliquet",
+		"ssd": "Integer",
+		"hdd": "Nec Mollis Vitae Limited"
+	},
+	{
+		"spec_Idx": 40,
+		"gpu": "Acciano",
+		"cpu": "Svalbard and Jan Mayen Islands",
+		"ram": "non nisi.",
+		"ssd": "tellus",
+		"hdd": "In Incorporated"
+	},
+	{
+		"spec_Idx": 41,
+		"gpu": "Hualaihué",
+		"cpu": "San Marino",
+		"ram": "vel pede",
+		"ssd": "tincidunt",
+		"hdd": "Eget Massa Suspendisse Limited"
+	},
+	{
+		"spec_Idx": 42,
+		"gpu": "Bagh",
+		"cpu": "China",
+		"ram": "velit. Sed",
+		"ssd": "Duis",
+		"hdd": "Ullamcorper Corporation"
+	},
+	{
+		"spec_Idx": 43,
+		"gpu": "Verona",
+		"cpu": "British Indian Ocean Territory",
+		"ram": "lacus pede",
+		"ssd": "iaculis",
+		"hdd": "Risus Incorporated"
+	},
+	{
+		"spec_Idx": 44,
+		"gpu": "Dillingen",
+		"cpu": "Guernsey",
+		"ram": "neque. Sed",
+		"ssd": "Sed",
+		"hdd": "Ut Nulla Corp."
+	},
+	{
+		"spec_Idx": 45,
+		"gpu": "Olympia",
+		"cpu": "Viet Nam",
+		"ram": "imperdiet, erat",
+		"ssd": "nulla",
+		"hdd": "Nulla Semper Tellus LLP"
+	},
+	{
+		"spec_Idx": 46,
+		"gpu": "Pointe-du-Lac",
+		"cpu": "Austria",
+		"ram": "ipsum leo",
+		"ssd": "aptent",
+		"hdd": "Metus Institute"
+	},
+	{
+		"spec_Idx": 47,
+		"gpu": "Marzabotto",
+		"cpu": "Monaco",
+		"ram": "neque. Nullam",
+		"ssd": "ac",
+		"hdd": "Aenean Limited"
+	},
+	{
+		"spec_Idx": 48,
+		"gpu": "Cossignano",
+		"cpu": "Ecuador",
+		"ram": "Integer mollis.",
+		"ssd": "magna",
+		"hdd": "Quam A Felis Consulting"
+	},
+	{
+		"spec_Idx": 49,
+		"gpu": "Meeffe",
+		"cpu": "Micronesia",
+		"ram": "dignissim magna",
+		"ssd": "fermentum",
+		"hdd": "Molestie Sodales Institute"
+	},
+	{
+		"spec_Idx": 50,
+		"gpu": "Paulatuk",
+		"cpu": "Tonga",
+		"ram": "metus eu",
+		"ssd": "Donec",
+		"hdd": "Aliquam Institute"
+	},
+	{
+		"spec_Idx": 51,
+		"gpu": "Bergen",
+		"cpu": "Syria",
+		"ram": "tortor nibh",
+		"ssd": "mus.",
+		"hdd": "Rhoncus Id PC"
+	},
+	{
+		"spec_Idx": 52,
+		"gpu": "West Jordan",
+		"cpu": "Colombia",
+		"ram": "elementum sem,",
+		"ssd": "tellus.",
+		"hdd": "Odio Aliquam Vulputate Corporation"
+	},
+	{
+		"spec_Idx": 53,
+		"gpu": "Mariakerke",
+		"cpu": "Montserrat",
+		"ram": "amet metus.",
+		"ssd": "posuere",
+		"hdd": "Semper Incorporated"
+	},
+	{
+		"spec_Idx": 54,
+		"gpu": "Dangjin",
+		"cpu": "French Polynesia",
+		"ram": "ut ipsum",
+		"ssd": "velit",
+		"hdd": "Faucibus Morbi LLC"
+	},
+	{
+		"spec_Idx": 55,
+		"gpu": "Ettelgem",
+		"cpu": "Japan",
+		"ram": "Nam consequat",
+		"ssd": "ultricies",
+		"hdd": "In Company"
+	},
+	{
+		"spec_Idx": 56,
+		"gpu": "Ghislarengo",
+		"cpu": "Greece",
+		"ram": "nec metus",
+		"ssd": "enim",
+		"hdd": "Eu Augue Ltd"
+	},
+	{
+		"spec_Idx": 57,
+		"gpu": "Vicuña",
+		"cpu": "Lebanon",
+		"ram": "tristique pellentesque,",
+		"ssd": "tempor",
+		"hdd": "Mollis Foundation"
+	},
+	{
+		"spec_Idx": 58,
+		"gpu": "Manaure",
+		"cpu": "Panama",
+		"ram": "rutrum lorem",
+		"ssd": "Phasellus",
+		"hdd": "Ornare Tortor Associates"
+	},
+	{
+		"spec_Idx": 59,
+		"gpu": "Rothesay",
+		"cpu": "Georgia",
+		"ram": "vitae erat",
+		"ssd": "dui.",
+		"hdd": "Nulla Donec Associates"
+	},
+	{
+		"spec_Idx": 60,
+		"gpu": "Sialkot",
+		"cpu": "Qatar",
+		"ram": "scelerisque scelerisque",
+		"ssd": "eget",
+		"hdd": "Arcu Imperdiet Ltd"
+	},
+	{
+		"spec_Idx": 61,
+		"gpu": "Parauapebas",
+		"cpu": "Uzbekistan",
+		"ram": "sodales nisi",
+		"ssd": "bibendum",
+		"hdd": "Tempus Non Industries"
+	},
+	{
+		"spec_Idx": 62,
+		"gpu": "Neunkirchen",
+		"cpu": "United States Minor Outlying Islands",
+		"ram": "Ut tincidunt",
+		"ssd": "Donec",
+		"hdd": "At Pretium Consulting"
+	},
+	{
+		"spec_Idx": 63,
+		"gpu": "Spormaggiore",
+		"cpu": "Brazil",
+		"ram": "Cras dictum",
+		"ssd": "lobortis",
+		"hdd": "Sem Eget Massa Corporation"
+	},
+	{
+		"spec_Idx": 64,
+		"gpu": "Köthen",
+		"cpu": "Togo",
+		"ram": "a ultricies",
+		"ssd": "diam.",
+		"hdd": "Ridiculus Mus Proin LLC"
+	},
+	{
+		"spec_Idx": 65,
+		"gpu": "Saskatoon",
+		"cpu": "United Arab Emirates",
+		"ram": "Etiam laoreet,",
+		"ssd": "Phasellus",
+		"hdd": "Massa Inc."
+	},
+	{
+		"spec_Idx": 66,
+		"gpu": "Whitby",
+		"cpu": "Bulgaria",
+		"ram": "mi. Aliquam",
+		"ssd": "cubilia",
+		"hdd": "Libero Institute"
+	},
+	{
+		"spec_Idx": 67,
+		"gpu": "Penhold",
+		"cpu": "Puerto Rico",
+		"ram": "Praesent luctus.",
+		"ssd": "In",
+		"hdd": "In Faucibus Orci PC"
+	},
+	{
+		"spec_Idx": 68,
+		"gpu": "Crescentino",
+		"cpu": "Panama",
+		"ram": "tempus, lorem",
+		"ssd": "Nullam",
+		"hdd": "Cursus Et Consulting"
+	},
+	{
+		"spec_Idx": 69,
+		"gpu": "Malambo",
+		"cpu": "Greece",
+		"ram": "mollis. Duis",
+		"ssd": "Proin",
+		"hdd": "Neque Et Incorporated"
+	},
+	{
+		"spec_Idx": 70,
+		"gpu": "Geraldton-Greenough",
+		"cpu": "Austria",
+		"ram": "dolor quam,",
+		"ssd": "et",
+		"hdd": "Gravida Aliquam Tincidunt Limited"
+	},
+	{
+		"spec_Idx": 71,
+		"gpu": "Chimbarongo",
+		"cpu": "Antarctica",
+		"ram": "arcu. Vestibulum",
+		"ssd": "nascetur",
+		"hdd": "At Corporation"
+	},
+	{
+		"spec_Idx": 72,
+		"gpu": "Sasaram",
+		"cpu": "Saint Vincent and The Grenadines",
+		"ram": "lobortis risus.",
+		"ssd": "Phasellus",
+		"hdd": "Mauris Suspendisse Consulting"
+	},
+	{
+		"spec_Idx": 73,
+		"gpu": "Montague",
+		"cpu": "Guyana",
+		"ram": "dignissim. Maecenas",
+		"ssd": "ut",
+		"hdd": "Facilisis Lorem Inc."
+	},
+	{
+		"spec_Idx": 74,
+		"gpu": "Bassiano",
+		"cpu": "Tonga",
+		"ram": "et ultrices",
+		"ssd": "Sed",
+		"hdd": "Donec Associates"
+	},
+	{
+		"spec_Idx": 75,
+		"gpu": "HŽron",
+		"cpu": "Turkmenistan",
+		"ram": "vestibulum nec,",
+		"ssd": "posuere",
+		"hdd": "Adipiscing Elit Aliquam Inc."
+	},
+	{
+		"spec_Idx": 76,
+		"gpu": "Maubeuge",
+		"cpu": "Burundi",
+		"ram": "ac, fermentum",
+		"ssd": "amet",
+		"hdd": "Per Conubia Foundation"
+	},
+	{
+		"spec_Idx": 77,
+		"gpu": "Balvano",
+		"cpu": "India",
+		"ram": "nunc ac",
+		"ssd": "id",
+		"hdd": "Nulla Magna Corporation"
+	},
+	{
+		"spec_Idx": 78,
+		"gpu": "Pukekohe",
+		"cpu": "Albania",
+		"ram": "libero nec",
+		"ssd": "porttitor",
+		"hdd": "Nec Foundation"
+	},
+	{
+		"spec_Idx": 79,
+		"gpu": "Hertford",
+		"cpu": "Gibraltar",
+		"ram": "mauris id",
+		"ssd": "et,",
+		"hdd": "Faucibus Ut Nulla Associates"
+	},
+	{
+		"spec_Idx": 80,
+		"gpu": "New Plymouth",
+		"cpu": "New Caledonia",
+		"ram": "auctor ullamcorper,",
+		"ssd": "facilisis",
+		"hdd": "Magna A Corp."
+	},
+	{
+		"spec_Idx": 81,
+		"gpu": "San Martino in Pensilis",
+		"cpu": "Venezuela",
+		"ram": "ligula. Nullam",
+		"ssd": "ridiculus",
+		"hdd": "Viverra Donec Tempus Consulting"
+	},
+	{
+		"spec_Idx": 82,
+		"gpu": "Lake Cowichan",
+		"cpu": "Guyana",
+		"ram": "mauris id",
+		"ssd": "Integer",
+		"hdd": "Erat Neque Non Institute"
+	},
+	{
+		"spec_Idx": 83,
+		"gpu": "Cametá",
+		"cpu": "Gabon",
+		"ram": "metus. Aenean",
+		"ssd": "Duis",
+		"hdd": "Aliquam Nisl Nulla Consulting"
+	},
+	{
+		"spec_Idx": 84,
+		"gpu": "Norrköping",
+		"cpu": "Côte D'Ivoire (Ivory Coast)",
+		"ram": "arcu imperdiet",
+		"ssd": "odio.",
+		"hdd": "Magna Industries"
+	},
+	{
+		"spec_Idx": 85,
+		"gpu": "Ways",
+		"cpu": "Bulgaria",
+		"ram": "augue id",
+		"ssd": "Suspendisse",
+		"hdd": "Metus Associates"
+	},
+	{
+		"spec_Idx": 86,
+		"gpu": "Vietri di Potenza",
+		"cpu": "Tajikistan",
+		"ram": "vulputate ullamcorper",
+		"ssd": "pharetra,",
+		"hdd": "Blandit Congue In Industries"
+	},
+	{
+		"spec_Idx": 87,
+		"gpu": "College",
+		"cpu": "Algeria",
+		"ram": "feugiat placerat",
+		"ssd": "ornare,",
+		"hdd": "Fringilla Cursus PC"
+	},
+	{
+		"spec_Idx": 88,
+		"gpu": "Bhilwara",
+		"cpu": "Jamaica",
+		"ram": "auctor quis,",
+		"ssd": "Mauris",
+		"hdd": "Eu Tellus Phasellus LLC"
+	},
+	{
+		"spec_Idx": 89,
+		"gpu": "Tulsa",
+		"cpu": "Nigeria",
+		"ram": "sodales nisi",
+		"ssd": "nibh",
+		"hdd": "Pellentesque Habitant Inc."
+	},
+	{
+		"spec_Idx": 90,
+		"gpu": "Mombaruzzo",
+		"cpu": "Nicaragua",
+		"ram": "dui lectus",
+		"ssd": "auctor",
+		"hdd": "Imperdiet Ornare In Incorporated"
+	},
+	{
+		"spec_Idx": 91,
+		"gpu": "Leduc",
+		"cpu": "Svalbard and Jan Mayen Islands",
+		"ram": "non, egestas",
+		"ssd": "Cras",
+		"hdd": "Curabitur Institute"
+	},
+	{
+		"spec_Idx": 92,
+		"gpu": "Forlì",
+		"cpu": "Zimbabwe",
+		"ram": "Ut tincidunt",
+		"ssd": "dignissim.",
+		"hdd": "Fusce Mi Lorem Consulting"
+	},
+	{
+		"spec_Idx": 93,
+		"gpu": "Laguna Blanca",
+		"cpu": "Cyprus",
+		"ram": "volutpat ornare,",
+		"ssd": "Nam",
+		"hdd": "Sed PC"
+	},
+	{
+		"spec_Idx": 94,
+		"gpu": "Pishin Valley",
+		"cpu": "Afghanistan",
+		"ram": "commodo tincidunt",
+		"ssd": "Mauris",
+		"hdd": "Diam Corporation"
+	},
+	{
+		"spec_Idx": 95,
+		"gpu": "San Andrés",
+		"cpu": "New Zealand",
+		"ram": "aliquet. Phasellus",
+		"ssd": "velit.",
+		"hdd": "Sed PC"
+	},
+	{
+		"spec_Idx": 96,
+		"gpu": "Istmina",
+		"cpu": "Iceland",
+		"ram": "ac mi",
+		"ssd": "et,",
+		"hdd": "Nunc Est Mollis Limited"
+	},
+	{
+		"spec_Idx": 97,
+		"gpu": "Ferrere",
+		"cpu": "Western Sahara",
+		"ram": "tempor augue",
+		"ssd": "Cras",
+		"hdd": "Gravida Ltd"
+	},
+	{
+		"spec_Idx": 98,
+		"gpu": "Mandi Bahauddin",
+		"cpu": "Palau",
+		"ram": "pede. Suspendisse",
+		"ssd": "urna",
+		"hdd": "Mi Limited"
+	},
+	{
+		"spec_Idx": 99,
+		"gpu": "San Pedro de la Paz",
+		"cpu": "Bonaire, Sint Eustatius and Saba",
+		"ram": "eleifend non,",
+		"ssd": "amet,",
+		"hdd": "Metus Urna Convallis Foundation"
+	},
+	{
+		"spec_Idx": 100,
+		"gpu": "Szczecin",
+		"cpu": "Albania",
+		"ram": "nisl. Maecenas",
+		"ssd": "odio.",
+		"hdd": "Turpis Nec Corp."
+	}
+]
+}
