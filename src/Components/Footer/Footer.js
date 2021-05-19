@@ -1,35 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { facebook, instagram, twitter } from "../../img";
-import {
-  FooterWrapper,
-  IconWrapper,
-  TextWrapper,
-  InquireWrapper,
-  PrivacyPolicy,
-  Copyright,
-} from "./Styled";
+import * as S from "./Styled"
 
 const Footer = () => {
   return (
-    <FooterWrapper>
-      <IconWrapper>
+    <S.FooterWrapper>
+      <S.IconWrapper>
         <img src={instagram} alt="instagram" />
         <img src={facebook} alt="facebook" />
         <img src={twitter} alt="twitter" />
-      </IconWrapper>
-      <TextWrapper>
-        <InquireWrapper>
+      </S.IconWrapper>
+      <S.TextWrapper>
+        <S.InquireWrapper>
           <p>문의 062-115-6437 ㅣ Team Gsm-Web-Technologies</p>
-        </InquireWrapper>
-        <PrivacyPolicy>
+        </S.InquireWrapper>
+        <S.PrivacyPolicy>
           <Link className="link">개인정보 처리방침</Link>
-        </PrivacyPolicy>
-        <Copyright>
+        </S.PrivacyPolicy>
+        <S.Copyright>
           <p>ⓒ 2020 Team Gsm-Web-Technologies</p>
-        </Copyright>
-      </TextWrapper>
-    </FooterWrapper>
+        </S.Copyright>
+      </S.TextWrapper>
+    </S.FooterWrapper>
   );
 };
 
