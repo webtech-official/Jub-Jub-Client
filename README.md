@@ -31,5 +31,5 @@
  - 신이삭 https://github.com/towel1017
  - 유영재 https://github.com/pdlma0904
  - 문상규 https://github.com/sanggyu0929
- - 이선우 https://github.com/Goolgae
+ - 이선우 https://github.com/sunwoo0706
  - 이서린 https://github.com/iseolin76
