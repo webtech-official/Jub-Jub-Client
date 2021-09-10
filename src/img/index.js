@@ -12,7 +12,7 @@ import twitter from "./twitter.png";
 import X from "./close.png";
 import TestImg from "./test.jpg";
 
-export {
+export { 
   logo,
   snow_globe_dom,
   ground,

@@ -10,6 +10,7 @@ import Auth from "../../assets/Api/Auth";
 import useModal from "../../hooks/useModal";
 import ModalPortal from "../ModalPortal/ModalPortal";
 import { userInfoSelector } from "../../Util/AuthStore/AuthSelector";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
   const [userInfo, setUserInfo] = useRecoilState(authStore)
@@ -22,11 +23,13 @@ const Header = () => {
   //새로 작성한 리펙토링 코드 
   const {isShow, toggleModal} = useModal()
   const [modalName, setModalName] = useState("register")
-  const {roles} = userInfo || ""
+  const { roles } = userInfo || ""
+  
+  const history = useHistory();
   return (
     <>
       <HeaderWrapper>
-        <Logo src={logo} />
+        <Logo src={logo} onClick={() => history.push("/")}/>
         <ButtonWrapper roles={roles}>
           <Buttons token={token} roles={roles} setModalName={setModalName} toggleModal={toggleModal}/>
         </ButtonWrapper>
