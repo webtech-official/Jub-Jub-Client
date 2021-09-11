@@ -14,6 +14,9 @@ export const HeaderWrapper = styled.header`
 
 export const Logo = styled.img`
   margin: 15px 25px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
