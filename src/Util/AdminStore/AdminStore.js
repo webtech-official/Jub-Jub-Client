@@ -17,3 +17,8 @@ export const applyListState = atom({
     default : [...equipment_allow_table]
 })
 
+export const adminEmail = atom({
+    key : "applyList",
+    default : ""
+})
+
