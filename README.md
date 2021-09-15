@@ -27,9 +27,15 @@
  - 학생 정보 확인
 
 
-## FE 개발 
+## FE 개발
+### v1
  - 신이삭 https://github.com/towel1017
  - 유영재 https://github.com/pdlma0904
  - 문상규 https://github.com/sanggyu0929
  - 이선우 https://github.com/sunwoo0706
  - 이서린 https://github.com/iseolin76
+### v2
+ - 이선우 https://github.com/sunwoo0706
+ - 김형록 https://github.com/hyeongrok7874
+ - 유시온 https://github.com/yoosion030
+ - 양시준 https://github.com/YangSiJun528
