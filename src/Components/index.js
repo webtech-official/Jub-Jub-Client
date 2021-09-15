@@ -5,7 +5,7 @@ import Header from "./Header/Header";
 import Login from "./Login/Login";
 import Lookup from "./Lookup/Lookup";
 import Main from "./Main/Main";
-import Mypage from "./Mypage/Mypage";
+import Mypage from "./MyPage/MyPage";
 import Register from "./Register/Register";
 import Statistics from "./Statistics/Statistics";
 import Footer from "./Footer/Footer";

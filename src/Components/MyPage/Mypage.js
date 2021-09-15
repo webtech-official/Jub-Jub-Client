@@ -1,8 +1,8 @@
 import React, { Suspense, useState } from "react";
 import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
-import MypageItem from "./MypageItem/MypageItem";
-import MypageSide from "./MypageSide/MypageSide";
+import MypageItem from "./MyPageItem/MyPageItem";
+import MypageSide from "./MyPageSide/MyPageSide";
 import * as S from "./Styled";
 import { PwChange } from "..";
 import ModalPortal from "../ModalPortal/ModalPortal";
