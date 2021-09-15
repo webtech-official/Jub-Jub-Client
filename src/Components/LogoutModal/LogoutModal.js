@@ -13,10 +13,12 @@ const LogoutM = ({toggleModal}) => {
             if(res.data.code >= 0) {
                 alert(res.data.msg);
                 window.localStorage.clear();
-                toggleModal(false)
-                history.push("/")
+                toggleModal(false);
+                history.push("/");
             }
         })
+        toggleModal();
+        window.localStorage.clear();
     }
     return (
         <S.ModalBack>

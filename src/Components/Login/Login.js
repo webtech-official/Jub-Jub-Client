@@ -12,6 +12,9 @@ const Login = ({ toggleModal , setModalName}) => {
   const [password, setPassword] = useState("");
   const [userInfo, setUserInfo] = useRecoilState(authStore)
 
+  const logged = () => {
+    localStorage.setItem('jupjup_token', 'dummy');
+  }
   const history = useHistory();
   const handleLogin = () => {
     Auth.login(email, password)
@@ -62,7 +65,10 @@ const Login = ({ toggleModal , setModalName}) => {
           />
         </div>
       </S.InputBox>
-      <S.LoginButton onClick={handleLogin}>로그인</S.LoginButton>
+      <S.LoginButton onClick={() => {
+        handleLogin()
+        logged()
+      }}>로그인</S.LoginButton>
     </LoginRegister>
   );
 };

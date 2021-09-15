@@ -17,7 +17,6 @@ const Buttons = ({ token, roles, setModalName, toggleModal }) => {
   const changeRouterStudent = () => {
     history.push("/Management")
   }
-  console.log(roles, "buttons roles")
   return (
     <>
       {
@@ -36,7 +35,7 @@ const Buttons = ({ token, roles, setModalName, toggleModal }) => {
                 }}
               >
                 로그아웃
-                  </Button>
+              </Button>
             </>
           ) : (
             <>
