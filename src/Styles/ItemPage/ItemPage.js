@@ -2,7 +2,11 @@ import React from "react";
 import * as S from "./Styled";
 
 const ItemPage = ({ id, setId, length, children, white }) => {
-  const page = [id, id + 1, id + 2, id + 3, id + 4];
+  //const showId = Math.floor(temporary / 5) === 0 ? 1 : Math.floor(id / 5) * 5;
+  
+  const showId = id % 10 === 5 && id % 10 === 0 ? Math.floor(id / 5) - 1 : Math.floor(id / 5) * 5;
+
+  const page = [showId + 1, showId + 2, showId + 3, showId + 4, showId + 5]
   const pages = page.map((p) => (
     <span
       key={p}
