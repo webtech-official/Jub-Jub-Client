@@ -36,3 +36,4 @@
  - 이서린 https://github.com/iseolin76
 ### v2
  - 이선우 https://github.com/sunwoo0706
+ - 유시온 https://github.com/yoosion030
