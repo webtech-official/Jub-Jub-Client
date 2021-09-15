@@ -9,6 +9,9 @@ const Register = ({ toggleModal }) => {
   const [pwcheck, setPwcheck] = useState("");
   const [name, setName] = useState("");
   const [classNumber, setClassNumber] = useState("");
+  const logged = () => {
+    localStorage.setItem('jupjup_token', 'dummy');
+  }
   const handleRegister = () => {
     if (password === pwcheck) {
       // Auth.signup(classNumber, id, name, password).then((res) => {
@@ -73,7 +76,10 @@ const Register = ({ toggleModal }) => {
           />
         </div>
       </S.InputBox>
-      <S.RegisterButton onClick={handleRegister}>회원가입</S.RegisterButton>
+      <S.RegisterButton onClick={() => {
+        handleRegister()
+        logged()
+      }}>회원가입</S.RegisterButton>
     </LoginRegister>
   );
 };
