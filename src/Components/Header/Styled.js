@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const HeaderWrapper = styled.header`
   width: 100%;
-  min-width: 1870px;
   height: fit-content;
   background-color: black;
   display: flex;
