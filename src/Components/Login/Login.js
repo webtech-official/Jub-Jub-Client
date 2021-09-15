@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
-import Auth from "../../assets/Api/Auth";
+import Auth from "../../Assets/Api/Auth";
 import { useHistory } from "react-router-dom";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";

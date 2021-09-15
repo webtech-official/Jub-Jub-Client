@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useModal from "../../hooks/useModal";
+import useModal from "../../Hooks/useModal";
 import ModalPortal from "../ModalPortal/ModalPortal";
 import AddModal from "./AddModal";
 import EquipmentList from "./EquipmentList/EquipmentList";

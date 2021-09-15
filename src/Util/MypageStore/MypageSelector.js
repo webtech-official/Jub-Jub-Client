@@ -1,5 +1,5 @@
 import { selector } from "recoil";
-import Mypage from "../../assets/Api/Mypage"
+import Mypage from "../../Assets/Api/Mypage"
 
 
 export const myEquipmentSelector = selector({

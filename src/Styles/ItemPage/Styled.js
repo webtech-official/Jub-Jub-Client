@@ -4,7 +4,7 @@ import {
   right_arrow,
   left_arrow_black,
   right_arrow_black,
-} from "../../img";
+} from "../../Img";
 
 const ContentBox = styled.div`
   width: 90%;

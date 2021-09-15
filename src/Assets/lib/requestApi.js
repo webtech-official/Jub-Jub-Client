@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_URL, BASE_HEADER } from "../../config/config.json";
+import { BASE_URL, BASE_HEADER } from "../../Config/config.json";
 export const methodType = {
   GET: "get",
   POST: "post",

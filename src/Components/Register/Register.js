@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
-import Auth from "../../assets/Api/Auth";
+import Auth from "../../Assets/Api/Auth";
 
 const Register = ({ toggleModal }) => {
   const [id, setId] = useState("");

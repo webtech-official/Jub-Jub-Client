@@ -1,5 +1,5 @@
 import React from "react";
-import { X } from "../../img";
+import { X } from "../../Img";
 import * as S from "./Styled";
 
 const NameContent = () => {

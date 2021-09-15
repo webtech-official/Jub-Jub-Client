@@ -3,12 +3,12 @@ import * as S from "./Styled"
 import Check from "./Check";
 import { useRecoilState } from "recoil";
 import { equipmentItemState } from "../../Util/AdminStore/AdminStore";
-import Admin from "../../assets/Api/Admin";
-import {equipment_table} from "../../data/equipment_table.json"
-import Student from "../../assets/Api/Student";
+import Admin from "../../Assets/Api/Admin";
+import {equipment_table} from "../../Data/equipment_table.json"
+import Student from "../../Assets/Api/Student";
 import { useHistory } from "react-router";
 import ModalPortal from "../ModalPortal/ModalPortal";
-import useModal from "../../hooks/useModal";
+import useModal from "../../Hooks/useModal";
 
 const oneThings = ['노트북', '태블릿', '모니터']
 

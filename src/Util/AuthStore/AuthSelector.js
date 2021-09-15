@@ -1,5 +1,5 @@
 import { selector, selectorFamily } from "recoil";
-import Auth from "../../assets/Api/Auth";
+import Auth from "../../Assets/Api/Auth";
 import { authStore } from "./AuthStore";
 
 export const userInfoSelector = selector({

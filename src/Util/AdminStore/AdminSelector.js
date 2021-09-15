@@ -1,5 +1,5 @@
 import { selector, selectorFamily } from "recoil";
-import Admin from "../../assets/Api/Admin";
+import Admin from "../../Assets/Api/Admin";
 import { applyListState, equipmentListState } from "./AdminStore";
 //신청 전체 조회
 export const applyViewSelector = selectorFamily({

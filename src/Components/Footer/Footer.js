@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { facebook, instagram, twitter } from "../../img";
+import { facebook, instagram, twitter } from "../../Img";
 import * as S from "./Styled"
 
 const Footer = () => {
