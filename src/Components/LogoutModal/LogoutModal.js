@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import Auth from '../../assets/Api/Auth'
-import { X } from '../../img'
+import Auth from '../../Assets/Api/Auth'
+import { X } from '../../Img'
 import * as S from './Styled'
 
 const LogoutM = ({toggleModal}) => {

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { snow_globe_dom, ground } from "../../img/index";
+import { snow_globe_dom, ground } from "../../Img/index";
 
 const TextWrapper = styled.div`
   position: absolute;

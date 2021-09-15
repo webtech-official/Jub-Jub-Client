@@ -6,7 +6,7 @@ import MypageSide from "./MyPageSide/MyPageSide";
 import * as S from "./Styled";
 import { PwChange } from "..";
 import ModalPortal from "../ModalPortal/ModalPortal";
-import useModal from "../../hooks/useModal";
+import useModal from "../../Hooks/useModal";
 import { useRecoilValue } from "recoil";
 import {myEquipmentSelector} from "../../Util/MypageStore/MypageSelector"
 

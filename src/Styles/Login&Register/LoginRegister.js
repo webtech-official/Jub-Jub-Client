@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./Styled";
-import { logo, X } from "../../img/index";
+import { logo, X } from "../../Img/index";
 
 const LoginRegister = ({ sideMark, children, toggleModal }) => {
   return (

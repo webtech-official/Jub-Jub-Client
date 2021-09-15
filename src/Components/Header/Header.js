@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Login, Register } from "..";
 import LogoutModal from "../LogoutModal/LogoutModal";
-import { logo } from "../../img/index";
+import { logo } from "../../Img/index";
 import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
 import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";
 import Buttons from "./Buttons/Buttons";
-import Auth from "../../assets/Api/Auth";
-import useModal from "../../hooks/useModal";
+import Auth from "../../Assets/Api/Auth";
+import useModal from "../../Hooks/useModal";
 import ModalPortal from "../ModalPortal/ModalPortal";
 import { userInfoSelector } from "../../Util/AuthStore/AuthSelector";
 import { useHistory } from "react-router-dom";
