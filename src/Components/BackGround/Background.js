@@ -6,15 +6,22 @@ const Background = ({ size, textHide }) => {
   const BackGroundWrapper = styled.div`
     position: relative;
     width: 100%;
-    min-width: 1870px;
     height: ${size}px;
     background-color: #000000;
     z-index: -1;
+    @media screen and (max-width: 1540px){
+      .textWrapper {
+        left: 5%;
+      }
+      .snowGlobeDom {
+          left: 960px;
+      }
+    }
   `;
   return (
     <BackGroundWrapper>
       {textHide === false ? (
-        <TextWrapper>
+        <TextWrapper className="textWrapper">
           <div className="firstRow">
             <span className="korText">학교에서 필요한것을 주워가세요!</span>
           </div>
@@ -26,7 +33,7 @@ const Background = ({ size, textHide }) => {
       ) : (
         null
       )}
-      <SnowGlobeDom />
+      <SnowGlobeDom className="snowGlobeDom"/>
       <Ground />
     </BackGroundWrapper>
   );
