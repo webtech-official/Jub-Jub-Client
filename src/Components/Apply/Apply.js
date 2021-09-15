@@ -55,7 +55,9 @@ const Apply = ({match}) => {
   }
   //리팩토링
   const { isShow, toggleModal } = useModal();
-
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, []);
   return (
     <>
       <S.BackApply>
@@ -72,7 +74,7 @@ const Apply = ({match}) => {
               </S.BtnBox>
               <S.ReasonWrapper>
                 <S.ReasonTitle>목적</S.ReasonTitle>
-                <S.ReasonInput type="text" value={reason} onChange={handleChangeReason} />
+                <S.ReasonInput rows="7" value={reason} onChange={handleChangeReason} />
               </S.ReasonWrapper>
               <S.SubBtn onClick={allowModalOpen}>대여</S.SubBtn>
             </S.ApplyBox>

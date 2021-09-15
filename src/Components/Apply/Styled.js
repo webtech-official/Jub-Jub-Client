@@ -86,7 +86,7 @@ const SubBtn = styled.button`
   border-radius: 10px;
   border: none;
   font-size: 22px;
-  margin-top: 200px;
+  margin-top: 70px;
 `;
 
 const ReasonWrapper = styled.div`
@@ -99,7 +99,7 @@ const ReasonTitle = styled.span`
   margin : 8px 0px;
 `;
 
-const ReasonInput = styled.input`
+const ReasonInput = styled.textarea`
   padding : 7px;
   font-size: 18px;
   margin-left : 5px;
