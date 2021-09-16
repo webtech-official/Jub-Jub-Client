@@ -12,13 +12,7 @@ const Lookup = () => {
   const [search, setSearch] = useState("");
   const [equipmentList, setEquipmentList] = useState(equipment_table);
   const [standard, setStandard] = useState("description");
-  // useEffect(() => { 
-  //   Admin.equipmentInfoAll().then(res => {
-  //     console.log(res)
-  //     setEquipmentList(res.Data.list)
-  //   })
-  // }, [setEquipmentList])
-  console.log(equipmentList, "asd");
+
   const history = useHistory();
   const LookupItemList = equipmentList
     .filter((item, index) => equipmentList[index][standard].includes(search))
@@ -28,7 +22,6 @@ const Lookup = () => {
     .map((item) => (
       <LookupItem itemInfo={item} key={item.equ_Idx} history={history} />
     ));
-  console.log(equipmentList);
   return (
     <S.LookupContainer>
       <Search search={search} onChange={setSearch} standard={standard} setStandard={setStandard} />
