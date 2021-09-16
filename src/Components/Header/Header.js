@@ -6,7 +6,7 @@ import { ButtonWrapper, HeaderWrapper, Logo } from "./Styled";
 import { useRecoilValue } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";
 import Buttons from "./Buttons/Buttons";
-import useModal from "../../Hooks/useModal";
+import useModal from "../../Hooks/UseModal";
 import ModalPortal from "../ModalPortal/ModalPortal";
 import { useHistory } from "react-router-dom";
 
