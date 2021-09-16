@@ -10,7 +10,8 @@ const LookupWrapper = styled.div`
 `;
 
 const LookupContainer = styled.div`
-  width: calc(100vw - 20vw);
+  margin: 0 auto;
+  width: 1215px;
   height: 850px;
   display: flex;
   flex-direction: column;

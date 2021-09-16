@@ -50,4 +50,8 @@ export const CheckBtn = styled.button`
   font-size: 24px;
   margin-top: 40px;
   border: none;
+  &:hover {
+    transform: scale(0.9);
+    box-shadow:  5px 5px 5px rgba(116, 125, 136, .5)  
+    }
 `;
