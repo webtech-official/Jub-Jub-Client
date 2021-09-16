@@ -602,41 +602,41 @@
 	},
 	{
 		"equ_Idx": 76,
-		"name": "Ferdinand",
+		"name": "아두이노",
 		"img_equipment": "E9N 0I6",
-		"description": "Lorem ipsum",
+		"description": "기타",
 		"amount": 21,
 		"create_at": "2121-12-11PST10:12:53"
 	},
 	{
 		"equ_Idx": 77,
-		"name": "James",
+		"name": "라즈베리파이",
 		"img_equipment": "T5Y 8S9",
-		"description": "Lorem ipsum",
+		"description": "기타",
 		"amount": 38,
 		"create_at": "2020-11-22PST12:11:32"
 	},
 	{
 		"equ_Idx": 78,
-		"name": "Leo",
+		"name": "터치스크린",
 		"img_equipment": "Y5U 8G8",
-		"description": "Lorem ipsum",
+		"description": "기타",
 		"amount": 34,
 		"create_at": "2121-06-28PDT04:06:02"
 	},
 	{
 		"equ_Idx": 79,
-		"name": "Colin",
+		"name": "드론",
 		"img_equipment": "O4B 0J6",
-		"description": "Lorem",
+		"description": "기타",
 		"amount": 12,
 		"create_at": "2020-09-09PDT06:09:43"
 	},
 	{
 		"equ_Idx": 80,
-		"name": "Andrew",
+		"name": "타블렛",
 		"img_equipment": "V2Y 2Q6",
-		"description": "Lorem",
+		"description": "기타",
 		"amount": 41,
 		"create_at": "2121-12-12PST09:12:09"
 	},
