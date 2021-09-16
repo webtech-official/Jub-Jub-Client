@@ -5,18 +5,19 @@ import Auth from "../../Assets/Api/Auth";
 import { useHistory } from "react-router-dom";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";
-import { loginSelector } from "../../Util/AuthStore/AuthSelector";
-import { adminEmail } from "../../Util/AdminStore/AdminStore";
+import { isAdminState } from "../../Util/AdminStore/AdminStore";
 
-const Login = ({ toggleModal , setModalName}) => {
+const Login = ({ toggleModal, setModalName }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [userInfo, setUserInfo] = useRecoilState(authStore)
-  const setUserName = useSetRecoilState(adminEmail);
+  const [userInfo, setUserInfo] = useRecoilState(authStore);
+  const [_, setIsAdminState] = useRecoilState(isAdminState);
   const logged = () => {
-    localStorage.setItem('jupjup_token', 'dummy');
-  }
-  const setAdminEmail = useSetRecoilState(adminEmail);
+    localStorage.setItem("jupjup_token", "dummy");
+    if (email === "s20054@gsm.hs.kr") {
+      setIsAdminState(true);
+    }
+  };
   const history = useHistory();
   const handleLogin = () => {
     Auth.login(email, password)
@@ -24,29 +25,28 @@ const Login = ({ toggleModal , setModalName}) => {
         const { code, data, msg } = res.data;
         console.log(data);
         alert(msg);
-        toggleModal()
+        toggleModal();
         if (code >= 0) {
-          console.log(res.data)
-          const {authority, classNum, email, name} = res.data.data;
-          setUserInfo({authority, classNum, email, name})
+          console.log(res.data);
+          const { authority, classNum, email, name } = res.data.data;
+          setUserInfo({ authority, classNum, email, name });
           window.localStorage.setItem("jupjup_token", data.accessToken);
           history.push("/Main");
         }
       })
       .catch((err) => console.log(err));
-    toggleModal()
-    history.push('/Main')
-  }; 
+    toggleModal();
+    history.push("/Main");
+  };
   const onChangePassword = useCallback((e) => {
     setPassword(e.target.value);
-  },[]);
+  }, []);
   const onChangeId = useCallback((e) => {
     setEmail(e.target.value);
   }, []);
   const renderRegisterModal = () => {
-    setModalName("register")
-  }
-  setAdminEmail(email);
+    setModalName("register");
+  };
   return (
     <LoginRegister sideMark="?" toggleModal={toggleModal}>
       <S.TextBox>
@@ -68,10 +68,14 @@ const Login = ({ toggleModal , setModalName}) => {
           />
         </div>
       </S.InputBox>
-      <S.LoginButton onClick={() => {
-        handleLogin()
-        logged()
-      }}>로그인</S.LoginButton>
+      <S.LoginButton
+        onClick={() => {
+          handleLogin();
+          logged();
+        }}
+      >
+        로그인
+      </S.LoginButton>
     </LoginRegister>
   );
 };
