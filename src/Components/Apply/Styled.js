@@ -71,6 +71,7 @@ const BtnI = styled.button`
   background-color: white;
   outline: none;
   vertical-align : middle;
+  
 `;
 
 const BtnSum = styled.span`
@@ -79,18 +80,25 @@ const BtnSum = styled.span`
   color: #464646;
   text-align: center;
   line-height:30px;
+  
 `;
 
 const SubBtn = styled.button`
   width: 100px;
   height: 65px;
   background-color: black;
+  border: 1px solid black;
   color: white;
   border-radius: 10px;
   border: none;
   font-size: 22px;
   margin-top: 70px;
   margin-right: 20px;
+  &:hover {
+    transform: scale(0.9);
+    box-shadow:  5px 5px 5px rgba(116, 125, 136, .5)  
+    }
+   
 `;
 
 
@@ -148,6 +156,10 @@ const CheckBtn = styled.button`
   font-size: 24px;
   margin-top: 30px;
   border: none;
+  &:hover {
+    transform: scale(0.9);
+    box-shadow:  5px 5px 5px rgba(116, 125, 136, .5)  
+    }
 
 `;
 export {
