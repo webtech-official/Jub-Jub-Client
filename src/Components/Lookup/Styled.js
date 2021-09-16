@@ -11,7 +11,7 @@ const LookupWrapper = styled.div`
 
 const LookupContainer = styled.div`
   margin: 0 auto;
-  width: calc(100vw - 20vw);
+  width: 1215px;
   height: 850px;
   display: flex;
   flex-direction: column;
