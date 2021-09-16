@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./Styled";
-import { equipment_table } from "../../data/equipment_table.json";
+import { equipment_table } from "../../Data/equipment_table.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import { Search } from "../../Styles/index";
 import LookupItem from "./LookupItem/LookupItem";
@@ -17,7 +17,7 @@ const Lookup = () => {
   // useEffect(() => { 
   //   Admin.equipmentInfoAll().then(res => {
   //     console.log(res)
-  //     setEquipmentList(res.data.list)
+  //     setEquipmentList(res.Data.list)
   //   })
   // }, [setEquipmentList])
   console.log(equipmentList, "asd")

@@ -12,7 +12,7 @@ const Register = ({ toggleModal }) => {
   const handleRegister = () => {
     if (password === pwcheck) {
       // Auth.signup(classNumber, id, name, password).then((res) => {
-      //   const { msg } = res.data;
+      //   const { msg } = res.Data;
       //   alert(msg);
       //   setOpen({ open: false });
       // });

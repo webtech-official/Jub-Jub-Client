@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ItemPage, Search } from "../../Styles";
 import ItemRows from "./ItemRows/ItemRows";
-import { auth_table } from "../../data/auth_table.json";
+import { auth_table } from "../../Data/auth_table.json";
 import * as S from "./Styled";
 import RentalList from "./Rental/RentalList/RentalList";
 

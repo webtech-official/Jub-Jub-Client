@@ -4,7 +4,7 @@ import Check from "./Check";
 import { useRecoilState } from "recoil";
 import { equipmentItemState } from "../../Util/AdminStore/AdminStore";
 import Admin from "../../Assets/Api/Admin";
-import {equipment_table} from "../../data/equipment_table.json"
+import {equipment_table} from "../../Data/equipment_table.json"
 import Student from "../../Assets/Api/Student";
 import { useHistory } from "react-router";
 import ModalPortal from "../ModalPortal/ModalPortal";
@@ -36,13 +36,13 @@ const Apply = ({match}) => {
   };
   // useEffect(() => {
   //   Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
-  //     console.log(res.data, equipmentItem ,"api equipdetail")
-  //     setEquipmentItem(res.data.data)
+  //     console.log(res.Data, equipmentItem ,"api equipdetail")
+  //     setEquipmentItem(res.Data.Data)
   //   })
   // }, [match.params.id, setEquipmentItem])
   const handleApply = () => {
     // Student.equipmentApplyStudent(name, applSum, reason).then(res => {
-    //   alert(res.data.msg)
+    //   alert(res.Data.msg)
     //   setOpen(false)
     //   history.push("/")
     // })

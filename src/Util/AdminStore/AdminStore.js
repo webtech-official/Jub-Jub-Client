@@ -1,6 +1,6 @@
 import { atom } from "recoil";
-import { equipment_table } from "../../data/equipment_table.json"
-import {equipment_allow_table} from "../../data/equipment_allow_table.json"
+import { equipment_table } from "../../Data/equipment_table.json"
+import {equipment_allow_table} from "../../Data/equipment_allow_table.json"
 
 export const equipmentListState = atom({
     key : "equipmentList",
