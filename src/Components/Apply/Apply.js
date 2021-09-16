@@ -10,8 +10,8 @@ const oneThings = ["노트북", "태블릿", "모니터"];
 
 const Apply = () => {
   const [applSum, setApplSum] = useState(0);
-  const [reason, setReason] = useState("");
-  const [equipmentItem] = useState(equipment_table[2]);
+  const [reason, setReason] = useState("")
+  const [equipmentItem, setEquipmentItem] = useState(equipment_table[match.params.id - 1])
   const history = useHistory();
   const { _, description, amount, name, img_equipment } = equipmentItem;
   const handleChangeReason = useCallback((e) => {
