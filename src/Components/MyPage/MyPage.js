@@ -5,6 +5,8 @@ import MypageSide from "./MyPageSide/MyPageSide";
 import * as S from "./Styled";
 
 const MyPage = () => {
+  const unparseData = localStorage.getItem('rental');
+  const data = JSON.parse(unparseData)
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status, setStatus] = useState("");
@@ -31,6 +33,9 @@ const MyPage = () => {
                 <span className="btn"></span>
               </div>
             </S.TitleBox>
+              <ItemPage id={page} setId={setPage} length={currentLength}>
+                {MypageItemList.length === 0 ? null : MypageItemList}
+              </ItemPage>
             <ItemPage id={page} setId={setPage} length={currentLength}>
               {[]}
             </ItemPage>

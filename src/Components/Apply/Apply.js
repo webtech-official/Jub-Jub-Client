@@ -25,6 +25,27 @@ const Apply = ({match}) => {
     applSum < amount ? setApplSum(applSum + 1) : alert("최대 수량입니다.");
   }, [applSum, amount]);
   const allowModalOpen = () => {
+    const unparseData = localStorage.getItem('rental');
+    const data = JSON.parse(unparseData)
+    data
+    ? localStorage.setItem('rental', JSON.stringify([...data,{...equipment_table[match.params.id - 1],"amount":applSum , "state": "승인", "rentDate":getDate()}]))
+    : localStorage.setItem('rental', JSON.stringify([{...equipment_table[match.params.id - 1],"amount":applSum, "state": "승인", "rentDate":getDate()}]))
+    toggleModal();
+  };
+  const getDate = () => {
+  let today = new Date();
+  let year = today.getFullYear();
+  let month = ('0' + (today.getMonth() + 1)).slice(-2);
+  let day = ('0' + today.getDate()).slice(-2);
+  return year + '-' + month  + '-' + day;
+}
+  // useEffect(() => {
+  //   Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
+  //     console.log(res.Data, equipmentItem ,"api equipdetail")
+  //     setEquipmentItem(res.Data.Data)
+  //   })
+  // }, [match.params.id, setEquipmentItem])
+=======
     toggleModal();
   };
   const handleApply = () => {
