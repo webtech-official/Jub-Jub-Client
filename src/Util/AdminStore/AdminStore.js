@@ -1,24 +1,23 @@
 import { atom } from "recoil";
-import { equipment_table } from "../../Data/equipment_table.json"
-import {equipment_allow_table} from "../../Data/equipment_allow_table.json"
+import { equipment_table } from "../../Data/equipment_table.json";
+import { equipment_allow_table } from "../../Data/equipment_allow_table.json";
 
 export const equipmentListState = atom({
-    key : "equipmentList",
-    default  : [...equipment_table],
-})
+  key: "equipmentList",
+  default: [...equipment_table],
+});
 
 export const equipmentItemState = atom({
-    key:  "equipmentItem",
-    default : {}
-})
+  key: "equipmentItem",
+  default: {},
+});
 
 export const applyListState = atom({
-    key : "applyList",
-    default : [...equipment_allow_table]
-})
+  key: "applyList",
+  default: [...equipment_allow_table],
+});
 
-export const adminEmail = atom({
-    key : "applyList",
-    default : ""
-})
-
+export const isAdminState = atom({
+  key: "isAdminState",
+  default: false,
+});

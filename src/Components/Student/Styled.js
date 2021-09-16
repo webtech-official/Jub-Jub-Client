@@ -2,9 +2,8 @@ import styled from "@emotion/styled";
 
 export const MyWrapper = styled.div`
   position: absolute;
-  min-width: 1440px;
   width: 100%;
-  height: 1780px;
+  height: 150px;
   display: flex;
   justify-content: center;
   z-index: 2;
