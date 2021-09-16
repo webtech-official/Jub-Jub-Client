@@ -25,7 +25,7 @@ const Lookup = () => {
     .filter(
       (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
     )
-    .filter((item, index) => equipmentList[index].name.includes(search))
+    .filter((item, index) => equipmentList[index][standard].includes(search))
     .filter((_, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5)
     .map((item) => (
       <LookupItem itemInfo={item} key={item.equ_Idx} history={history} />
