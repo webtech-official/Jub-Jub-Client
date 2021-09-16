@@ -28,8 +28,8 @@ const Apply = ({match}) => {
     const unparseData = localStorage.getItem('rental');
     const data = JSON.parse(unparseData)
     data
-    ? localStorage.setItem('rental', JSON.stringify([...data,{...equipment_table[match.params.id - 1],"amount":applSum , "state": "승인", "rentDate":getDate()}]))
-    : localStorage.setItem('rental', JSON.stringify([{...equipment_table[match.params.id - 1],"amount":applSum, "state": "승인", "rentDate":getDate()}]))
+    ? localStorage.setItem('rental', JSON.stringify([...data,{...equipment_table[match.params.id - 1],"amount":applSum , "state": "대기", "rentDate":getDate()}]))
+    : localStorage.setItem('rental', JSON.stringify([{...equipment_table[match.params.id - 1],"amount":applSum, "state": "대기", "rentDate":getDate()}]))
     toggleModal();
   };
   const getDate = () => {

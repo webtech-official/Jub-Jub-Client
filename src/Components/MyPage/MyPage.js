@@ -7,7 +7,7 @@ import MypageSide from "./MyPageSide/MyPageSide";
 
 const MyPage = () => {
   const unparseData = localStorage.getItem('rental');
-  const data = JSON.parse(unparseData)
+  const data = JSON.parse(unparseData) || []
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status, setStatus] = useState("");
@@ -39,15 +39,12 @@ const MyPage = () => {
                 <span className="itemName">품명</span>
                 <span className="itemAmount">수량</span>
                 <span className="rentDate">대여일</span>
-                <span className="btn"></span>
+                <span className="btn">상태</span>
               </div>
             </S.TitleBox>
               <ItemPage id={page} setId={setPage} length={currentLength}>
                 {MypageItemList.length === 0 ? null : MypageItemList}
               </ItemPage>
-            <ItemPage id={page} setId={setPage} length={currentLength}>
-              {[]}
-            </ItemPage>
           </S.MyContainer>
         </S.MyBox>
       </S.MyWrapper>

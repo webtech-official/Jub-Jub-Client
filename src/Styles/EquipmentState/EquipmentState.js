@@ -29,8 +29,8 @@ const EquipmentState = ({ EqState }) => {
     }
   }, [EqState]);
   const Box = styled.div`
-    width: 99px;
-    height: 63px;
+    width: 80px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
