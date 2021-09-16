@@ -3,15 +3,15 @@ import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
 import Auth from "../../Assets/Api/Auth";
 import { useHistory } from "react-router-dom";
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";
 import { isAdminState } from "../../Util/AdminStore/AdminStore";
 
 const Login = ({ toggleModal, setModalName }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [userInfo, setUserInfo] = useRecoilState(authStore);
-  const [_, setIsAdminState] = useRecoilState(isAdminState);
+  const [_1, setUserInfo] = useRecoilState(authStore);
+  const [_2, setIsAdminState] = useRecoilState(isAdminState);
   const logged = () => {
     localStorage.setItem("jupjup_token", "dummy");
     if (email === "s20054@gsm.hs.kr") {

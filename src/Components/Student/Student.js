@@ -2,24 +2,28 @@ import React, { useState } from "react";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import StudentItem from "./StudentItem/StudentItem";
 import * as S from "./Styled";
-import { auth_table } from "../../Data/auth_table.json"
-import { equipment_allow_table } from "../../Data/equipment_allow_table.json"
-import {equipment_table} from "../../Data/equipment_table.json"
+import { auth_table } from "../../Data/auth_table.json";
+import { equipment_allow_table } from "../../Data/equipment_allow_table.json";
+import { equipment_table } from "../../Data/equipment_table.json";
 
 const Student = ({ match }) => {
-  // const [is_open, setOpen] = useState({
-  //   open: false,
-  //   component: null,
-  // });
   const [page, setPage] = useState(1);
-  const [items] = useState(equipment_allow_table.filter(val => val.u_Idx === 33));
-  const [status] = useState("");
+  const [items] = useState(
+    equipment_allow_table.filter((val) => val.u_Idx === 33)
+  );
   const currentLength = items.length;
   const StudentItemList = items
-    .filter(
-      (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
-    )
-    .map((item, index) => <StudentItem itemInfo={{name : equipment_table[index].name, description : equipment_table[index].description}} allowInfo={item} key={index} />);
+    .filter((_, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5)
+    .map((item, index) => (
+      <StudentItem
+        itemInfo={{
+          name: equipment_table[index].name,
+          description: equipment_table[index].description,
+        }}
+        allowInfo={item}
+        key={index}
+      />
+    ));
   const user = auth_table.filter(
     (item) => item.classnum === parseInt(match.params.classnum)
   );
