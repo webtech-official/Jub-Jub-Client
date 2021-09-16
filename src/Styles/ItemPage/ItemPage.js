@@ -35,7 +35,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
             className="pageMoveButton"
             onClick={() => {
               if (id >= 6) {
-                setId(id - 5);
+                if (id % 5 === 0) setId(id - 5);
+                else setId(id - (id % 5));
               } else {
                 setId(1);
               }
@@ -49,6 +50,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
               if (id + 5 >= parseInt(length / 5) + 1) {
                 setId(parseInt(length / 5) + 1);
               } else {
+                if (id % 5 === 0) setId(id + 1);
+                else setId(id + (6 - id % 5));
                 setId(id + 5);
               }
             }}
@@ -66,7 +69,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
             className="pageMoveButton"
             onClick={() => {
               if (id >= 6) {
-                setId(id - 5);
+                if (id % 5 === 0) setId(id - 5);
+                else setId(id - (id % 5));
               } else {
                 setId(1);
               }
@@ -80,7 +84,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
               if (id + 5 >= parseInt(length / 5) + 1) {
                 setId(parseInt(length / 5) + 1);
               } else {
-                setId(id + 5);
+                if (id % 5 === 0) setId(id + 1);
+                else setId(id + (6 - id % 5));
               }
             }}
           ></div>
