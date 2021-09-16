@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { data } from "./dummy.json";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
-import MypageSide from "./MyPageSide/MyPageSide";
 import * as S from "./Styled";
+import MypageItem from "./MyPageItem/MyPageItem";
+import MypageSide from "./MyPageSide/MyPageSide";
 
 const MyPage = () => {
   const unparseData = localStorage.getItem('rental');
@@ -16,6 +17,14 @@ const MyPage = () => {
   const currentLength = items.filter((item) => {
     return item.state.includes(status);
   }).length;
+  const MypageItemList = items
+    .filter((item) => {
+      return item.state.includes(status);
+    })
+    .filter(
+      (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
+    )
+    .map((item, index) => <MypageItem itemInfo={item} key={index} />);
   return (
     <>
       <S.MyWrapper>

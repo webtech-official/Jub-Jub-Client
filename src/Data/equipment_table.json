@@ -4,7 +4,7 @@
 		"equ_Idx": 1,
 		"name": "MCOM 모니터",
 		"img_equipment": "https://lh3.googleusercontent.com/proxy/NKmVe-n30FcfQc6OVKOoGVqugoN47EqJZAoJSgKbDKuHdgvtcJfvH8Z7PBjY75W9UR9kRfuSBtLbrfOu7PyGx7Txj3HoqUGF_9h-1hUhFfC_Yina7ljOjBH4ROCn7_IJPlT7iRC822L5HQ",
-		"description": "모니터",
+		"category": "모니터",
 		"amount": 32,
 		"create_at": "2020-12-24PST10:12:12"
 	},
@@ -12,7 +12,7 @@
 		"equ_Idx": 2,
 		"name": "SAMSUNG 모니터",
 		"img_equipment": "https://static.coupangcdn.com/image/retail/images/2019/10/17/9/5/0d49f501-8ff1-4868-90da-5ec864e36c59.jpg",
-		"description": "모니터",
+		"category": "모니터",
 		"amount": 25,
 		"create_at": "2121-06-20PDT08:06:12"
 	},
@@ -20,7 +20,7 @@
 		"equ_Idx": 3,
 		"name": "LG 모니터",
 		"img_equipment": "http://m.ainzon.co.kr/web/product/big/201607/191_shop1_478115.jpg",
-		"description": "모니터",
+		"category": "모니터",
 		"amount": 44,
 		"create_at": "2121-07-11PDT04:07:58"
 	},  
@@ -28,7 +28,7 @@
 		"equ_Idx": 4,
 		"name": "HANSUNG 모니터",
 		"img_equipment": "http://photo3.enuri.info/data/images/service/middle/15246000/15246498.jpg",
-		"description": "모니터",
+		"category": "모니터",
 		"amount": 49,
 		"create_at": "2121-12-07PST01:12:12"
 	},
@@ -36,7 +36,7 @@
 		"equ_Idx": 5,
 		"name": "ASUS 모니터",
 		"img_equipment": "http://img.danawa.com/prod_img/500000/417/015/img/14015417_1.jpg?shrink=360:360&_v=20210520101856",
-		"description": "모니터",
+		"category": "모니터",
 		"amount": 2,
 		"create_at": "2121-07-03PDT08:07:57"
 	},
@@ -44,7 +44,7 @@
 		"equ_Idx": 6,
 		"name": "로지텍 마우스",
 		"img_equipment": "G2O 2B1",
-		"description": "마우스",
+		"category": "마우스",
 		"amount": 49,
 		"create_at": "2121-12-17PST10:12:09"
 	},
@@ -52,7 +52,7 @@
 		"equ_Idx": 7,
 		"name": "MCOM 마우스",
 		"img_equipment": "S1U 3X7",
-		"description": "마우스",
+		"category": "마우스",
 		"amount": 5,
 		"create_at": "2121-03-07PST04:03:02"
 	},
@@ -60,7 +60,7 @@
 		"equ_Idx": 8,
 		"name": "레이져 마우스",
 		"img_equipment": "T3C 2G6",
-		"description": "마우스",
+		"category": "마우스",
 		"amount": 41,
 		"create_at": "2222-01-17PST10:01:12"
 	},
@@ -68,7 +68,7 @@
 		"equ_Idx": 9,
 		"name": "SAMSUNG 마우스",
 		"img_equipment": "Y4Y 4M6",
-		"description": "마우스",
+		"category": "마우스",
 		"amount": 13,
 		"create_at": "2121-10-20PDT07:10:52"
 	},
@@ -76,7 +76,7 @@
 		"equ_Idx": 10,
 		"name": "LG 마우스",
 		"img_equipment": "W9P 8S6",
-		"description": "마우스",
+		"category": "마우스",
 		"amount": 36,
 		"create_at": "2020-08-05PDT10:08:42"
 	},
@@ -84,7 +84,7 @@
 		"equ_Idx": 11,
 		"name": "SAMSUNG 이온",
 		"img_equipment": "K1Y 2A4",
-		"description": "노트북",
+		"category": "노트북",
 		"amount": 21,
 		"create_at": "2121-03-29PDT03:03:51"
 	},
@@ -92,7 +92,7 @@
 		"equ_Idx": 12,
 		"name": "SAMSUNG 플렉스",
 		"img_equipment": "L2V 6G3",
-		"description": "노트북",
+		"category": "노트북",
 		"amount": 33,
 		"create_at": "2020-05-15PDT04:05:14"
 	},
@@ -100,7 +100,7 @@
 		"equ_Idx": 13,
 		"name": "LG 그램",
 		"img_equipment": "W4Q 1B3",
-		"description": "노트북",
+		"category": "노트북",
 		"amount": 46,
 		"create_at": "2121-08-12PDT07:08:06"
 	},
@@ -108,7 +108,7 @@
 		"equ_Idx": 14,
 		"name": "MacBook Air",
 		"img_equipment": "W0I 3Q1",
-		"description": "노트북",
+		"category": "노트북",
 		"amount": 13,
 		"create_at": "2121-12-18PST12:12:17"
 	},
@@ -116,7 +116,7 @@
 		"equ_Idx": 15,
 		"name": "MacBook Pro",
 		"img_equipment": "M0Y 2S6",
-		"description": "노트북",
+		"category": "노트북",
 		"amount": 6,
 		"create_at": "2020-09-29PDT06:09:45"
 	},
@@ -124,7 +124,7 @@
 		"equ_Idx": 16,
 		"name": "hdmi to hdmi 1m",
 		"img_equipment": "X3Q 8F6",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 49,
 		"create_at": "2020-07-25PDT08:07:41"
 	},
@@ -132,7 +132,7 @@
 		"equ_Idx": 17,
 		"name": "hdmi to hdmi 2m",
 		"img_equipment": "H4A 8A0",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 34,
 		"create_at": "2222-01-14PST09:01:15"
 	},
@@ -140,7 +140,7 @@
 		"equ_Idx": 18,
 		"name": "hdmi to hdmi 3m",
 		"img_equipment": "N8A 8V0",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 22,
 		"create_at": "2020-06-17PDT01:06:07"
 	},
@@ -148,7 +148,7 @@
 		"equ_Idx": 19,
 		"name": "USB-C to USB-C 1m",
 		"img_equipment": "Q1E 5Z8",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 42,
 		"create_at": "2121-01-11PST08:01:42"
 	},
@@ -156,7 +156,7 @@
 		"equ_Idx": 20,
 		"name": "USB-C to USB-C 2m",
 		"img_equipment": "W7Z 4G1",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 22,
 		"create_at": "2121-11-13PST04:11:02"
 	},
@@ -164,7 +164,7 @@
 		"equ_Idx": 21,
 		"name": "USB-C to USB-C 3m",
 		"img_equipment": "R7D 3F2",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 18,
 		"create_at": "2222-03-11PST03:03:40"
 	},
@@ -172,7 +172,7 @@
 		"equ_Idx": 22,
 		"name": "USB-A to USB-A 1m",
 		"img_equipment": "K1M 8G1",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 1,
 		"create_at": "2222-03-19PDT12:03:56"
 	},
@@ -180,7 +180,7 @@
 		"equ_Idx": 23,
 		"name": "USB-A to USB-A 2m",
 		"img_equipment": "Z4U 9I7",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 34,
 		"create_at": "2121-06-25PDT04:06:18"
 	},
@@ -188,7 +188,7 @@
 		"equ_Idx": 24,
 		"name": "USB-A to USB-A 3m",
 		"img_equipment": "X5Y 7H6",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 11,
 		"create_at": "2222-04-07PDT08:04:08"
 	},
@@ -196,7 +196,7 @@
 		"equ_Idx": 25,
 		"name": "USB-A to USB-C 1m",
 		"img_equipment": "F3Q 0Y4",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 40,
 		"create_at": "2121-03-10PST06:03:25"
 	},
@@ -204,7 +204,7 @@
 		"equ_Idx": 26,
 		"name": "USB-A to USB-C 2m",
 		"img_equipment": "Z3K 9R7",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 43,
 		"create_at": "2020-11-14PST01:11:39"
 	},
@@ -212,7 +212,7 @@
 		"equ_Idx": 27,
 		"name": "USB-A to USB-C 3m",
 		"img_equipment": "K8T 1K5",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 31,
 		"create_at": "2121-11-01PDT10:11:52"
 	},
@@ -220,7 +220,7 @@
 		"equ_Idx": 28,
 		"name": "LAN 케이블 1m",
 		"img_equipment": "Y7E 9O0",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 37,
 		"create_at": "2020-05-29PDT09:05:06"
 	},
@@ -228,7 +228,7 @@
 		"equ_Idx": 29,
 		"name": "LAN 케이블 2m",
 		"img_equipment": "C8L 9H6",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 25,
 		"create_at": "2020-11-05PST07:11:05"
 	},
@@ -236,7 +236,7 @@
 		"equ_Idx": 30,
 		"name": "LAN 케이블 3m",
 		"img_equipment": "F5U 4V8",
-		"description": "케이블",
+		"category": "케이블",
 		"amount": 37,
 		"create_at": "2020-05-17PDT05:05:24"
 	},
@@ -244,7 +244,7 @@
 		"equ_Idx": 31,
 		"name": "Stone",
 		"img_equipment": "N6X 8Y0",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 4,
 		"create_at": "2121-01-14PST03:01:45"
 	},
@@ -252,7 +252,7 @@
 		"equ_Idx": 32,
 		"name": "Salvador",
 		"img_equipment": "T3Z 6L3",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 37,
 		"create_at": "2121-11-02PDT03:11:34"
 	},
@@ -260,7 +260,7 @@
 		"equ_Idx": 33,
 		"name": "Chadwick",
 		"img_equipment": "R9C 2T7",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 5,
 		"create_at": "2121-03-06PST06:03:01"
 	},
@@ -268,7 +268,7 @@
 		"equ_Idx": 34,
 		"name": "Ronan",
 		"img_equipment": "L1B 1K0",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 35,
 		"create_at": "2020-08-07PDT01:08:40"
 	},
@@ -276,7 +276,7 @@
 		"equ_Idx": 35,
 		"name": "Bruno",
 		"img_equipment": "Z3A 1Y8",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 6,
 		"create_at": "2020-10-31PDT11:10:39"
 	},
@@ -284,7 +284,7 @@
 		"equ_Idx": 36,
 		"name": "Maxwell",
 		"img_equipment": "R8W 1T1",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 42,
 		"create_at": "2020-05-19PDT04:05:29"
 	},
@@ -292,7 +292,7 @@
 		"equ_Idx": 37,
 		"name": "Aaron",
 		"img_equipment": "B7Q 4F4",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 3,
 		"create_at": "2121-12-15PST09:12:23"
 	},
@@ -300,7 +300,7 @@
 		"equ_Idx": 38,
 		"name": "John",
 		"img_equipment": "E0O 2L1",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 12,
 		"create_at": "2121-06-06PDT02:06:32"
 	},
@@ -308,7 +308,7 @@
 		"equ_Idx": 39,
 		"name": "Lance",
 		"img_equipment": "H9N 8D2",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 41,
 		"create_at": "2121-10-13PDT12:10:24"
 	},
@@ -316,7 +316,7 @@
 		"equ_Idx": 40,
 		"name": "Salvador",
 		"img_equipment": "N3N 4A5",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 32,
 		"create_at": "2020-12-24PST03:12:57"
 	},
@@ -324,7 +324,7 @@
 		"equ_Idx": 41,
 		"name": "Dalton",
 		"img_equipment": "D9K 9C2",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 47,
 		"create_at": "2121-12-16PST04:12:11"
 	},
@@ -332,7 +332,7 @@
 		"equ_Idx": 42,
 		"name": "Salvador",
 		"img_equipment": "H6G 8R5",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 2,
 		"create_at": "2121-03-20PDT07:03:43"
 	},
@@ -340,7 +340,7 @@
 		"equ_Idx": 43,
 		"name": "Rogan",
 		"img_equipment": "G3S 6U2",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 31,
 		"create_at": "2121-10-13PDT05:10:22"
 	},
@@ -348,7 +348,7 @@
 		"equ_Idx": 44,
 		"name": "Reed",
 		"img_equipment": "B9N 7N8",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 33,
 		"create_at": "2121-10-19PDT02:10:16"
 	},
@@ -356,7 +356,7 @@
 		"equ_Idx": 45,
 		"name": "Ali",
 		"img_equipment": "L5T 9Y4",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 38,
 		"create_at": "2121-12-03PST10:12:21"
 	},
@@ -364,7 +364,7 @@
 		"equ_Idx": 46,
 		"name": "SAMSUNG 충전기",
 		"img_equipment": "N2K 7D0",
-		"description": "충전기",
+		"category": "충전기",
 		"amount": 44,
 		"create_at": "2222-01-01PST02:01:22"
 	},
@@ -372,7 +372,7 @@
 		"equ_Idx": 47,
 		"name": "HANSUNG 충전기",
 		"img_equipment": "I3A 7K6",
-		"description": "충전기",
+		"category": "충전기",
 		"amount": 12,
 		"create_at": "2121-11-04PDT11:11:24"
 	},
@@ -380,7 +380,7 @@
 		"equ_Idx": 48,
 		"name": "LG 충전기",
 		"img_equipment": "Q9M 2Z7",
-		"description": "충전기",
+		"category": "충전기",
 		"amount": 9,
 		"create_at": "2121-10-17PDT03:10:41"
 	},
@@ -388,7 +388,7 @@
 		"equ_Idx": 49,
 		"name": "ASUS 충전기",
 		"img_equipment": "B0A 6H4",
-		"description": "충전기",
+		"category": "충전기",
 		"amount": 17,
 		"create_at": "2020-09-10PDT07:09:34"
 	},
@@ -396,7 +396,7 @@
 		"equ_Idx": 50,
 		"name": "Apple 충전기",
 		"img_equipment": "I1X 5X5",
-		"description": "충전기",
+		"category": "충전기",
 		"amount": 22,
 		"create_at": "2020-10-16PDT03:10:09"
 	},
@@ -404,7 +404,7 @@
 		"equ_Idx": 51,
 		"name": "로지텍 키보드",
 		"img_equipment": "J5I 2E5",
-		"description": "키보드",
+		"category": "키보드",
 		"amount": 1,
 		"create_at": "2121-09-08PDT12:09:24"
 	},
@@ -412,7 +412,7 @@
 		"equ_Idx": 52,
 		"name": "MCOM 키보드",
 		"img_equipment": "B0H 8K0",
-		"description": "키보드",
+		"category": "키보드",
 		"amount": 30,
 		"create_at": "2121-10-06PDT09:10:17"
 	},
@@ -420,7 +420,7 @@
 		"equ_Idx": 53,
 		"name": "Magic 키보드",
 		"img_equipment": "S2D 1T5",
-		"description": "키보드",
+		"category": "키보드",
 		"amount": 12,
 		"create_at": "2121-05-05PDT11:05:32"
 	},
@@ -428,7 +428,7 @@
 		"equ_Idx": 54,
 		"name": "SAMSUNG 키보드",
 		"img_equipment": "A4O 9D2",
-		"description": "키보드",
+		"category": "키보드",
 		"amount": 5,
 		"create_at": "2020-10-01PDT12:10:26"
 	},
@@ -436,7 +436,7 @@
 		"equ_Idx": 55,
 		"name": "맥스틸 키보드",
 		"img_equipment": "K5Q 5G2",
-		"description": "키보드",
+		"category": "키보드",
 		"amount": 38,
 		"create_at": "2121-11-09PST03:11:40"
 	},
@@ -444,7 +444,7 @@
 		"equ_Idx": 56,
 		"name": "Michael",
 		"img_equipment": "S2U 1A7",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 12,
 		"create_at": "2121-10-23PDT05:10:56"
 	},
@@ -452,7 +452,7 @@
 		"equ_Idx": 57,
 		"name": "Wallace",
 		"img_equipment": "F3K 3P9",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 39,
 		"create_at": "2121-10-30PDT08:10:55"
 	},
@@ -460,7 +460,7 @@
 		"equ_Idx": 58,
 		"name": "Conan",
 		"img_equipment": "L1F 1E8",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 42,
 		"create_at": "2121-09-06PDT09:09:12"
 	},
@@ -468,7 +468,7 @@
 		"equ_Idx": 59,
 		"name": "Daquan",
 		"img_equipment": "V8N 1P5",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 15,
 		"create_at": "2121-04-10PDT11:04:54"
 	},
@@ -476,7 +476,7 @@
 		"equ_Idx": 60,
 		"name": "Philip",
 		"img_equipment": "W1N 3Z8",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 43,
 		"create_at": "2222-04-22PDT08:04:38"
 	},
@@ -484,7 +484,7 @@
 		"equ_Idx": 61,
 		"name": "Baxter",
 		"img_equipment": "P4R 0F1",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 41,
 		"create_at": "2121-07-30PDT11:07:00"
 	},
@@ -492,7 +492,7 @@
 		"equ_Idx": 62,
 		"name": "Raymond",
 		"img_equipment": "Y7L 2U3",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 46,
 		"create_at": "2121-11-10PST05:11:45"
 	},
@@ -500,7 +500,7 @@
 		"equ_Idx": 63,
 		"name": "Jarrod",
 		"img_equipment": "S7O 5W2",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 32,
 		"create_at": "2121-05-09PDT07:05:20"
 	},
@@ -508,7 +508,7 @@
 		"equ_Idx": 64,
 		"name": "Hunter",
 		"img_equipment": "X3J 0M8",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 17,
 		"create_at": "2121-02-25PST07:02:58"
 	},
@@ -516,7 +516,7 @@
 		"equ_Idx": 65,
 		"name": "Harding",
 		"img_equipment": "I0H 2M1",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 27,
 		"create_at": "2121-09-07PDT06:09:38"
 	},
@@ -524,7 +524,7 @@
 		"equ_Idx": 66,
 		"name": "Jonas",
 		"img_equipment": "O2U 1N1",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 47,
 		"create_at": "2121-03-15PDT07:03:28"
 	},
@@ -532,7 +532,7 @@
 		"equ_Idx": 67,
 		"name": "Chaim",
 		"img_equipment": "Q0V 9L6",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 24,
 		"create_at": "2121-02-12PST10:02:18"
 	},
@@ -540,7 +540,7 @@
 		"equ_Idx": 68,
 		"name": "Wesley",
 		"img_equipment": "T0K 5Z8",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 32,
 		"create_at": "2121-08-19PDT07:08:42"
 	},
@@ -548,7 +548,7 @@
 		"equ_Idx": 69,
 		"name": "Matthew",
 		"img_equipment": "I9H 8C9",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 5,
 		"create_at": "2020-09-22PDT01:09:17"
 	},
@@ -556,7 +556,7 @@
 		"equ_Idx": 70,
 		"name": "Calvin",
 		"img_equipment": "P8Q 5N3",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 1,
 		"create_at": "2121-06-13PDT12:06:56"
 	},
@@ -564,7 +564,7 @@
 		"equ_Idx": 71,
 		"name": "멀티탭 2구",
 		"img_equipment": "V2A 2T0",
-		"description": "멀티탭",
+		"category": "멀티탭",
 		"amount": 23,
 		"create_at": "2020-10-11PDT01:10:06"
 	},
@@ -572,7 +572,7 @@
 		"equ_Idx": 72,
 		"name": "멀티탭 3구",
 		"img_equipment": "A5J 4U2",
-		"description": "멀티탭",
+		"category": "멀티탭",
 		"amount": 21,
 		"create_at": "2222-04-21PDT09:04:33"
 	},
@@ -580,7 +580,7 @@
 		"equ_Idx": 73,
 		"name": "멀티탭 4구",
 		"img_equipment": "I6D 3F9",
-		"description": "멀티탭",
+		"category": "멀티탭",
 		"amount": 38,
 		"create_at": "2222-04-16PDT01:04:46"
 	},
@@ -588,7 +588,7 @@
 		"equ_Idx": 74,
 		"name": "멀티탭 5구",
 		"img_equipment": "Q6V 8F6",
-		"description": "멀티탭",
+		"category": "멀티탭",
 		"amount": 19,
 		"create_at": "2020-09-17PDT07:09:39"
 	},
@@ -596,7 +596,7 @@
 		"equ_Idx": 75,
 		"name": "멀티탭 6구",
 		"img_equipment": "M0I 4J0",
-		"description": "멀티탭",
+		"category": "멀티탭",
 		"amount": 28,
 		"create_at": "2020-12-29PST07:12:27"
 	},
@@ -604,7 +604,7 @@
 		"equ_Idx": 76,
 		"name": "아두이노",
 		"img_equipment": "E9N 0I6",
-		"description": "기타",
+		"category": "기타",
 		"amount": 21,
 		"create_at": "2121-12-11PST10:12:53"
 	},
@@ -612,7 +612,7 @@
 		"equ_Idx": 77,
 		"name": "라즈베리파이",
 		"img_equipment": "T5Y 8S9",
-		"description": "기타",
+		"category": "기타",
 		"amount": 38,
 		"create_at": "2020-11-22PST12:11:32"
 	},
@@ -620,7 +620,7 @@
 		"equ_Idx": 78,
 		"name": "터치스크린",
 		"img_equipment": "Y5U 8G8",
-		"description": "기타",
+		"category": "기타",
 		"amount": 34,
 		"create_at": "2121-06-28PDT04:06:02"
 	},
@@ -628,7 +628,7 @@
 		"equ_Idx": 79,
 		"name": "드론",
 		"img_equipment": "O4B 0J6",
-		"description": "기타",
+		"category": "기타",
 		"amount": 12,
 		"create_at": "2020-09-09PDT06:09:43"
 	},
@@ -636,7 +636,7 @@
 		"equ_Idx": 80,
 		"name": "타블렛",
 		"img_equipment": "V2Y 2Q6",
-		"description": "기타",
+		"category": "기타",
 		"amount": 41,
 		"create_at": "2121-12-12PST09:12:09"
 	},
@@ -644,7 +644,7 @@
 		"equ_Idx": 81,
 		"name": "Callum",
 		"img_equipment": "A8B 8L1",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 21,
 		"create_at": "2020-08-13PDT07:08:07"
 	},
@@ -652,7 +652,7 @@
 		"equ_Idx": 82,
 		"name": "Raja",
 		"img_equipment": "T4U 7D4",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 26,
 		"create_at": "2121-03-05PST01:03:37"
 	},
@@ -660,7 +660,7 @@
 		"equ_Idx": 83,
 		"name": "Alden",
 		"img_equipment": "C2U 4A2",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 17,
 		"create_at": "2020-11-13PST09:11:55"
 	},
@@ -668,7 +668,7 @@
 		"equ_Idx": 84,
 		"name": "Edward",
 		"img_equipment": "E7Z 2X3",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 12,
 		"create_at": "2121-10-27PDT04:10:05"
 	},
@@ -676,7 +676,7 @@
 		"equ_Idx": 85,
 		"name": "Amery",
 		"img_equipment": "A8T 3T0",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 4,
 		"create_at": "2121-01-29PST08:01:37"
 	},
@@ -684,7 +684,7 @@
 		"equ_Idx": 86,
 		"name": "Yoshio",
 		"img_equipment": "S3F 6A1",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 40,
 		"create_at": "2121-05-05PDT03:05:02"
 	},
@@ -692,7 +692,7 @@
 		"equ_Idx": 87,
 		"name": "Zachery",
 		"img_equipment": "E0G 5B7",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 24,
 		"create_at": "2222-02-08PST03:02:09"
 	},
@@ -700,7 +700,7 @@
 		"equ_Idx": 88,
 		"name": "Bruce",
 		"img_equipment": "A0Q 8S9",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 1,
 		"create_at": "2222-03-06PST01:03:23"
 	},
@@ -708,7 +708,7 @@
 		"equ_Idx": 89,
 		"name": "Brody",
 		"img_equipment": "X0T 9S9",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 20,
 		"create_at": "2020-05-25PDT11:05:17"
 	},
@@ -716,7 +716,7 @@
 		"equ_Idx": 90,
 		"name": "Quinlan",
 		"img_equipment": "G1Z 5Q8",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 24,
 		"create_at": "2121-07-25PDT02:07:32"
 	},
@@ -724,7 +724,7 @@
 		"equ_Idx": 91,
 		"name": "Alan",
 		"img_equipment": "D9J 3O0",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 46,
 		"create_at": "2121-05-14PDT11:05:51"
 	},
@@ -732,7 +732,7 @@
 		"equ_Idx": 92,
 		"name": "Reese",
 		"img_equipment": "P3F 8H0",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 25,
 		"create_at": "2121-10-22PDT08:10:48"
 	},
@@ -740,7 +740,7 @@
 		"equ_Idx": 93,
 		"name": "Malik",
 		"img_equipment": "J6E 3L1",
-		"description": "Lorem",
+		"category": "Lorem",
 		"amount": 6,
 		"create_at": "2121-03-02PST12:03:54"
 	},
@@ -748,7 +748,7 @@
 		"equ_Idx": 94,
 		"name": "Zeph",
 		"img_equipment": "P6I 0C4",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 21,
 		"create_at": "2121-03-11PST05:03:56"
 	},
@@ -756,7 +756,7 @@
 		"equ_Idx": 95,
 		"name": "Lars",
 		"img_equipment": "P2M 1A0",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 48,
 		"create_at": "2222-04-25PDT01:04:37"
 	},
@@ -764,7 +764,7 @@
 		"equ_Idx": 96,
 		"name": "Finn",
 		"img_equipment": "D2I 8Y6",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 28,
 		"create_at": "2121-07-09PDT08:07:28"
 	},
@@ -772,7 +772,7 @@
 		"equ_Idx": 97,
 		"name": "Holmes",
 		"img_equipment": "O2N 6Q5",
-		"description": "Lorem ipsum dolor",
+		"category": "Lorem ipsum dolor",
 		"amount": 19,
 		"create_at": "2121-03-15PDT05:03:29"
 	},
@@ -780,7 +780,7 @@
 		"equ_Idx": 98,
 		"name": "Blake",
 		"img_equipment": "W8G 3K4",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 50,
 		"create_at": "2222-04-27PDT06:04:51"
 	},
@@ -788,7 +788,7 @@
 		"equ_Idx": 99,
 		"name": "Paki",
 		"img_equipment": "L8R 7Z2",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 31,
 		"create_at": "2020-07-21PDT05:07:39"
 	},
@@ -796,7 +796,7 @@
 		"equ_Idx": 100,
 		"name": "Robert",
 		"img_equipment": "Q1Q 6F8",
-		"description": "Lorem ipsum",
+		"category": "Lorem ipsum",
 		"amount": 15,
 		"create_at": "2121-03-26PDT01:03:14"
 	}

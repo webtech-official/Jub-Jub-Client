@@ -11,7 +11,7 @@ const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [equipmentList, setEquipmentList] = useState(equipment_table);
-  const [standard, setStandard] = useState("description");
+  const [standard, setStandard] = useState("category");
 
   const history = useHistory();
   const LookupItemList = equipmentList
