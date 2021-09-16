@@ -44,6 +44,7 @@ const HeadingTitle = styled.h2`
   margin: 0;
   margin-bottom: 12px;
   border-bottom: 1px solid black;
+  line-height : 60px;
 `;
 
 const ApplySort = styled.div`
@@ -57,18 +58,20 @@ const BtnBox = styled.div`
   height: fit-content;
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+  margin-bottom : 20px;
 `;
 
 const BtnI = styled.button`
-  width: 30px;
-  height: 30px;
-  border: 1px solid gray;
+  width : 30px;
+  border: 1px solid #000;
+  border-radius : 30px;
   font-size: 24px;
   text-align: center;
   color: #464646;
   background-color: white;
   outline: none;
+  vertical-align : middle;
+  
 `;
 
 const BtnSum = styled.span`
@@ -76,19 +79,28 @@ const BtnSum = styled.span`
   font-size: 20px;
   color: #464646;
   text-align: center;
+  line-height:30px;
+  
 `;
 
 const SubBtn = styled.button`
   width: 100px;
   height: 65px;
   background-color: black;
+  border: 1px solid black;
   color: white;
   border-radius: 10px;
   border: none;
   font-size: 22px;
   margin-top: 70px;
   margin-right: 20px;
+  &:hover {
+    transform: scale(0.9);
+    box-shadow:  5px 5px 5px rgba(116, 125, 136, .5)  
+    }
+   
 `;
+
 
 const ReasonWrapper = styled.div`
   display : flex;
@@ -144,6 +156,11 @@ const CheckBtn = styled.button`
   font-size: 24px;
   margin-top: 30px;
   border: none;
+  &:hover {
+    transform: scale(0.9);
+    box-shadow:  5px 5px 5px rgba(116, 125, 136, .5)  
+    }
+
 `;
 export {
   BackApply,
