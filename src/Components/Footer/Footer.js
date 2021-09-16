@@ -19,7 +19,7 @@ const Footer = () => {
           <Link className="link">개인정보 처리방침</Link>
         </S.PrivacyPolicy>
         <S.Copyright>
-          <p>ⓒ 2020 Team Gsm-Web-Technologies</p>
+          <p>ⓒ 2021 Team Gsm-Web-Technologies</p>
         </S.Copyright>
       </S.TextWrapper>
     </S.FooterWrapper>
