@@ -3,7 +3,7 @@
 	{
 		"equ_Idx": 1,
 		"name": "MCOM 모니터",
-		"img_equipment": "G9D 4B5",
+		"img_equipment": "https://lh3.googleusercontent.com/proxy/NKmVe-n30FcfQc6OVKOoGVqugoN47EqJZAoJSgKbDKuHdgvtcJfvH8Z7PBjY75W9UR9kRfuSBtLbrfOu7PyGx7Txj3HoqUGF_9h-1hUhFfC_Yina7ljOjBH4ROCn7_IJPlT7iRC822L5HQ",
 		"description": "모니터",
 		"amount": 32,
 		"create_at": "2020-12-24PST10:12:12"
@@ -11,7 +11,7 @@
 	{
 		"equ_Idx": 2,
 		"name": "SAMSUNG 모니터",
-		"img_equipment": "W0O 1F2",
+		"img_equipment": "https://static.coupangcdn.com/image/retail/images/2019/10/17/9/5/0d49f501-8ff1-4868-90da-5ec864e36c59.jpg",
 		"description": "모니터",
 		"amount": 25,
 		"create_at": "2121-06-20PDT08:06:12"
@@ -19,7 +19,7 @@
 	{
 		"equ_Idx": 3,
 		"name": "LG 모니터",
-		"img_equipment": "G1I 1X6",
+		"img_equipment": "http://m.ainzon.co.kr/web/product/big/201607/191_shop1_478115.jpg",
 		"description": "모니터",
 		"amount": 44,
 		"create_at": "2121-07-11PDT04:07:58"
@@ -27,7 +27,7 @@
 	{
 		"equ_Idx": 4,
 		"name": "HANSUNG 모니터",
-		"img_equipment": "I8P 0T2",
+		"img_equipment": "http://photo3.enuri.info/data/images/service/middle/15246000/15246498.jpg",
 		"description": "모니터",
 		"amount": 49,
 		"create_at": "2121-12-07PST01:12:12"
@@ -35,7 +35,7 @@
 	{
 		"equ_Idx": 5,
 		"name": "ASUS 모니터",
-		"img_equipment": "Q9B 0H9",
+		"img_equipment": "http://img.danawa.com/prod_img/500000/417/015/img/14015417_1.jpg?shrink=360:360&_v=20210520101856",
 		"description": "모니터",
 		"amount": 2,
 		"create_at": "2121-07-03PDT08:07:57"

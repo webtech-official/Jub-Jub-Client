@@ -30,7 +30,8 @@ const ContentBox = styled.div`
 
 const ApplyImg = styled.img`
   width: 45%;
-  margin : 5%;
+  margin: 0 4%;
+  padding-bottom: 100px;
 `;
 
 const ApplyBox = styled.div`
