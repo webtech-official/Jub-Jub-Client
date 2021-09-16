@@ -4,11 +4,11 @@ import Check from "./Check";
 import { equipment_table } from "../../Data/equipment_table.json";
 import { useHistory } from "react-router";
 import ModalPortal from "../ModalPortal/ModalPortal";
-import useModal from "../../Hooks/useModal";
+import useModal from "../../Hooks/UseModal";
 
 const oneThings = ["노트북", "태블릿", "모니터"];
 
-const Apply = () => {
+const Apply = ({match}) => {
   const [applSum, setApplSum] = useState(0);
   const [reason, setReason] = useState("")
   const [equipmentItem, setEquipmentItem] = useState(equipment_table[match.params.id - 1])
