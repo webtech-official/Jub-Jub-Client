@@ -3,7 +3,7 @@ import { useRecoilValue } from "recoil";
 import { authStore } from "../../../Util/AuthStore/AuthStore";
 
 const LookupItem = ({ itemInfo, history }) => {
-  const { equ_Idx, description, name, amount } = itemInfo;
+  const { equ_Idx, category, name, amount } = itemInfo;
   // const userInfo = useRecoilValue(authStore)
   // const { roles } = userInfo || {}
   const handleDetailInfo = () => {
@@ -19,7 +19,7 @@ const LookupItem = ({ itemInfo, history }) => {
     <>
       <div className="itemBox" onClick={handleDetailInfo}>
         <span className="itemNumber">{equ_Idx}</span>
-        <span className="category">{description}</span>
+        <span className="category">{category}</span>
         <span className="itemName">{name}</span>
         <span className="itemAmount">{amount}</span>
       </div>

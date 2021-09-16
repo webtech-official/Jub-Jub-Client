@@ -11,6 +11,8 @@ import { useRecoilValue } from "recoil";
 import {myEquipmentSelector} from "../../Util/MypageStore/MypageSelector"
 
 const MyPage = () => {
+  const unparseData = localStorage.getItem('rental');
+  const data = JSON.parse(unparseData)
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status, setStatus] = useState("");
@@ -49,7 +51,7 @@ const MyPage = () => {
               </div>
             </S.TitleBox>
               <ItemPage id={page} setId={setPage} length={currentLength}>
-                {[]}
+                {MypageItemList.length === 0 ? null : MypageItemList}
               </ItemPage>
           </S.MyContainer>
         </S.MyBox>
