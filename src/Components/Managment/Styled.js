@@ -3,19 +3,17 @@ import { Link } from "react-router-dom";
 
 export const ManagementWrapper = styled.div`
   position: absolute;
-  top: 113px;
+  top: 200px;
   width: 100%;
-  min-width: 1870px;
-  height: 2107px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
 `;
 
 export const ManagementContainer = styled.div`
-  width: 1315px;
-  height: 800px;
+  width: calc(100% - 20vw);
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -24,24 +22,9 @@ export const ManagementContainer = styled.div`
   background-color: #ffffff;
   border-radius: 30px;
   span {
-    width : 220px;
-    text-align:center;
+    width: 220px;
+    text-align: center;
   }
-  /* .classNum{
-    width: 100px;
-  }
-  .category{
-    width: 250px;
-  }
-  .name{
-    width: 350px;
-  }
-  .amount{
-    width: 200px;
-  }
-  .rentDate{
-    width: 200px;
-  } */
 `;
 
 export const TitleBox = styled.div`
@@ -61,7 +44,8 @@ export const TitleBox = styled.div`
     font-size: 20px;
     color: #ffffff;
     text-align: center;
-    width : 220px;
+    width: 220px;
+  }
 `;
 
 export const ItemInfoWrapper = styled(Link)`
