@@ -40,3 +40,4 @@
  - 유시온 https://github.com/yoosion030
  - 양시준 https://github.com/YangSiJun528
  - 변찬우 https://github.com/chanwoo00106
+ - 이서린 https://github.com/iseolin76
