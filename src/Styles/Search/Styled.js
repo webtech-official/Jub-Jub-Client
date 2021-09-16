@@ -10,6 +10,7 @@ export const SearchBox = styled.div`
     display: flex;
     border-bottom: 3px solid #000000;
     .inputBox {
+      padding-top: 10px;
       width: 95%;
       height: 100%;
       border: 0;

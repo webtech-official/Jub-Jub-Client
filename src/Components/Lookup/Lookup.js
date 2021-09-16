@@ -11,10 +11,20 @@ const Lookup = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [equipmentList, setEquipmentList] = useState(equipment_table);
+  const [standard, setStandard] = useState("description");
+  // useEffect(() => { 
+  //   Admin.equipmentInfoAll().then(res => {
+  //     console.log(res)
+  //     setEquipmentList(res.Data.list)
+  //   })
   // }, [setEquipmentList])
   console.log(equipmentList, "asd");
   const history = useHistory();
   const LookupItemList = equipmentList
+    .filter((item, index) => equipmentList[index][standard].includes(search))
+    .filter(
+      (item, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5
+    )
     .filter((item, index) => equipmentList[index].name.includes(search))
     .filter((_, index) => index + 1 <= page * 5 && index + 1 > (page - 1) * 5)
     .map((item) => (
@@ -23,7 +33,7 @@ const Lookup = () => {
   console.log(equipmentList);
   return (
     <S.LookupContainer>
-      <Search search={search} onChange={setSearch} />
+      <Search search={search} onChange={setSearch} standard={standard} setStandard={setStandard} />
       <S.TitleBox>
         <div>
           <span className="itemNumber">번호</span>
