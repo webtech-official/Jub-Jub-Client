@@ -2,11 +2,11 @@ import React from "react";
 import * as S from "./Styled";
 
 const ItemPage = ({ id, setId, length, children, white }) => {
-  //const showId = Math.floor(temporary / 5) === 0 ? 1 : Math.floor(id / 5) * 5;
-  
-  const showId = id % 10 === 5 && id % 10 === 0 ? Math.floor(id / 5) - 1 : Math.floor(id / 5) * 5;
-
-  const page = [showId + 1, showId + 2, showId + 3, showId + 4, showId + 5]
+  var showId;
+  if (id % 10 === 5) showId = 5 * (Math.floor(id / 5) - 1);
+  else if (id % 10 === 0) showId = id - 5;
+  else showId = Math.floor(id / 5) * 5;
+  const page = [1 + showId, 2 + showId, 3 + showId, 4 + showId, 5 + showId];
   const pages = page.map((p) => (
     <span
       key={p}
@@ -35,7 +35,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
             className="pageMoveButton"
             onClick={() => {
               if (id >= 6) {
-                setId(id - 5);
+                if (id % 5 === 0) setId(id - 5);
+                else setId(id - (id % 5));
               } else {
                 setId(1);
               }
@@ -49,6 +50,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
               if (id + 5 >= parseInt(length / 5) + 1) {
                 setId(parseInt(length / 5) + 1);
               } else {
+                if (id % 5 === 0) setId(id + 1);
+                else setId(id + (6 - id % 5));
                 setId(id + 5);
               }
             }}
@@ -66,7 +69,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
             className="pageMoveButton"
             onClick={() => {
               if (id >= 6) {
-                setId(id - 5);
+                if (id % 5 === 0) setId(id - 5);
+                else setId(id - (id % 5));
               } else {
                 setId(1);
               }
@@ -80,7 +84,8 @@ const ItemPage = ({ id, setId, length, children, white }) => {
               if (id + 5 >= parseInt(length / 5) + 1) {
                 setId(parseInt(length / 5) + 1);
               } else {
-                setId(id + 5);
+                if (id % 5 === 0) setId(id + 1);
+                else setId(id + (6 - id % 5));
               }
             }}
           ></div>
