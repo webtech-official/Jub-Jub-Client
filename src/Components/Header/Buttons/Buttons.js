@@ -1,6 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router';
+import { useRecoilValue } from 'recoil';
 import { Button } from "../../../Styles/index";
+import { adminEmail } from '../../../Util/AdminStore/AdminStore';
 
 
 const Buttons = ({ token, roles, setModalName, toggleModal }) => {
@@ -17,12 +19,12 @@ const Buttons = ({ token, roles, setModalName, toggleModal }) => {
   const changeRouterStudent = () => {
     history.push("/Management")
   }
-  console.log(roles, "buttons roles")
+  const admin = useRecoilValue(adminEmail);
   return (
     <>
       {
         token ? (
-          roles === "ROLE_ADMIN" ? (
+          admin === "s20054@gsm.hs.kr" ? (
             <>
               <span onClick={changeRouterAdmin}>기자재 관리</span>
               <span onClick={changeRouterAllow}>기자재 대여 승인</span>
@@ -36,7 +38,7 @@ const Buttons = ({ token, roles, setModalName, toggleModal }) => {
                 }}
               >
                 로그아웃
-                  </Button>
+              </Button>
             </>
           ) : (
             <>

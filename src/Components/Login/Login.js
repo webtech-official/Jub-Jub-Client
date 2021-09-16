@@ -3,15 +3,20 @@ import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
 import Auth from "../../Assets/Api/Auth";
 import { useHistory } from "react-router-dom";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import { authStore } from "../../Util/AuthStore/AuthStore";
 import { loginSelector } from "../../Util/AuthStore/AuthSelector";
+import { adminEmail } from "../../Util/AdminStore/AdminStore";
 
 const Login = ({ toggleModal , setModalName}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userInfo, setUserInfo] = useRecoilState(authStore)
-
+  const setUserName = useSetRecoilState(adminEmail);
+  const logged = () => {
+    localStorage.setItem('jupjup_token', 'dummy');
+  }
+  const setAdminEmail = useSetRecoilState(adminEmail);
   const history = useHistory();
   const handleLogin = () => {
     Auth.login(email, password)
@@ -41,6 +46,7 @@ const Login = ({ toggleModal , setModalName}) => {
   const renderRegisterModal = () => {
     setModalName("register")
   }
+  setAdminEmail(email);
   return (
     <LoginRegister sideMark="?" toggleModal={toggleModal}>
       <S.TextBox>
@@ -62,7 +68,10 @@ const Login = ({ toggleModal , setModalName}) => {
           />
         </div>
       </S.InputBox>
-      <S.LoginButton onClick={handleLogin}>로그인</S.LoginButton>
+      <S.LoginButton onClick={() => {
+        handleLogin()
+        logged()
+      }}>로그인</S.LoginButton>
     </LoginRegister>
   );
 };

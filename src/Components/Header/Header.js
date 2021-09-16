@@ -15,15 +15,15 @@ import { useHistory } from "react-router-dom";
 const Header = () => {
   const [userInfo, setUserInfo] = useRecoilState(authStore)
   const loadUserInfo = useRecoilValue(userInfoSelector)
-  const token = window.localStorage.getItem("jupjup_token");
-  // useEffect(()=> {
-  //   setUserInfo(loadUserInfo)
-  // }, [setUserInfo, loadUserInfo])
-  // console.log({}, "userInfo")
-  //새로 작성한 리펙토링 코드 
   const {isShow, toggleModal} = useModal()
   const [modalName, setModalName] = useState("register")
   const { roles } = userInfo || ""
+  const [token, setToken] = useState("");
+
+  useEffect(() => {
+    const val = window.localStorage.getItem("jupjup_token");
+    setToken(val);
+  })
   
   const history = useHistory();
   return (
