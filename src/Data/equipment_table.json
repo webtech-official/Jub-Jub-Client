@@ -42,41 +42,41 @@
 	},
 	{
 		"equ_Idx": 6,
-		"name": "Lionel",
+		"name": "로지텍 마우스",
 		"img_equipment": "G2O 2B1",
-		"description": "Lorem ipsum",
+		"description": "마우스",
 		"amount": 49,
 		"create_at": "2121-12-17PST10:12:09"
 	},
 	{
 		"equ_Idx": 7,
-		"name": "Gavin",
+		"name": "MCOM 마우스",
 		"img_equipment": "S1U 3X7",
-		"description": "Lorem ipsum",
+		"description": "마우스",
 		"amount": 5,
 		"create_at": "2121-03-07PST04:03:02"
 	},
 	{
 		"equ_Idx": 8,
-		"name": "Tanner",
+		"name": "레이져 마우스",
 		"img_equipment": "T3C 2G6",
-		"description": "Lorem ipsum dolor",
+		"description": "마우스",
 		"amount": 41,
 		"create_at": "2222-01-17PST10:01:12"
 	},
 	{
 		"equ_Idx": 9,
-		"name": "Reuben",
+		"name": "SAMSUNG 마우스",
 		"img_equipment": "Y4Y 4M6",
-		"description": "Lorem",
+		"description": "마우스",
 		"amount": 13,
 		"create_at": "2121-10-20PDT07:10:52"
 	},
 	{
 		"equ_Idx": 10,
-		"name": "Driscoll",
+		"name": "LG 마우스",
 		"img_equipment": "W9P 8S6",
-		"description": "Lorem ipsum",
+		"description": "마우스",
 		"amount": 36,
 		"create_at": "2020-08-05PDT10:08:42"
 	},
