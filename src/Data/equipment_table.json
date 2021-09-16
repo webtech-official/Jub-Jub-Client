@@ -82,41 +82,41 @@
 	},
 	{
 		"equ_Idx": 11,
-		"name": "Laith",
+		"name": "SAMSUNG 이온",
 		"img_equipment": "K1Y 2A4",
-		"description": "Lorem ipsum",
+		"description": "노트북",
 		"amount": 21,
 		"create_at": "2121-03-29PDT03:03:51"
 	},
 	{
 		"equ_Idx": 12,
-		"name": "Malik",
+		"name": "SAMSUNG 플렉스",
 		"img_equipment": "L2V 6G3",
-		"description": "Lorem ipsum",
+		"description": "노트북",
 		"amount": 33,
 		"create_at": "2020-05-15PDT04:05:14"
 	},
 	{
 		"equ_Idx": 13,
-		"name": "Ian",
+		"name": "LG 그램",
 		"img_equipment": "W4Q 1B3",
-		"description": "Lorem ipsum dolor",
+		"description": "노트북",
 		"amount": 46,
 		"create_at": "2121-08-12PDT07:08:06"
 	},
 	{
 		"equ_Idx": 14,
-		"name": "Rafael",
+		"name": "MacBook Air",
 		"img_equipment": "W0I 3Q1",
-		"description": "Lorem ipsum dolor",
+		"description": "노트북",
 		"amount": 13,
 		"create_at": "2121-12-18PST12:12:17"
 	},
 	{
 		"equ_Idx": 15,
-		"name": "Ali",
+		"name": "MacBook Pro",
 		"img_equipment": "M0Y 2S6",
-		"description": "Lorem",
+		"description": "노트북",
 		"amount": 6,
 		"create_at": "2020-09-29PDT06:09:45"
 	},
