@@ -10,9 +10,8 @@ const LookupWrapper = styled.div`
 `;
 
 const LookupContainer = styled.div`
-  width: 1215px;
+  width: calc(100vw - 20vw);
   height: 850px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,8 +40,7 @@ const LookupContainer = styled.div`
   }
 `;
 
-export const LookupItemTitleWrapper = styled.div`
-`;
+export const LookupItemTitleWrapper = styled.div``;
 
 const TitleBox = styled.div`
   width: 90%;
