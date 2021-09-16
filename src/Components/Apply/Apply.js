@@ -39,15 +39,7 @@ const Apply = ({match}) => {
   let day = ('0' + today.getDate()).slice(-2);
   return year + '-' + month  + '-' + day;
 }
-  // useEffect(() => {
-  //   Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
-  //     console.log(res.Data, equipmentItem ,"api equipdetail")
-  //     setEquipmentItem(res.Data.Data)
-  //   })
-  // }, [match.params.id, setEquipmentItem])
-=======
-    toggleModal();
-  };
+ 
   const handleApply = () => {
     if (applSum === 0) {
     } else if (oneThings.indexOf(description) !== -1 && applSum > 1) {
