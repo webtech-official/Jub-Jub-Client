@@ -3,7 +3,6 @@ import { ItemPage, Search } from "../../Styles";
 import ItemRows from "./ItemRows/ItemRows";
 import { auth_table } from "../../Data/auth_table.json";
 import * as S from "./Styled";
-import RentalList from "./Rental/RentalList/RentalList";
 
 const Management = () => {
   const [page, setPage] = useState(1);
@@ -17,9 +16,6 @@ const Management = () => {
         <ItemPage id={page} setId={setPage} length={items.length / 3 + 1}>
           <ItemRows page={page} search={search} />
         </ItemPage>
-      </S.ManagementContainer>
-      <S.ManagementContainer>
-        <RentalList />
       </S.ManagementContainer>
     </S.ManagementWrapper>
   );
