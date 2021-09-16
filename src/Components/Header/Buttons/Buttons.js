@@ -41,11 +41,9 @@ const Buttons = ({ token, setModalName, toggleModal }) => {
         ) : (
           <>
             <>
-            <Button
-              backGroundColor="black"
-              isBig={true}
+            <span
               onClick={changeRouterMypage}
-            >마이페이지</Button>
+            >마이페이지</span>
             </>
             <Button
               backGroundColor="black"
