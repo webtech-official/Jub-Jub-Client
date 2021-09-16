@@ -87,6 +87,7 @@ const SubBtn = styled.button`
   border: none;
   font-size: 22px;
   margin-top: 70px;
+  margin-right: 20px;
 `;
 
 const ReasonWrapper = styled.div`

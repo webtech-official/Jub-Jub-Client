@@ -77,6 +77,7 @@ const Apply = ({match}) => {
                 <S.ReasonInput rows="7" value={reason} onChange={handleChangeReason} />
               </S.ReasonWrapper>
               <S.SubBtn onClick={allowModalOpen}>대여</S.SubBtn>
+              <S.SubBtn onClick={() => {history.goBack()}} >취소</S.SubBtn>
             </S.ApplyBox>
           </S.ContentBox>
         </S.MainBox>
