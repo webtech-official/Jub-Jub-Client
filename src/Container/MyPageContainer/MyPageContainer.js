@@ -1,11 +1,11 @@
 import React from "react";
-import { Mypage } from "../../Components";
+import { MyPage } from "../../Components";
 import { Background } from "../../Styles/index";
 
 const MyPageContainer = () => {
   return (
     <>
-      <Mypage />
+      <MyPage />
       <Background textHide={true} />
     </>
   );

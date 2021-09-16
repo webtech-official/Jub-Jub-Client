@@ -6,7 +6,7 @@ import { Button } from "../../../Styles/index";
 const Buttons = ({ token, roles, setModalName, toggleModal }) => {
   const history = useHistory();
   const changeRouterMypage = () => {
-    history.push("/Mypage");
+    history.push("/MyPage");
   }
   const changeRouterAdmin = () => {
     history.push("/Admin/Main")

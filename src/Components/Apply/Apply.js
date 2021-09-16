@@ -4,7 +4,7 @@ import Check from "./Check";
 import { useRecoilState } from "recoil";
 import { equipmentItemState } from "../../Util/AdminStore/AdminStore";
 import Admin from "../../Assets/Api/Admin";
-import {equipment_table} from "../../Data/equipment_table.json"
+import {equipment_table} from "../../data/equipment_table.json"
 import Student from "../../Assets/Api/Student";
 import { useHistory } from "react-router";
 import ModalPortal from "../ModalPortal/ModalPortal";

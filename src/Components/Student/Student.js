@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import ItemPage from "../../Styles/ItemPage/ItemPage";
 import StudentItem from "./StudentItem/StudentItem";
 import * as S from "./Styled";
-import { auth_table } from "../../Data/auth_table.json"
-import { equipment_allow_table } from "../../Data/equipment_allow_table.json"
-import {equipment_table} from "../../Data/equipment_table.json"
+import { auth_table } from "../../data/auth_table.json"
+import { equipment_allow_table } from "../../data/equipment_allow_table.json"
+import {equipment_table} from "../../data/equipment_table.json"
 
 const Student = ({ match }) => {
   // const [is_open, setOpen] = useState({

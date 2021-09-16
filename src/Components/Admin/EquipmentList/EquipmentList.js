@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ItemPage, Search } from "../../../Styles";
 import Loading from "../../Lookup/Loading/Loading";
 import ItemInfo from "../ItemInfo/ItemInfo";
-import { equipment_table } from "../../../Data/equipment_table.json";
+import { equipment_table } from "../../../data/equipment_table.json";
 import * as S from "../Styled";
 import Admin from "../../../Assets/Api/Admin";
 import { useRecoilState } from "recoil";

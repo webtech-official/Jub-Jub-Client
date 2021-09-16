@@ -5,7 +5,7 @@ import Header from "./Header/Header";
 import Login from "./Login/Login";
 import Lookup from "./Lookup/Lookup";
 import Main from "./Main/Main";
-import Mypage from "./MyPage/MyPage";
+import MyPage from "./MyPage/MyPage";
 import Register from "./Register/Register";
 import Statistics from "./Statistics/Statistics";
 import Footer from "./Footer/Footer";
@@ -22,7 +22,7 @@ export {
   Login,
   Lookup,
   Main,
-  Mypage,
+  MyPage,
   Register,
   Statistics,
   Footer,

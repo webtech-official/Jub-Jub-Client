@@ -23,7 +23,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={HomeContainer} />
             <Route path="/main" component={MainContainer} />
-            <Route path="/Mypage" component={MyPageContainer} />
+            <Route path="/MyPage" component={MyPageContainer} />
             <Route path="/Apply/:id" component={ApplyContainer} />
             <Route path="/Allow" component={AllowContainer} />
             <Route path="/Student/:classnum" component={StudentContainer} />

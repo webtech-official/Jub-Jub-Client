@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as S from "../../Styled";
 import { ItemPage, Search } from "../../../../Styles";
-import { equipment_allow_table } from "../../../../Data/equipment_allow_table.json";
+import { equipment_allow_table } from "../../../../data/equipment_allow_table.json";
 import RentalListItem from "../RentalListItem/RentalListItem";
 
 const RentalList = () => {

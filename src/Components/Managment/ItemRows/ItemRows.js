@@ -1,5 +1,5 @@
 import React from "react";
-import { auth_table } from "../../../Data/auth_table.json";
+import { auth_table } from "../../../data/auth_table.json";
 import ItemInfo from "../ItemInfo/ItemInfo";
 import * as S from "../Styled";
 
