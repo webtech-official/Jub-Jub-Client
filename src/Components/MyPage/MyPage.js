@@ -10,11 +10,11 @@ import useModal from "../../Hooks/useModal";
 import { useRecoilValue } from "recoil";
 import {myEquipmentSelector} from "../../Util/MypageStore/MypageSelector"
 
-const Mypage = () => {
+const MyPage = () => {
   const [page, setPage] = useState(1);
   const [items] = useState(data);
   const [status, setStatus] = useState("");
-  const myRentalList = useRecoilValue(myEquipmentSelector)
+  // const myRentalList = useRecoilValue(myEquipmentSelector)
   const statusFilter = (status) => {
     setStatus(status);
   };
@@ -48,11 +48,9 @@ const Mypage = () => {
                 <span className="btn"></span>
               </div>
             </S.TitleBox>
-            <Suspense fallback={<div>loading...</div>}>
               <ItemPage id={page} setId={setPage} length={currentLength}>
-                {MypageItemList}
+                {[]}
               </ItemPage>
-            </Suspense>
           </S.MyContainer>
         </S.MyBox>
       </S.MyWrapper>
@@ -60,4 +58,4 @@ const Mypage = () => {
   );
 };
 
-export default Mypage;
+export default MyPage;

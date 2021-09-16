@@ -17,7 +17,7 @@ const Lookup = () => {
   // useEffect(() => { 
   //   Admin.equipmentInfoAll().then(res => {
   //     console.log(res)
-  //     setEquipmentList(res.data.list)
+  //     setEquipmentList(res.Data.list)
   //   })
   // }, [setEquipmentList])
   console.log(equipmentList, "asd")

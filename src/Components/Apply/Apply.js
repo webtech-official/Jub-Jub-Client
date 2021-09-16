@@ -36,13 +36,13 @@ const Apply = ({match}) => {
   };
   // useEffect(() => {
   //   Admin.equipmentDetail(parseInt(match.params.id)).then(res => {
-  //     console.log(res.data, equipmentItem ,"api equipdetail")
-  //     setEquipmentItem(res.data.data)
+  //     console.log(res.Data, equipmentItem ,"api equipdetail")
+  //     setEquipmentItem(res.Data.Data)
   //   })
   // }, [match.params.id, setEquipmentItem])
   const handleApply = () => {
     // Student.equipmentApplyStudent(name, applSum, reason).then(res => {
-    //   alert(res.data.msg)
+    //   alert(res.Data.msg)
     //   setOpen(false)
     //   history.push("/")
     // })

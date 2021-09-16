@@ -16,7 +16,7 @@ const EquipmentList = ({ toggleModal, setModalName }) => {
   // useEffect(() => {
   //   Admin.equipmentInfoAll().then(res => {
   //     console.log(res)
-  //     setEquipmentList(res.data.list)
+  //     setEquipmentList(res.Data.list)
   //   })
   // },[setEquipmentList])
   const equipments = equipmentList

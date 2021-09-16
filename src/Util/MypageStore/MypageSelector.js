@@ -7,8 +7,8 @@ export const myEquipmentSelector = selector({
     get: async ({ get }) => {
         const { data } = await Mypage.myEquipment().then(res => console.log("res", res));
         console.log(data)
-        //    if (data.code >= 0) {
-        //        const { list } = data;
+        //    if (Data.code >= 0) {
+        //        const { list } = Data;
         //        console.log()
         //        const rentalData = list.map((rentalItem) => {
         //            const { amount, equipmentEnum, modifiedDate, equipment } = rentalItem;
@@ -20,7 +20,7 @@ export const myEquipmentSelector = selector({
         //        }) || {}
         //        console.log(rentalData)
         //    } else {
-        //        console.log("myEquipment Error:", data)
+        //        console.log("myEquipment Error:", Data)
         //    }
     }
 })
