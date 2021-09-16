@@ -19,5 +19,12 @@ export const SearchBox = styled.div`
       font-size: 20px;
       background-color: rgba(0, 0, 0, 0);
     }
+    button{
+      height: 50px;
+      line-height: 50px;
+    }
+    img{
+      height: 50px;
+    }
   }
 `;
