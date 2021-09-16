@@ -122,121 +122,121 @@
 	},
 	{
 		"equ_Idx": 16,
-		"name": "Preston",
+		"name": "hdmi to hdmi 1m",
 		"img_equipment": "X3Q 8F6",
-		"description": "Lorem",
+		"description": "케이블",
 		"amount": 49,
 		"create_at": "2020-07-25PDT08:07:41"
 	},
 	{
 		"equ_Idx": 17,
-		"name": "John",
+		"name": "hdmi to hdmi 2m",
 		"img_equipment": "H4A 8A0",
-		"description": "Lorem ipsum dolor",
+		"description": "케이블",
 		"amount": 34,
 		"create_at": "2222-01-14PST09:01:15"
 	},
 	{
 		"equ_Idx": 18,
-		"name": "Addison",
+		"name": "hdmi to hdmi 3m",
 		"img_equipment": "N8A 8V0",
-		"description": "Lorem ipsum dolor",
+		"description": "케이블",
 		"amount": 22,
 		"create_at": "2020-06-17PDT01:06:07"
 	},
 	{
 		"equ_Idx": 19,
-		"name": "Ryan",
+		"name": "USB-C to USB-C 1m",
 		"img_equipment": "Q1E 5Z8",
-		"description": "Lorem ipsum",
+		"description": "케이블",
 		"amount": 42,
 		"create_at": "2121-01-11PST08:01:42"
 	},
 	{
 		"equ_Idx": 20,
-		"name": "Shad",
+		"name": "USB-C to USB-C 2m",
 		"img_equipment": "W7Z 4G1",
-		"description": "Lorem ipsum dolor",
+		"description": "케이블",
 		"amount": 22,
 		"create_at": "2121-11-13PST04:11:02"
 	},
 	{
 		"equ_Idx": 21,
-		"name": "Jerry",
+		"name": "USB-C to USB-C 3m",
 		"img_equipment": "R7D 3F2",
-		"description": "Lorem",
+		"description": "케이블",
 		"amount": 18,
 		"create_at": "2222-03-11PST03:03:40"
 	},
 	{
 		"equ_Idx": 22,
-		"name": "Lev",
+		"name": "USB-A to USB-A 1m",
 		"img_equipment": "K1M 8G1",
-		"description": "Lorem ipsum dolor",
+		"description": "케이블",
 		"amount": 1,
 		"create_at": "2222-03-19PDT12:03:56"
 	},
 	{
 		"equ_Idx": 23,
-		"name": "Graiden",
+		"name": "USB-A to USB-A 2m",
 		"img_equipment": "Z4U 9I7",
-		"description": "Lorem",
+		"description": "케이블",
 		"amount": 34,
 		"create_at": "2121-06-25PDT04:06:18"
 	},
 	{
 		"equ_Idx": 24,
-		"name": "Fitzgerald",
+		"name": "USB-A to USB-A 3m",
 		"img_equipment": "X5Y 7H6",
-		"description": "Lorem ipsum",
+		"description": "케이블",
 		"amount": 11,
 		"create_at": "2222-04-07PDT08:04:08"
 	},
 	{
 		"equ_Idx": 25,
-		"name": "Bruno",
+		"name": "USB-A to USB-C 1m",
 		"img_equipment": "F3Q 0Y4",
-		"description": "Lorem ipsum",
+		"description": "케이블",
 		"amount": 40,
 		"create_at": "2121-03-10PST06:03:25"
 	},
 	{
 		"equ_Idx": 26,
-		"name": "Nolan",
+		"name": "USB-A to USB-C 2m",
 		"img_equipment": "Z3K 9R7",
-		"description": "Lorem",
+		"description": "케이블",
 		"amount": 43,
 		"create_at": "2020-11-14PST01:11:39"
 	},
 	{
 		"equ_Idx": 27,
-		"name": "Sebastian",
+		"name": "USB-A to USB-C 3m",
 		"img_equipment": "K8T 1K5",
-		"description": "Lorem ipsum dolor",
+		"description": "케이블",
 		"amount": 31,
 		"create_at": "2121-11-01PDT10:11:52"
 	},
 	{
 		"equ_Idx": 28,
-		"name": "Ashton",
+		"name": "LAN 케이블 1m",
 		"img_equipment": "Y7E 9O0",
-		"description": "Lorem",
+		"description": "케이블",
 		"amount": 37,
 		"create_at": "2020-05-29PDT09:05:06"
 	},
 	{
 		"equ_Idx": 29,
-		"name": "Beck",
+		"name": "LAN 케이블 2m",
 		"img_equipment": "C8L 9H6",
-		"description": "Lorem ipsum",
+		"description": "케이블",
 		"amount": 25,
 		"create_at": "2020-11-05PST07:11:05"
 	},
 	{
 		"equ_Idx": 30,
-		"name": "Oscar",
+		"name": "LAN 케이블 3m",
 		"img_equipment": "F5U 4V8",
-		"description": "Lorem ipsum dolor",
+		"description": "케이블",
 		"amount": 37,
 		"create_at": "2020-05-17PDT05:05:24"
 	},
@@ -362,81 +362,81 @@
 	},
 	{
 		"equ_Idx": 46,
-		"name": "Elton",
+		"name": "SAMSUNG 충전기",
 		"img_equipment": "N2K 7D0",
-		"description": "Lorem",
+		"description": "충전기",
 		"amount": 44,
 		"create_at": "2222-01-01PST02:01:22"
 	},
 	{
 		"equ_Idx": 47,
-		"name": "Adrian",
+		"name": "HANSUNG 충전기",
 		"img_equipment": "I3A 7K6",
-		"description": "Lorem ipsum dolor",
+		"description": "충전기",
 		"amount": 12,
 		"create_at": "2121-11-04PDT11:11:24"
 	},
 	{
 		"equ_Idx": 48,
-		"name": "Galvin",
+		"name": "LG 충전기",
 		"img_equipment": "Q9M 2Z7",
-		"description": "Lorem ipsum dolor",
+		"description": "충전기",
 		"amount": 9,
 		"create_at": "2121-10-17PDT03:10:41"
 	},
 	{
 		"equ_Idx": 49,
-		"name": "Jerry",
+		"name": "ASUS 충전기",
 		"img_equipment": "B0A 6H4",
-		"description": "Lorem",
+		"description": "충전기",
 		"amount": 17,
 		"create_at": "2020-09-10PDT07:09:34"
 	},
 	{
 		"equ_Idx": 50,
-		"name": "Eagan",
+		"name": "Apple 충전기",
 		"img_equipment": "I1X 5X5",
-		"description": "Lorem",
+		"description": "충전기",
 		"amount": 22,
 		"create_at": "2020-10-16PDT03:10:09"
 	},
 	{
 		"equ_Idx": 51,
-		"name": "Vernon",
+		"name": "로지텍 키보드",
 		"img_equipment": "J5I 2E5",
-		"description": "Lorem",
+		"description": "키보드",
 		"amount": 1,
 		"create_at": "2121-09-08PDT12:09:24"
 	},
 	{
 		"equ_Idx": 52,
-		"name": "Lars",
+		"name": "MCOM 키보드",
 		"img_equipment": "B0H 8K0",
-		"description": "Lorem ipsum",
+		"description": "키보드",
 		"amount": 30,
 		"create_at": "2121-10-06PDT09:10:17"
 	},
 	{
 		"equ_Idx": 53,
-		"name": "Mohammad",
+		"name": "Magic 키보드",
 		"img_equipment": "S2D 1T5",
-		"description": "Lorem ipsum dolor",
+		"description": "키보드",
 		"amount": 12,
 		"create_at": "2121-05-05PDT11:05:32"
 	},
 	{
 		"equ_Idx": 54,
-		"name": "Donovan",
+		"name": "SAMSUNG 키보드",
 		"img_equipment": "A4O 9D2",
-		"description": "Lorem ipsum dolor",
+		"description": "키보드",
 		"amount": 5,
 		"create_at": "2020-10-01PDT12:10:26"
 	},
 	{
 		"equ_Idx": 55,
-		"name": "Orson",
+		"name": "맥스틸 키보드",
 		"img_equipment": "K5Q 5G2",
-		"description": "Lorem",
+		"description": "키보드",
 		"amount": 38,
 		"create_at": "2121-11-09PST03:11:40"
 	},
@@ -562,41 +562,41 @@
 	},
 	{
 		"equ_Idx": 71,
-		"name": "Castor",
+		"name": "멀티탭 2구",
 		"img_equipment": "V2A 2T0",
-		"description": "Lorem",
+		"description": "멀티탭",
 		"amount": 23,
 		"create_at": "2020-10-11PDT01:10:06"
 	},
 	{
 		"equ_Idx": 72,
-		"name": "Andrew",
+		"name": "멀티탭 3구",
 		"img_equipment": "A5J 4U2",
-		"description": "Lorem ipsum",
+		"description": "멀티탭",
 		"amount": 21,
 		"create_at": "2222-04-21PDT09:04:33"
 	},
 	{
 		"equ_Idx": 73,
-		"name": "Preston",
+		"name": "멀티탭 4구",
 		"img_equipment": "I6D 3F9",
-		"description": "Lorem ipsum dolor",
+		"description": "멀티탭",
 		"amount": 38,
 		"create_at": "2222-04-16PDT01:04:46"
 	},
 	{
 		"equ_Idx": 74,
-		"name": "Ethan",
+		"name": "멀티탭 5구",
 		"img_equipment": "Q6V 8F6",
-		"description": "Lorem ipsum",
+		"description": "멀티탭",
 		"amount": 19,
 		"create_at": "2020-09-17PDT07:09:39"
 	},
 	{
 		"equ_Idx": 75,
-		"name": "Gregory",
+		"name": "멀티탭 6구",
 		"img_equipment": "M0I 4J0",
-		"description": "Lorem ipsum",
+		"description": "멀티탭",
 		"amount": 28,
 		"create_at": "2020-12-29PST07:12:27"
 	},
