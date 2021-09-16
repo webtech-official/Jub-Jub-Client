@@ -10,9 +10,9 @@ const LookupWrapper = styled.div`
 `;
 
 const LookupContainer = styled.div`
+  margin: 0 auto;
   width: 1215px;
   height: 850px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,10 +39,24 @@ const LookupContainer = styled.div`
   .itemAmount {
     width: 296px;
   }
+  .standard {
+    border: none;
+    width: 15%;
+    height: 45px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+    margin-right: 5px;
+    &:active {
+      transform: scale(0.9);
+      box-shadow:  5px 5px 5px rgba(116, 125, 136, .5)
+    }
+  }
 `;
 
-export const LookupItemTitleWrapper = styled.div`
-`;
+export const LookupItemTitleWrapper = styled.div``;
 
 const TitleBox = styled.div`
   width: 90%;

@@ -1,25 +1,19 @@
 import React, { useState } from "react";
 import * as S from "./Styled";
 import { LoginRegister } from "../../Styles";
-import Auth from "../../Assets/Api/Auth";
 
 const Register = ({ toggleModal }) => {
-  const [id, setId] = useState("");
+  const [_, setId] = useState("");
   const [password, setPassword] = useState("");
   const [pwcheck, setPwcheck] = useState("");
-  const [name, setName] = useState("");
-  const [classNumber, setClassNumber] = useState("");
+  const [_2, setName] = useState("");
+  const [_3, setClassNumber] = useState("");
   const logged = () => {
-    localStorage.setItem('jupjup_token', 'dummy');
-  }
+    localStorage.setItem("jupjup_token", "dummy");
+  };
   const handleRegister = () => {
     if (password === pwcheck) {
-      // Auth.signup(classNumber, id, name, password).then((res) => {
-      //   const { msg } = res.Data;
-      //   alert(msg);
-      //   setOpen({ open: false });
-      // });
-      toggleModal()
+      toggleModal();
     } else {
       alert("패스워드가 다릅니다");
     }
@@ -76,10 +70,14 @@ const Register = ({ toggleModal }) => {
           />
         </div>
       </S.InputBox>
-      <S.RegisterButton onClick={() => {
-        handleRegister()
-        logged()
-      }}>회원가입</S.RegisterButton>
+      <S.RegisterButton
+        onClick={() => {
+          handleRegister();
+          logged();
+        }}
+      >
+        회원가입
+      </S.RegisterButton>
     </LoginRegister>
   );
 };

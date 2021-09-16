@@ -4,7 +4,7 @@ import ItemPage from "../../Styles/ItemPage/ItemPage";
 import AllowItem from "./AllowItem/AllowItem";
 import * as S from "./Styled";
 import AllowModal from "./AllowModal";
-import useModal from "../../Hooks/useModal";
+import useModal from "../../Hooks/UseModal";
 import ModalPortal from "../ModalPortal/ModalPortal";
 
 const Allow = () => {

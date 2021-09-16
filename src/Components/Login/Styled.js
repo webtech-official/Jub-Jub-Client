@@ -49,4 +49,8 @@ export const LoginButton = styled.button`
   font-family: "Noto Sans KR";
   cursor: pointer;
   outline:0;
+  &:hover {
+    transform: scale(0.9);
+    box-shadow:  5px 5px 5px rgba(116, 125, 136, .5)  
+    }
 `;
